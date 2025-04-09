@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Serenity Imobiliária - Consulta na Prefeitura</title>
+  <title>Serenity Imobiliária - Certidões</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
@@ -22,7 +22,7 @@
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1300px;
       margin: 0 auto;
       background-color: #d6c7b4;
       border-radius: 12px;
@@ -57,19 +57,6 @@
       font-weight: bold;
     }
 
-    .iframe-box {
-      border: 3px solid #dbae8e;
-      border-radius: 8px;
-      overflow: hidden;
-      height: 600px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
     .back-btn {
       background-color: #3a7a76;
       color: white;
@@ -84,17 +71,40 @@
       background-color: #2f5e5a;
     }
 
-    @media (max-width: 768px) {
-      .container {
-        padding: 1rem;
+    .iframes-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .iframe-box {
+      border: 3px solid #dbae8e;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 600px;
+      background-color: white;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .iframe-title {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    @media (max-width: 992px) {
+      .iframes-wrapper {
+        grid-template-columns: 1fr;
       }
 
       .iframe-box {
         height: 500px;
-      }
-
-      .logo {
-        font-size: 1.2rem;
       }
     }
   </style>
@@ -109,9 +119,22 @@
       <button class="back-btn" onclick="history.back()">Voltar</button>
     </div>
 
-    <h2 style="margin-bottom: 1rem;">Consulta de Dados no Site da Prefeitura</h2>
-    <div class="iframe-box">
-      <iframe src="https://www2.londrina.pr.gov.br/sistemas/iptu/narrativa/"></iframe>
+    <h2 style="margin-bottom: 2rem;">Consultas de Certidões</h2>
+
+    <div class="iframes-wrapper">
+      <div>
+        <div class="iframe-title">Certidão Narrativa</div>
+        <div class="iframe-box">
+          <iframe src="https://www2.londrina.pr.gov.br/sistemas/iptu/narrativa/"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="iframe-title">Certidão de Numeração</div>
+        <div class="iframe-box">
+          <iframe src="https://portal.londrina.pr.gov.br/obras/certidao-de-numeracao"></iframe>
+        </div>
+      </div>
     </div>
   </div>
 </body>
