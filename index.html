@@ -129,6 +129,7 @@
       padding: 0.8rem 1rem;
       text-align: left;
       border-bottom: 1px solid #d6c7b4;
+      position: relative;
     }
 
     .data-table th {
@@ -138,6 +139,28 @@
 
     .data-table tr:hover {
       background-color: rgba(219, 174, 142, 0.1);
+    }
+
+    .copy-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .copy-btn {
+      display: none;
+      background-color: #3a7a76;
+      color: white;
+      border: none;
+      font-size: 0.8rem;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      margin-left: 8px;
+      cursor: pointer;
+    }
+
+    td.inscription-cell:hover .copy-btn {
+      display: inline-block;
     }
 
     .no-data {
@@ -237,7 +260,6 @@
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
   <script>
-    // Configuração Firebase
     const firebaseConfig = {
       apiKey: "AIzaSyDGSLzvob9IS9LWUsR4i0FVuW7k5_wcjgA",
       authDomain: "serenity-imobiliaria.firebaseapp.com",
@@ -249,14 +271,10 @@
     };
     firebase.initializeApp(firebaseConfig);
 
-    // Verifica se está logado
     firebase.auth().onAuthStateChanged(user => {
-      if (!user) {
-        window.location.href = "login.html";
-      }
+      if (!user) window.location.href = "login.html";
     });
 
-    // Função logout
     function logout() {
       firebase.auth().signOut().then(() => {
         window.location.href = "login.html";
@@ -264,7 +282,7 @@
     }
   </script>
 
-  <!-- Script da aplicação -->
+  <!-- Script principal -->
   <script>
     let currentData = [];
     let currentSearchType = 'all';
@@ -276,7 +294,6 @@
     const statusMessage = document.getElementById('statusMessage');
     const statusText = document.getElementById('statusText');
     const loadingIndicator = document.getElementById('loadingIndicator');
-
     const JSON_URL = 'imoveis.json';
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -306,7 +323,6 @@
     }
 
     searchInput.addEventListener('input', filterData);
-
     searchButtons.forEach(button => {
       button.addEventListener('click', function () {
         searchButtons.forEach(btn => btn.classList.remove('active'));
@@ -331,7 +347,12 @@
           <td>${item.address || '-'}</td>
           <td>${item.building || '-'}</td>
           <td>${item.complement || '-'}</td>
-          <td>${item.inscription || '-'}</td>
+          <td class="inscription-cell">
+            <div class="copy-container">
+              <span class="inscription-text">${item.inscription || '-'}</span>
+              <button class="copy-btn" onclick="copyToClipboard('${item.inscription || ''}')">Copiar</button>
+            </div>
+          </td>
         `;
         tableBody.appendChild(row);
       });
@@ -376,6 +397,14 @@
       });
 
       displayData(currentData);
+    }
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Inscrição copiada!');
+      }).catch(() => {
+        alert('Erro ao copiar.');
+      });
     }
   </script>
 </body>
