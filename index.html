@@ -283,35 +283,37 @@
         });
         
         // Função para exibir os dados na tabela (com paginação virtual)
+        // Atualize sua função displayData() para isso:
         function displayData(data) {
-            if (data.length === 0) {
+            console.log("Dados recebidos para exibição:", data); // Debug
+            
+            if (!data || data.length === 0) {
                 tableBody.innerHTML = '<tr><td colspan="4" class="no-data">Nenhum imóvel encontrado.</td></tr>';
                 return;
             }
             
-            // Mostra apenas os primeiros 100 resultados para performance
-            const displayData = data.slice(0, 100);
-            
             tableBody.innerHTML = '';
             
-            displayData.forEach(item => {
-                const row = document.createElement('tr');
+            // Mostra apenas os primeiros 100 resultados
+            const displayData = data.slice(0, 100);
+            
+            displayData.forEach((item, index) => {
+                console.log(`Imóvel ${index}:`, item); // Debug
                 
+                const row = document.createElement('tr');
                 row.innerHTML = `
                     <td>${item.address || '-'}</td>
                     <td>${item.building || '-'}</td>
                     <td>${item.complement || '-'}</td>
                     <td>${item.inscription || '-'}</td>
                 `;
-                
                 tableBody.appendChild(row);
             });
             
-            // Adiciona mensagem se houver mais resultados não exibidos
             if (data.length > 100) {
                 const row = document.createElement('tr');
                 row.innerHTML = `<td colspan="4" style="text-align: center; background-color: #f8f9fa;">
-                    Mostrando 100 de ${data.length} imóveis encontrados. Refine sua busca para ver mais.
+                    Mostrando 100 de ${data.length} imóveis. Refine sua busca para ver mais.
                 </td>`;
                 tableBody.appendChild(row);
             }
