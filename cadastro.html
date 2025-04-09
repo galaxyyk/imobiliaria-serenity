@@ -118,7 +118,7 @@
 
     document.getElementById('registerForm').addEventListener('submit', async (e) => {
       e.preventDefault();
-      const email = document.getElementById('email').value.trim();
+      const email = document.getElementById('email').value.trim().toLowerCase();
       const password = document.getElementById('password').value;
 
       const statusMessage = document.getElementById('statusMessage');
@@ -126,9 +126,12 @@
       statusMessage.textContent = '';
 
       try {
-        // Verifica se o e-mail está autorizado no Firestore
-        const doc = await db.collection('config').doc('allowedEmails').get();
-        const allowed = doc.exists && doc.data().emails.includes(email);
+        // Verifica se o e-mail está autorizado na coleção allowedEmails
+        const querySnapshot = await db.collection('allowedEmails')
+          .where('email', '==', email)
+          .get();
+
+        const allowed = !querySnapshot.empty;
 
         if (!allowed) {
           showMessage('Este e-mail não está autorizado para cadastro.', 'error');
