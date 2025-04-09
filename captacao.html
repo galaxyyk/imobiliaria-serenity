@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Serenity Imobiliária - Consulta na Prefeitura</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #3a7a76;
+      color: #333;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #d6c7b4;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      gap: 0.5rem;
+    }
+
+    .logo-circle {
+      background-color: #dbae8e;
+      color: #333;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-weight: bold;
+    }
+
+    .iframe-box {
+      border: 3px solid #dbae8e;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 600px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .back-btn {
+      background-color: #3a7a76;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #2f5e5a;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+
+      .iframe-box {
+        height: 500px;
+      }
+
+      .logo {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <div class="logo-circle">S</div>
+        Serenity Imobiliária
+      </div>
+      <button class="back-btn" onclick="history.back()">Voltar</button>
+    </div>
+
+    <h2 style="margin-bottom: 1rem;">Consulta de Dados no Site da Prefeitura</h2>
+    <div class="iframe-box">
+      <iframe src="https://www2.londrina.pr.gov.br/sistemas/iptu/narrativa/"></iframe>
+    </div>
+  </div>
+</body>
+</html>
