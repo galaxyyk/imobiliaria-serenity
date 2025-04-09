@@ -1,354 +1,324 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serenity Imobiliária - Login</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        body {
-            display: flex;
-            min-height: 100vh;
-            background-color: #3a7a76; /* VERDE AZULADO ESCURO */
-        }
-        
-        .left-section {
-            flex: 1;
-            background-color: #d6c7b4; /* BEGE CLARO */
-            color: #333333;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .logo {
-            position: absolute;
-            top: 2rem;
-            left: 2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #333333;
-        }
-        
-        .logo-circle {
-            width: 40px;
-            height: 40px;
-            background-color: #dbae8e; /* SALMÃO */
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #333333;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-        
-        .character {
-            width: 60%;
-            max-width: 400px;
-            margin-bottom: 2rem;
-        }
-        
-        .slogan {
-            font-size: 1.8rem;
-            font-weight: 300;
-            text-align: center;
-            line-height: 1.4;
-            margin-bottom: 1rem;
-            color: #333333;
-        }
-        
-        .right-section {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-            background-color: #3a7a76; /* VERDE AZULADO ESCURO */
-        }
-        
-        .login-form {
-            width: 100%;
-            max-width: 400px;
-        }
-        
-        h1 {
-            font-size: 2rem;
-            color: white;
-            margin-bottom: 2rem;
-            font-weight: 600;
-        }
-        
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: white;
-            font-weight: 500;
-        }
-        
-        input {
-            width: 100%;
-            padding: 0.8rem 1rem;
-            border: 1px solid #dbae8e; /* SALMÃO */
-            border-radius: 8px;
-            background-color: rgba(255, 255, 255, 0.7);
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
-        
-        input:focus {
-            outline: none;
-            border-color: #d6c7b4; /* BEGE CLARO no focus */
-            box-shadow: 0 0 0 2px rgba(214, 199, 180, 0.2);
-        }
-        
-        .checkbox-group {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1.5rem;
-        }
-        
-        .checkbox-group input {
-            width: auto;
-            margin-right: 0.5rem;
-        }
-        
-        button {
-            width: 100%;
-            padding: 1rem;
-            background-color: #d6c7b4; /* BEGE CLARO no botão */
-            color: #333333;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        
-        button:hover {
-            background-color: #c5b6a3; /* Bege mais escuro */
-        }
-        
-        .switch-form {
-            text-align: center;
-            margin-top: 1.5rem;
-            color: white;
-        }
-        
-        .switch-form a {
-            color: #d6c7b4; /* BEGE CLARO nos links */
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .switch-form a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Mensagens de status */
-        .status-message {
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            display: none;
-        }
-        
-        .error {
-            background-color: #ffebee;
-            color: #c62828;
-            display: block;
-        }
-        
-        .success {
-            background-color: #e8f5e9;
-            color: #2e7d32;
-            display: block;
-        }
-        
-        .forgot-password {
-            text-align: right;
-            margin-bottom: 1.5rem;
-        }
-        
-        .forgot-password a {
-            color: #d6c7b4;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-        
-        .forgot-password a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serenity Imobiliária - Login</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #3a7a76;
+    }
+
+    .left-section {
+      flex: 1;
+      background-color: #d6c7b4;
+      color: #333333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333333;
+    }
+
+    .logo-circle {
+      width: 40px;
+      height: 40px;
+      background-color: #dbae8e;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333333;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .character {
+      width: 60%;
+      max-width: 400px;
+      margin-bottom: 2rem;
+    }
+
+    .slogan {
+      font-size: 1.8rem;
+      font-weight: 300;
+      text-align: center;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+      color: #333333;
+    }
+
+    .right-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      background-color: #3a7a76;
+    }
+
+    .login-form {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: white;
+      margin-bottom: 2rem;
+      font-weight: 600;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: white;
+      font-weight: 500;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid #dbae8e;
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.7);
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #d6c7b4;
+      box-shadow: 0 0 0 2px rgba(214, 199, 180, 0.2);
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .checkbox-group input {
+      width: auto;
+      margin-right: 0.5rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 1rem;
+      background-color: #d6c7b4;
+      color: #333333;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #c5b6a3;
+    }
+
+    .switch-form {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: white;
+    }
+
+    .switch-form a {
+      color: #d6c7b4;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .switch-form a:hover {
+      text-decoration: underline;
+    }
+
+    .status-message {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      display: none;
+    }
+
+    .error {
+      background-color: #ffebee;
+      color: #c62828;
+      display: block;
+    }
+
+    .success {
+      background-color: #e8f5e9;
+      color: #2e7d32;
+      display: block;
+    }
+
+    .forgot-password {
+      text-align: right;
+      margin-bottom: 1.5rem;
+    }
+
+    .forgot-password a {
+      color: #d6c7b4;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .forgot-password a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <div class="left-section">
-        <div class="logo">
-            <div class="logo-circle">S</div>
-            <span>Serenity</span>
-        </div>
-        <img src="https://i.ibb.co/BVbm1zrk/Chat-GPT-Image-8-de-abr-de-2025-20-19-02-1.png" alt="Personagem" class="character">
-        <p class="slogan">Plataforma de Captações<br>em Londrina</p>
+  <div class="left-section">
+    <div class="logo">
+      <div class="logo-circle">S</div>
+      <span>Serenity</span>
     </div>
-    
-    <div class="right-section">
-        <div class="login-form">
-            <h1>Faça seu login</h1>
-            
-            <div id="statusMessage" class="status-message"></div>
-            
-            <form id="loginForm">
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" required>
-                </div>
-                
-                <div class="forgot-password">
-                    <a href="forgot-password.html">Esqueceu sua senha?</a>
-                </div>
-                
-                <button type="submit">Entrar</button>
-            </form>
-            
-            <p class="switch-form">Não tem uma conta? <a href="register.html">Cadastre-se</a></p>
-        </div>
-    </div>
+    <img src="https://i.ibb.co/BVbm1zrk/Chat-GPT-Image-8-de-abr-de-2025-20-19-02-1.png" alt="Personagem" class="character">
+    <p class="slogan">Plataforma de Captações<br>em Londrina</p>
+  </div>
 
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Limpa mensagens anteriores
-            document.getElementById('statusMessage').className = 'status-message';
-            
-            // Pega os valores dos campos
-            const email = document.getElementById('email').value.trim();
-            const password = document.getElementById('password').value;
-            
-            // Verifica se o usuário existe
-            const users = JSON.parse(localStorage.getItem('serenity_users')) || [];
-            const user = users.find(user => user.email === email);
-            
-            if (!user) {
-                showMessage('Email não cadastrado', 'error');
-                return;
-            }
-            
-            if (user.password !== password) {
-                showMessage('Senha incorreta', 'error');
-                return;
-            }
-            
-            // Salva o usuário na sessão
-            sessionStorage.setItem('currentUser', JSON.stringify(user));
-            
-            showMessage('Login realizado com sucesso! Redirecionando...', 'success');
-            
-            // Redireciona após 1 segundo
-            setTimeout(() => {
-                window.location.href = 'index.html';
-            }, 1000);
-        });
-        
-        function showMessage(message, type) {
-            const statusElement = document.getElementById('statusMessage');
-            statusElement.textContent = message;
-            statusElement.className = 'status-message ' + type;
+  <div class="right-section">
+    <div class="login-form">
+      <h1>Faça seu login</h1>
+
+      <div id="statusMessage" class="status-message"></div>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" required>
+        </div>
+
+        <div class="forgot-password">
+          <a href="forgot-password.html">Esqueceu sua senha?</a>
+        </div>
+
+        <button type="submit">Entrar</button>
+      </form>
+
+      <p class="switch-form">Não tem uma conta? <a href="register.html">Cadastre-se</a></p>
+    </div>
+  </div>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+  <script>
+    // Configuração Firebase
+    const firebaseConfig = {
+      apiKey: "AIzaSyDGSLzvob9IS9LWUsR4i0FVuW7k5_wcjgA",
+      authDomain: "serenity-imobiliaria.firebaseapp.com",
+      projectId: "serenity-imobiliaria",
+      storageBucket: "serenity-imobiliaria.appspot.com",
+      messagingSenderId: "381579749133",
+      appId: "1:381579749133:web:ccbad8bc904b1d35853244",
+      measurementId: "G-K3NGJMBYKH"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    // Função de login com verificação de email autorizado
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+
+      // Lista de emails autorizados
+      const allowedEmails = [
+        'kaua@imobiliariaserenity.com.br',
+        'rodrigo@imobiliariaserenity.com.br',
+        'luciane@imobiliariaserenity.com.br'
+      ];
+
+      if (!allowedEmails.includes(email)) {
+        showMessage('Este email não está autorizado a acessar a plataforma.', 'error');
+        return;
+      }
+
+      try {
+        const userCredential = await auth.signInWithEmailAndPassword(email, password);
+        const user = userCredential.user;
+
+        sessionStorage.setItem('currentUser', JSON.stringify({
+          email: user.email,
+          uid: user.uid
+        }));
+
+        showMessage('Login realizado com sucesso! Redirecionando...', 'success');
+
+        setTimeout(() => {
+          window.location.href = 'index.html';
+        }, 1000);
+      } catch (error) {
+        let errorMessage = 'Erro ao fazer login';
+
+        switch (error.code) {
+          case 'auth/user-not-found':
+            errorMessage = 'Email não cadastrado';
+            break;
+          case 'auth/wrong-password':
+            errorMessage = 'Senha incorreta';
+            break;
+          case 'auth/invalid-email':
+            errorMessage = 'Email inválido';
+            break;
+          default:
+            errorMessage = error.message;
         }
-    </script>
-    <!-- Adicione os scripts do Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    
-    <script>
-      // Configuração do Firebase (substitua com suas credenciais)
-      const firebaseConfig = {
-        apiKey: "AIzaSyDGSLzvob9IS9LWUsR4i0FVuW7k5_wcjgA",
-        authDomain: "serenity-imobiliaria.firebaseapp.com",
-        projectId: "serenity-imobiliaria",
-        storageBucket: "serenity-imobiliaria.firebasestorage.app",
-        messagingSenderId: "381579749133",
-        appId: "1:381579749133:web:ccbad8bc904b1d35853244",
-        measurementId: "G-K3NGJMBYKH"
-      };
-        
-      // Inicializa o Firebase
-      firebase.initializeApp(firebaseConfig);
-      const auth = firebase.auth();
-      const db = firebase.firestore();
-    
-      // Modifique o evento de submit do formulário
-      document.getElementById('loginForm').addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        const email = document.getElementById('email').value.trim();
-        const password = document.getElementById('password').value;
-        
-        try {
-          // Autenticação com Firebase
-          const userCredential = await firebase.auth().signInWithEmailAndPassword(email, password);
-          const user = userCredential.user;
-          
-          // Salva informações do usuário no sessionStorage
-          sessionStorage.setItem('currentUser', JSON.stringify({
-            email: user.email,
-            uid: user.uid
-          }));
-          
-          showMessage('Login realizado com sucesso! Redirecionando...', 'success');
-          
-          // Redireciona após 1 segundo
-          setTimeout(() => {
-            window.location.href = 'index.html';
-          }, 1000);
-          
-        } catch (error) {
-          let errorMessage = 'Erro ao fazer login';
-          
-          switch(error.code) {
-            case 'auth/user-not-found':
-              errorMessage = 'Email não cadastrado';
-              break;
-            case 'auth/wrong-password':
-              errorMessage = 'Senha incorreta';
-              break;
-            case 'auth/invalid-email':
-              errorMessage = 'Email inválido';
-              break;
-            default:
-              errorMessage = error.message;
-          }
-          
-          showMessage(errorMessage, 'error');
-        }
-      });
-    </script>
+
+        showMessage(errorMessage, 'error');
+      }
+    });
+
+    function showMessage(message, type) {
+      const statusElement = document.getElementById('statusMessage');
+      statusElement.textContent = message;
+      statusElement.className = 'status-message ' + type;
+    }
+  </script>
 </body>
 </html>
