@@ -319,35 +319,43 @@
         
         // Função para filtrar os dados
         function filterData() {
-            const searchTerm = searchInput.value.toLowerCase();
-            
-            if (!searchTerm) {
-                currentData = allProperties;
-                displayData(currentData);
-                return;
-            }
-            
-            currentData = allProperties.filter(item => {
-                switch (currentSearchType) {
-                    case 'address':
-                        return item.address.toLowerCase().includes(searchTerm);
-                    case 'building':
-                        return item.building.toLowerCase().includes(searchTerm);
-                    case 'inscription':
-                        return item.inscription.toLowerCase().includes(searchTerm);
-                    case 'all':
-                    default:
-                        return (
-                            item.address.toLowerCase().includes(searchTerm) ||
-                            item.building.toLowerCase().includes(searchTerm) ||
-                            item.complement.toLowerCase().includes(searchTerm) ||
-                            item.inscription.toLowerCase().includes(searchTerm)
-                        );
-                }
-            });
-            
-            displayData(currentData);
+    const searchTerm = searchInput.value.trim().toLowerCase();
+    
+    if (!searchTerm) {
+        currentData = [...allProperties];
+        displayData(currentData);
+        return;
+    }
+
+    currentData = allProperties.filter(item => {
+        // Garante que todos os campos sejam strings para evitar erros
+        const address = String(item.address || '').toLowerCase();
+        const building = String(item.building || '').toLowerCase();
+        const complement = String(item.complement || '').toLowerCase();
+        const inscription = String(item.inscription || '').toLowerCase();
+
+        switch (currentSearchType) {
+            case 'address':
+                return address.includes(searchTerm);
+            case 'building':
+                return building.includes(searchTerm);
+            case 'complement':
+                return complement.includes(searchTerm);
+            case 'inscription':
+                return inscription.includes(searchTerm);
+            case 'all':
+            default:
+                return (
+                    address.includes(searchTerm) ||
+                    building.includes(searchTerm) ||
+                    complement.includes(searchTerm) ||
+                    inscription.includes(searchTerm)
+                );
         }
+    });
+
+    displayData(currentData);
+}
     </script>
 </body>
 </html>
