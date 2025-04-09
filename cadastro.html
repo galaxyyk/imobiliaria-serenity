@@ -292,8 +292,8 @@
         }
     </script>
     <!-- Adicione os scripts do Firebase -->
-    <script src="https://https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
     
     <script>
       // Configuração do Firebase (substitua com suas credenciais)
@@ -337,9 +337,9 @@
         }
     
         try {
-          // Verifica se o e-mail termina com "@dominio.com"
-          if (!email.endsWith("@dominio.com")) {
-            showMessage("Apenas e-mails @dominio.com são permitidos!", "error");
+          // Verifica se o e-mail termina com "@imobiliariaserenity.com.br"
+          if (!email.endsWith("@imobiliariaserenity.com.br")) {
+            showMessage("Apenas e-mails @imobiliariaserenity.com.br são permitidos!", "error");
             return;
           }
         
