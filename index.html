@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Imobiliária - Catálogo de Imóveis</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            min-height: 100vh;
+            background-color: #3a7a76;
+            padding: 2rem;
+            color: #333333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #d6c7b4;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #dbae8e;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .logo-circle {
+            width: 40px;
+            height: 40px;
+            background-color: #dbae8e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333333;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .search-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #dbae8e;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        
+        .search-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .search-btn {
+            background-color: #dbae8e;
+            color: #333333;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        
+        .search-btn.active {
+            background-color: #3a7a76;
+            color: white;
+        }
+        
+        .search-btn:hover {
+            opacity: 0.9;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .data-table th, .data-table td {
+            padding: 0.8rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #d6c7b4;
+        }
+        
+        .data-table th {
+            background-color: #3a7a76;
+            color: white;
+        }
+        
+        .data-table tr:hover {
+            background-color: rgba(219, 174, 142, 0.1);
+        }
+        
+        .no-data {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+        }
+        
+        .status-message {
+            margin-top: 1rem;
+            padding: 0.8rem;
+            border-radius: 4px;
+        }
+        
+        .status-message.success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        .status-message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #3a7a76;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            
+            .search-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <div class="logo-circle">S</div>
+                <span>Serenity Imobiliária</span>
+            </div>
+            <h2>Catálogo de Imóveis</h2>
+        </div>
+        
+        <div class="search-section">
+            <h3>Buscar Imóveis</h3>
+            <input type="text" class="search-input" id="searchInput" placeholder="Digite sua busca...">
+            <div class="search-buttons">
+                <button class="search-btn active" data-type="all">Todos</button>
+                <button class="search-btn" data-type="address">Busca por Endereço</button>
+                <button class="search-btn" data-type="building">Busca por Prédio</button>
+                <button class="search-btn" data-type="inscription">Busca por Inscrição</button>
+            </div>
+            <div class="status-message" id="statusMessage">
+                <span id="loadingIndicator" class="loading"></span>
+                <span id="statusText">Carregando catálogo de imóveis...</span>
+            </div>
+        </div>
+        
+        <div class="data-container">
+            <table class="data-table" id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Endereço</th>
+                        <th>Prédio</th>
+                        <th>Complemento</th>
+                        <th>Inscrição</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td colspan="4" class="no-data">Carregando imóveis...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Variáveis globais
+        let currentData = [];
+        let currentSearchType = 'all';
+        let allProperties = [];
+        
+        // Elementos DOM
+        const searchInput = document.getElementById('searchInput');
+        const searchButtons = document.querySelectorAll('.search-btn');
+        const tableBody = document.getElementById('tableBody');
+        const statusMessage = document.getElementById('statusMessage');
+        const statusText = document.getElementById('statusText');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+        
+        // URL do arquivo JSON com os imóveis (substitua pelo seu)
+        const JSON_URL = 'imoveis.json';
+        
+        // Inicializa a aplicação
+        document.addEventListener('DOMContentLoaded', function() {
+            loadPropertyData();
+        });
+        
+        // Carrega os dados do JSON externo
+        async function loadPropertyData() {
+            try {
+                const response = await fetch(JSON_URL);
+                
+                if (!response.ok) {
+                    throw new Error('Falha ao carregar dados');
+                }
+                
+                allProperties = await response.json();
+                currentData = allProperties;
+                
+                displayData(currentData);
+                updateStatus(`Catálogo carregado com ${currentData.length} imóveis`, 'success');
+                
+            } catch (error) {
+                console.error('Erro ao carregar dados:', error);
+                updateStatus(`Erro: ${error.message}`, 'error');
+                tableBody.innerHTML = '<tr><td colspan="4" class="no-data">Erro ao carregar dados.</td></tr>';
+            } finally {
+                loadingIndicator.style.display = 'none';
+            }
+        }
+        
+        // Atualiza a mensagem de status
+        function updateStatus(message, type) {
+            statusText.textContent = message;
+            statusMessage.className = 'status-message ' + type;
+        }
+        
+        // Event Listeners
+        searchInput.addEventListener('input', filterData);
+        
+        searchButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                searchButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                currentSearchType = this.dataset.type;
+                filterData();
+            });
+        });
+        
+        // Função para exibir os dados na tabela (com paginação virtual)
+        function displayData(data) {
+            if (data.length === 0) {
+                tableBody.innerHTML = '<tr><td colspan="4" class="no-data">Nenhum imóvel encontrado.</td></tr>';
+                return;
+            }
+            
+            // Mostra apenas os primeiros 100 resultados para performance
+            const displayData = data.slice(0, 100);
+            
+            tableBody.innerHTML = '';
+            
+            displayData.forEach(item => {
+                const row = document.createElement('tr');
+                
+                row.innerHTML = `
+                    <td>${item.address || '-'}</td>
+                    <td>${item.building || '-'}</td>
+                    <td>${item.complement || '-'}</td>
+                    <td>${item.inscription || '-'}</td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+            
+            // Adiciona mensagem se houver mais resultados não exibidos
+            if (data.length > 100) {
+                const row = document.createElement('tr');
+                row.innerHTML = `<td colspan="4" style="text-align: center; background-color: #f8f9fa;">
+                    Mostrando 100 de ${data.length} imóveis encontrados. Refine sua busca para ver mais.
+                </td>`;
+                tableBody.appendChild(row);
+            }
+        }
+        
+        // Função para filtrar os dados
+        function filterData() {
+            const searchTerm = searchInput.value.toLowerCase();
+            
+            if (!searchTerm) {
+                currentData = allProperties;
+                displayData(currentData);
+                return;
+            }
+            
+            currentData = allProperties.filter(item => {
+                switch (currentSearchType) {
+                    case 'address':
+                        return item.address.toLowerCase().includes(searchTerm);
+                    case 'building':
+                        return item.building.toLowerCase().includes(searchTerm);
+                    case 'inscription':
+                        return item.inscription.toLowerCase().includes(searchTerm);
+                    case 'all':
+                    default:
+                        return (
+                            item.address.toLowerCase().includes(searchTerm) ||
+                            item.building.toLowerCase().includes(searchTerm) ||
+                            item.complement.toLowerCase().includes(searchTerm) ||
+                            item.inscription.toLowerCase().includes(searchTerm)
+                        );
+                }
+            });
+            
+            displayData(currentData);
+        }
+    </script>
+</body>
+</html>
