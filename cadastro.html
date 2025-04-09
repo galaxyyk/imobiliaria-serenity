@@ -291,5 +291,69 @@
             statusElement.className = 'status-message ' + type;
         }
     </script>
+    <!-- Adicione os scripts do Firebase -->
+    <script src="https://https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js"></script>
+    
+    <script>
+      // Configuração do Firebase (substitua com suas credenciais)
+      const firebaseConfig = {
+        apiKey: "AIzaSyDGSLzvob9IS9LWUsR4i0FVuW7k5_wcjgA",
+        authDomain: "serenity-imobiliaria.firebaseapp.com",
+        projectId: "serenity-imobiliaria",
+        storageBucket: "serenity-imobiliaria.firebasestorage.app",
+        messagingSenderId: "381579749133",
+        appId: "1:381579749133:web:ccbad8bc904b1d35853244",
+        measurementId: "G-K3NGJMBYKH"
+      };
+        
+      // Inicializa o Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    
+      // Modifique o evento de submit do formulário
+      document.getElementById('registerForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirm-password').value;
+        const termsAccepted = document.getElementById('terms').checked;
+        
+        // Validações (mantenha as que já tem)
+        if (!termsAccepted) {
+          showMessage('Você deve aceitar os termos e condições', 'error');
+          return;
+        }
+        
+        if (password !== confirmPassword) {
+          showMessage('As senhas não coincidem', 'error');
+          return;
+        }
+        
+        if (password.length < 6) {
+          showMessage('A senha deve ter pelo menos 6 caracteres', 'error');
+          return;
+        }
+    
+        try {
+          // Verifica se o e-mail termina com "@dominio.com"
+          if (!email.endsWith("@dominio.com")) {
+            showMessage("Apenas e-mails @dominio.com são permitidos!", "error");
+            return;
+          }
+        
+          // Se passar, salva no Firebase
+          await db.collection("users").add({
+            email: email,
+            createdAt: firebase.firestore.FieldValue.serverTimestamp()
+          });
+          
+          showMessage('Cadastro realizado!', 'success');
+        } catch (error) {
+          showMessage('Erro: ' + error.message, 'error');
+        }
+      });
+    </script>
 </body>
 </html>
