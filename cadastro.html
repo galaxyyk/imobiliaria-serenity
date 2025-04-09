@@ -1,165 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Serenity Imobiliária - Cadastro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro - Serenity Imobiliária</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-    body {
-      display: flex;
-      min-height: 100vh;
-      background-color: #3a7a76;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { display: flex; min-height: 100vh; background-color: #3a7a76; }
     .left-section {
-      flex: 1;
-      background-color: #d6c7b4;
-      color: #333333;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 2rem;
-      position: relative;
-      overflow: hidden;
+      flex: 1; background-color: #d6c7b4; color: #333333;
+      display: flex; flex-direction: column; justify-content: center;
+      align-items: center; padding: 2rem; position: relative;
     }
-    .logo {
-      position: absolute;
-      top: 2rem;
-      left: 2rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #333333;
-    }
+    .logo { position: absolute; top: 2rem; left: 2rem; display: flex; align-items: center; gap: 0.5rem; font-size: 1.5rem; font-weight: 600; }
     .logo-circle {
-      width: 40px;
-      height: 40px;
-      background-color: #dbae8e;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #333333;
-      font-weight: bold;
-      font-size: 1.2rem;
+      width: 40px; height: 40px; background-color: #dbae8e;
+      border-radius: 50%; display: flex; align-items: center;
+      justify-content: center; font-weight: bold; font-size: 1.2rem;
     }
-    .character {
-      width: 60%;
-      max-width: 400px;
-      margin-bottom: 2rem;
-    }
+    .character { width: 60%; max-width: 400px; margin-bottom: 2rem; }
     .slogan {
-      font-size: 1.8rem;
-      font-weight: 300;
-      text-align: center;
-      line-height: 1.4;
-      margin-bottom: 1rem;
-      color: #333333;
+      font-size: 1.8rem; font-weight: 300; text-align: center;
+      line-height: 1.4; margin-bottom: 1rem;
     }
     .right-section {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 2rem;
-      background-color: #3a7a76;
+      flex: 1; display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      padding: 2rem; background-color: #3a7a76;
     }
-    .login-form {
-      width: 100%;
-      max-width: 400px;
-    }
-    h1 {
-      font-size: 2rem;
-      color: white;
-      margin-bottom: 2rem;
-      font-weight: 600;
-    }
-    .form-group {
-      margin-bottom: 1.5rem;
-    }
+    .register-form { width: 100%; max-width: 400px; }
+    h1 { font-size: 2rem; color: white; margin-bottom: 2rem; font-weight: 600; }
+    .form-group { margin-bottom: 1.5rem; }
     label {
-      display: block;
-      margin-bottom: 0.5rem;
-      color: white;
+      display: block; margin-bottom: 0.5rem; color: white;
       font-weight: 500;
     }
     input {
-      width: 100%;
-      padding: 0.8rem 1rem;
-      border: 1px solid #dbae8e;
-      border-radius: 8px;
+      width: 100%; padding: 0.8rem 1rem;
+      border: 1px solid #dbae8e; border-radius: 8px;
       background-color: rgba(255, 255, 255, 0.7);
-      font-size: 1rem;
-      transition: all 0.3s ease;
+      font-size: 1rem; transition: all 0.3s ease;
     }
     input:focus {
-      outline: none;
-      border-color: #d6c7b4;
+      outline: none; border-color: #d6c7b4;
       box-shadow: 0 0 0 2px rgba(214, 199, 180, 0.2);
     }
-    .checkbox-group {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1.5rem;
-    }
-    .checkbox-group input {
-      width: auto;
-      margin-right: 0.5rem;
-    }
     button {
-      width: 100%;
-      padding: 1rem;
-      background-color: #d6c7b4;
-      color: #333333;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-weight: 500;
-      cursor: pointer;
+      width: 100%; padding: 1rem; background-color: #d6c7b4;
+      color: #333333; border: none; border-radius: 8px;
+      font-size: 1rem; font-weight: 500; cursor: pointer;
       transition: background-color 0.3s ease;
     }
-    button:hover {
-      background-color: #c5b6a3;
-    }
+    button:hover { background-color: #c5b6a3; }
     .switch-form {
-      text-align: center;
-      margin-top: 1.5rem;
-      color: white;
+      text-align: center; margin-top: 1.5rem; color: white;
     }
     .switch-form a {
-      color: #d6c7b4;
-      text-decoration: none;
-      font-weight: 500;
+      color: #d6c7b4; text-decoration: none; font-weight: 500;
     }
-    .switch-form a:hover {
-      text-decoration: underline;
-    }
+    .switch-form a:hover { text-decoration: underline; }
     .status-message {
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
-      display: none;
+      padding: 10px; margin: 10px 0;
+      border-radius: 5px; display: none;
     }
-    .error {
-      background-color: #ffebee;
-      color: #c62828;
-      display: block;
-    }
-    .success {
-      background-color: #e8f5e9;
-      color: #2e7d32;
-      display: block;
-    }
+    .error { background-color: #ffebee; color: #c62828; display: block; }
+    .success { background-color: #e8f5e9; color: #2e7d32; display: block; }
   </style>
 </head>
 <body>
@@ -173,7 +79,7 @@
   </div>
 
   <div class="right-section">
-    <div class="login-form">
+    <div class="register-form">
       <h1>Crie sua conta</h1>
       <div id="statusMessage" class="status-message"></div>
       <form id="registerForm">
@@ -183,94 +89,86 @@
         </div>
         <div class="form-group">
           <label for="password">Senha</label>
-          <input type="password" id="password" minlength="6" required>
+          <input type="password" id="password" required>
         </div>
-        <div class="form-group">
-          <label for="confirm-password">Confirmar Senha</label>
-          <input type="password" id="confirm-password" minlength="6" required>
-        </div>
-        <div class="checkbox-group">
-          <input type="checkbox" id="terms" required>
-          <label for="terms">Eu aceito os termos e condições</label>
-        </div>
-        <button type="submit">Criar conta</button>
+        <button type="submit">Cadastrar</button>
       </form>
-      <p class="switch-form">Já tem uma conta? <a href="login.html">Entrar</a></p>
+      <p class="switch-form">Já tem uma conta? <a href="login.html">Faça login</a></p>
     </div>
   </div>
 
-  <!-- Firebase SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <!-- Firebase Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
   <script>
     const firebaseConfig = {
       apiKey: "AIzaSyDGSLzvob9IS9LWUsR4i0FVuW7k5_wcjgA",
       authDomain: "serenity-imobiliaria.firebaseapp.com",
       projectId: "serenity-imobiliaria",
-      storageBucket: "serenity-imobiliaria.firebasestorage.app",
+      storageBucket: "serenity-imobiliaria.appspot.com",
       messagingSenderId: "381579749133",
       appId: "1:381579749133:web:ccbad8bc904b1d35853244",
       measurementId: "G-K3NGJMBYKH"
     };
-
     firebase.initializeApp(firebaseConfig);
     const auth = firebase.auth();
     const db = firebase.firestore();
 
     document.getElementById('registerForm').addEventListener('submit', async (e) => {
       e.preventDefault();
-
       const email = document.getElementById('email').value.trim();
       const password = document.getElementById('password').value;
-      const confirmPassword = document.getElementById('confirm-password').value;
-      const termsAccepted = document.getElementById('terms').checked;
 
-      if (!termsAccepted) {
-        showMessage('Você deve aceitar os termos e condições', 'error');
-        return;
-      }
-
-      if (password !== confirmPassword) {
-        showMessage('As senhas não coincidem', 'error');
-        return;
-      }
-
-      if (password.length < 6) {
-        showMessage('A senha deve ter pelo menos 6 caracteres', 'error');
-        return;
-      }
-
-      if (!email.endsWith("@imobiliariaserenity.com.br")) {
-        showMessage("Apenas e-mails @imobiliariaserenity.com.br são permitidos!", "error");
-        return;
-      }
+      const statusMessage = document.getElementById('statusMessage');
+      statusMessage.className = 'status-message';
+      statusMessage.textContent = '';
 
       try {
+        // Verifica se o e-mail está autorizado no Firestore
+        const doc = await db.collection('config').doc('allowedEmails').get();
+        const allowed = doc.exists && doc.data().emails.includes(email);
+
+        if (!allowed) {
+          showMessage('Este e-mail não está autorizado para cadastro.', 'error');
+          return;
+        }
+
         const userCredential = await auth.createUserWithEmailAndPassword(email, password);
         const user = userCredential.user;
 
-        await db.collection("users").doc(user.uid).set({
+        sessionStorage.setItem('currentUser', JSON.stringify({
           email: user.email,
-          createdAt: firebase.firestore.FieldValue.serverTimestamp()
-        });
+          uid: user.uid
+        }));
 
         showMessage('Cadastro realizado com sucesso! Redirecionando...', 'success');
-
         setTimeout(() => {
-          window.location.href = 'login.html';
-        }, 2000);
+          window.location.href = 'index.html';
+        }, 1000);
 
       } catch (error) {
-        showMessage('Erro: ' + error.message, 'error');
+        let errorMessage = 'Erro ao cadastrar';
+        switch (error.code) {
+          case 'auth/email-already-in-use':
+            errorMessage = 'Este email já está em uso';
+            break;
+          case 'auth/invalid-email':
+            errorMessage = 'Email inválido';
+            break;
+          case 'auth/weak-password':
+            errorMessage = 'Senha fraca (mínimo 6 caracteres)';
+            break;
+        }
+        showMessage(errorMessage, 'error');
       }
     });
 
     function showMessage(message, type) {
-      const statusElement = document.getElementById('statusMessage');
-      statusElement.textContent = message;
-      statusElement.className = 'status-message ' + type;
+      const el = document.getElementById('statusMessage');
+      el.textContent = message;
+      el.className = `status-message ${type}`;
     }
   </script>
 </body>
