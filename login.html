@@ -128,23 +128,26 @@
 
     document.getElementById('loginForm').addEventListener('submit', async (e) => {
       e.preventDefault();
-      const email = document.getElementById('email').value.trim();
+      const email = document.getElementById('email').value.trim().toLowerCase();
       const password = document.getElementById('password').value;
-
       const statusMessage = document.getElementById('statusMessage');
       statusMessage.className = 'status-message';
       statusMessage.textContent = '';
 
       try {
-        // Verificar se o email está permitido
-        const doc = await db.collection('config').doc('allowedEmails').get();
-        const allowed = doc.exists && doc.data().emails.includes(email);
+        // Verificar se o email está autorizado (coleção allowedEmails, campo email)
+        const querySnapshot = await db.collection('allowedEmails')
+          .where('email', '==', email)
+          .get();
+
+        const allowed = !querySnapshot.empty;
 
         if (!allowed) {
           showMessage('Este email não está autorizado a acessar o sistema.', 'error');
           return;
         }
 
+        // Autenticar com Firebase Auth
         const userCredential = await auth.signInWithEmailAndPassword(email, password);
         const user = userCredential.user;
 
