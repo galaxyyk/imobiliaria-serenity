@@ -19,11 +19,13 @@
       background-color: #3a7a76;
       padding: 2rem;
       color: #333333;
+      display: flex;
+      justify-content: center;
     }
 
     .container {
       max-width: 1200px;
-      margin: 0 auto;
+      width: 100%;
       background-color: #d6c7b4;
       border-radius: 10px;
       padding: 2rem;
@@ -39,32 +41,6 @@
 
     .sidebar {
       width: 250px;
-    }
-
-    .sidebar h4 {
-      margin-bottom: 1rem;
-      color: #3a7a76;
-    }
-
-    .building-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .building-list li {
-      cursor: pointer;
-      background-color: #3a7a76;
-      color: white;
-      padding: 0.5rem;
-      border-radius: 6px;
-      transition: background 0.3s;
-      font-size: 0.9rem;
-    }
-
-    .building-list li:hover {
-      background-color: #2e605d;
     }
 
     .header {
@@ -171,7 +147,6 @@
       padding: 0.8rem 1rem;
       text-align: left;
       border-bottom: 1px solid #d6c7b4;
-      position: relative;
     }
 
     .data-table th {
@@ -219,17 +194,38 @@
       to { transform: rotate(360deg); }
     }
 
+    .sidebar h4 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .building-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .building-item {
+      background-color: #3a7a76;
+      color: white;
+      padding: 0.5rem 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+    }
+
+    .building-item:hover {
+      background-color: #2e605d;
+    }
+
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
       }
-      .header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-      }
-      .search-buttons {
-        flex-direction: column;
+
+      .sidebar {
+        width: 100%;
       }
     }
   </style>
@@ -284,43 +280,178 @@
 
     <div class="sidebar">
       <h4>Prédios Completos</h4>
-      <ul class="building-list" id="buildingList">
-        <li>FLY TOP LIFE</li>
-        <li>PALHANO RESIDENCE</li>
-        <li>SUNFLOWERS</li>
-        <li>SPAZIO LÁ FONTAINE</li>
-        <li>ARUAK</li>
-        <li>BOULEVARD VILLAGE</li>
-        <li>TERRANOVA</li>
-        <li>SPAZIO LOUVRE</li>
-        <li>SUNSET FARIA LIMA</li>
-        <li>LÁ SICILIA</li>
-        <li>SPAZIO LEOPOLDINA</li>
-        <li>EVOLUTION AYRTON SENNA</li>
-        <li>GARDEN PALHANO</li>
-        <li>PARANAGUÁ SOHO</li>
-        <li>SPOT CENTRO RESIDENCE</li>
-        <li>EDIFÍCIO SPLENDOR</li>
-        <li>DUE TORRI</li>
-        <li>LIBERTY TOWERS</li>
-        <li>PRIME PIAUI</li>
-        <li>AQUARELA PINHEIROS</li>
-        <li>JARDIM SUL</li>
-      </ul>
+      <div class="building-list" id="buildingList"></div>
     </div>
   </div>
 
-  <!-- Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
   <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDGSLzvob9IS9LWUsR4i0FVuW7k5_wcjgA",
+      authDomain: "serenity-imobiliaria.firebaseapp.com",
+      projectId: "serenity-imobiliaria",
+      storageBucket: "serenity-imobiliaria.appspot.com",
+      messagingSenderId: "381579749133",
+      appId: "1:381579749133:web:ccbad8bc904b1d35853244",
+      measurementId: "G-K3NGJMBYKH"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    firebase.auth().onAuthStateChanged(user => {
+      if (!user) window.location.href = "login.html";
+    });
+
+    function logout() {
+      firebase.auth().signOut().then(() => {
+        window.location.href = "login.html";
+      });
+    }
+  </script>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const searchButtons = document.querySelectorAll('.search-btn');
+    const tableBody = document.getElementById('tableBody');
+    const statusMessage = document.getElementById('statusMessage');
+    const statusText = document.getElementById('statusText');
+    const loadingIndicator = document.getElementById('loadingIndicator');
     const buildingList = document.getElementById('buildingList');
-    buildingList.querySelectorAll('li').forEach(li => {
-      li.addEventListener('click', () => {
-        document.querySelectorAll('.search-btn').forEach(btn => btn.classList.remove('active'));
-        currentSearchType = 'building';
-        searchInput.value = li.textContent;
+    const JSON_URL = 'imoveis.json';
+
+    let allProperties = [];
+    let currentData = [];
+    let currentSearchType = 'all';
+
+    const validBuildings = [
+      "ARUAK",
+      "AQUARELA PINHEIROS",
+      "BOULEVARD VILLAGE",
+      "DUE TORRI",
+      "EDIFÍCIO SPLENDOR",
+      "EVOLUTION AYRTON SENNA",
+      "FLY TOP LIFE",
+      "GARDEN PALHANO",
+      "JARDIM SUL",
+      "LÁ SICILIA",
+      "LIBERTY TOWERS",
+      "PALHANO RESIDENCE",
+      "PARANAGUÁ SOHO",
+      "PRIME PIAUI",
+      "SPAZIO LÁ FONTAINE",
+      "SPAZIO LEOPOLDINA",
+      "SPAZIO LOUVRE",
+      "SPOT CENTRO RESIDENCE",
+      "SUNFLOWERS",
+      "SUNSET FARIA LIMA",
+      "TERRANOVA"
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadPropertyData();
+    });
+
+    async function loadPropertyData() {
+      try {
+        const response = await fetch(JSON_URL);
+        if (!response.ok) throw new Error('Falha ao carregar dados');
+        allProperties = await response.json();
+        currentData = allProperties;
+        displayData(currentData);
+        updateStatus(`Catálogo carregado com ${currentData.length} imóveis`, 'success');
+        renderBuildingList();
+      } catch (error) {
+        console.error('Erro ao carregar dados:', error);
+        updateStatus(`Erro: ${error.message}`, 'error');
+        tableBody.innerHTML = '<tr><td colspan="4" class="no-data">Erro ao carregar dados.</td></tr>';
+      } finally {
+        loadingIndicator.style.display = 'none';
+      }
+    }
+
+    function renderBuildingList() {
+      const sortedBuildings = validBuildings.sort();
+      buildingList.innerHTML = '';
+      sortedBuildings.forEach(building => {
+        const div = document.createElement('div');
+        div.className = 'building-item';
+        div.textContent = building;
+        div.addEventListener('click', () => {
+          currentSearchType = 'building';
+          searchInput.value = building;
+          filterData();
+        });
+        buildingList.appendChild(div);
+      });
+    }
+
+    function updateStatus(message, type) {
+      statusText.textContent = message;
+      statusMessage.className = 'status-message ' + type;
+    }
+
+    searchInput.addEventListener('input', filterData);
+    searchButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        searchButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        currentSearchType = this.dataset.type;
         filterData();
       });
     });
+
+    function displayData(data) {
+      if (data.length === 0) {
+        tableBody.innerHTML = '<tr><td colspan="4" class="no-data">Nenhum imóvel encontrado.</td></tr>';
+        return;
+      }
+
+      tableBody.innerHTML = '';
+
+      data.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${item.address || '-'}</td>
+          <td>${item.building || '-'}</td>
+          <td>${item.complement || '-'}</td>
+          <td>${item.inscription || '-'}</td>
+        `;
+        tableBody.appendChild(row);
+      });
+    }
+
+    function filterData() {
+      const searchTerm = searchInput.value.trim().toLowerCase();
+      if (!searchTerm) {
+        currentData = [...allProperties];
+        displayData(currentData);
+        return;
+      }
+
+      currentData = allProperties.filter(item => {
+        const address = String(item.address || '').toLowerCase();
+        const building = String(item.building || '').toLowerCase();
+        const complement = String(item.complement || '').toLowerCase();
+        const inscription = String(item.inscription || '').toLowerCase();
+
+        switch (currentSearchType) {
+          case 'address': return address.includes(searchTerm);
+          case 'building': return building.includes(searchTerm);
+          case 'complement': return complement.includes(searchTerm);
+          case 'inscription': return inscription.includes(searchTerm);
+          case 'all':
+          default:
+            return (
+              address.includes(searchTerm) ||
+              building.includes(searchTerm) ||
+              complement.includes(searchTerm) ||
+              inscription.includes(searchTerm)
+            );
+        }
+      });
+
+      displayData(currentData);
+    }
   </script>
 </body>
 </html>
