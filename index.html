@@ -80,6 +80,59 @@
       background-color: #2e605d;
     }
 
+    .main-content {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .left-content {
+      flex: 1;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #f4efe8;
+      padding: 1rem;
+      border-radius: 8px;
+      height: fit-content;
+    }
+
+    .sidebar h4 {
+      margin-bottom: 1rem;
+      color: #3a7a76;
+    }
+
+    .building-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .building-list li {
+      padding: 0.4rem 0.6rem;
+      background-color: #dbae8e;
+      margin-bottom: 0.5rem;
+      border-radius: 6px;
+      color: #333;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .building-list li:hover {
+      background-color: #3a7a76;
+      color: white;
+    }
+
+    .clear-filter {
+      margin-top: 1rem;
+      background-color: #3a7a76;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+
     .search-section {
       display: flex;
       flex-direction: column;
@@ -117,10 +170,6 @@
       color: white;
     }
 
-    .search-btn:hover {
-      opacity: 0.9;
-    }
-
     .data-table {
       width: 100%;
       border-collapse: collapse;
@@ -134,7 +183,6 @@
       padding: 0.8rem 1rem;
       text-align: left;
       border-bottom: 1px solid #d6c7b4;
-      position: relative;
     }
 
     .data-table th {
@@ -144,12 +192,6 @@
 
     .data-table tr:hover {
       background-color: rgba(219, 174, 142, 0.1);
-    }
-
-    .copy-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
     }
 
     .copy-btn {
@@ -189,32 +231,6 @@
       background-color: #f8d7da;
       color: #721c24;
     }
-
-    .loading {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      border: 3px solid rgba(255,255,255,.3);
-      border-radius: 50%;
-      border-top-color: #3a7a76;
-      animation: spin 1s ease-in-out infinite;
-    }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-
-    @media (max-width: 768px) {
-      .header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-      }
-
-      .search-buttons {
-        flex-direction: column;
-      }
-    }
   </style>
 </head>
 <body>
@@ -230,37 +246,46 @@
       </div>
     </div>
 
-    <div class="search-section">
-      <h3>Buscar Imóveis</h3>
-      <input type="text" class="search-input" id="searchInput" placeholder="Digite sua busca...">
-      <div class="search-buttons">
-        <button class="search-btn active" data-type="all">Todos</button>
-        <button class="search-btn" data-type="address">Busca por Endereço</button>
-        <button class="search-btn" data-type="building">Busca por Prédio</button>
-        <button class="search-btn" data-type="inscription">Busca por Inscrição</button>
-      </div>
-      <div class="status-message" id="statusMessage">
-        <span id="loadingIndicator" class="loading"></span>
-        <span id="statusText">Carregando catálogo de imóveis...</span>
-      </div>
-    </div>
+    <div class="main-content">
+      <div class="left-content">
+        <div class="search-section">
+          <h3>Buscar Imóveis</h3>
+          <input type="text" class="search-input" id="searchInput" placeholder="Digite sua busca...">
+          <div class="search-buttons">
+            <button class="search-btn active" data-type="all">Todos</button>
+            <button class="search-btn" data-type="address">Busca por Endereço</button>
+            <button class="search-btn" data-type="building">Busca por Prédio</button>
+            <button class="search-btn" data-type="inscription">Busca por Inscrição</button>
+          </div>
+          <div class="status-message" id="statusMessage">
+            <span id="statusText">Carregando catálogo de imóveis...</span>
+          </div>
+        </div>
 
-    <div class="data-container">
-      <table class="data-table" id="dataTable">
-        <thead>
-          <tr>
-            <th>Endereço</th>
-            <th>Prédio</th>
-            <th>Complemento</th>
-            <th>Inscrição</th>
-          </tr>
-        </thead>
-        <tbody id="tableBody">
-          <tr>
-            <td colspan="4" class="no-data">Carregando imóveis...</td>
-          </tr>
-        </tbody>
-      </table>
+        <div class="data-container">
+          <table class="data-table" id="dataTable">
+            <thead>
+              <tr>
+                <th>Endereço</th>
+                <th>Prédio</th>
+                <th>Complemento</th>
+                <th>Inscrição</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+              <tr>
+                <td colspan="4" class="no-data">Carregando imóveis...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <h4>Prédios Completos</h4>
+        <ul class="building-list" id="buildingList"></ul>
+        <button class="clear-filter" onclick="clearBuildingFilter()">Limpar Filtro</button>
+      </div>
     </div>
   </div>
 
@@ -290,21 +315,19 @@
     }
   </script>
 
-  <!-- Script principal -->
   <script>
+    let allProperties = [];
     let currentData = [];
     let currentSearchType = 'all';
-    let allProperties = [];
+    const JSON_URL = 'imoveis.json';
 
     const searchInput = document.getElementById('searchInput');
     const searchButtons = document.querySelectorAll('.search-btn');
     const tableBody = document.getElementById('tableBody');
-    const statusMessage = document.getElementById('statusMessage');
     const statusText = document.getElementById('statusText');
-    const loadingIndicator = document.getElementById('loadingIndicator');
-    const JSON_URL = 'imoveis.json';
+    const buildingList = document.getElementById('buildingList');
 
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', () => {
       loadPropertyData();
     });
 
@@ -313,24 +336,56 @@
         const response = await fetch(JSON_URL);
         if (!response.ok) throw new Error('Falha ao carregar dados');
         allProperties = await response.json();
-        currentData = allProperties;
+        currentData = [...allProperties];
         displayData(currentData);
-        updateStatus(`Catálogo carregado com ${currentData.length} imóveis`, 'success');
+        generateBuildingList(allProperties);
+        statusText.textContent = `Catálogo carregado com ${currentData.length} imóveis.`;
       } catch (error) {
         console.error('Erro ao carregar dados:', error);
-        updateStatus(`Erro: ${error.message}`, 'error');
         tableBody.innerHTML = '<tr><td colspan="4" class="no-data">Erro ao carregar dados.</td></tr>';
-      } finally {
-        loadingIndicator.style.display = 'none';
       }
     }
 
-    function updateStatus(message, type) {
-      statusText.textContent = message;
-      statusMessage.className = 'status-message ' + type;
+    function displayData(data) {
+      tableBody.innerHTML = data.length === 0
+        ? '<tr><td colspan="4" class="no-data">Nenhum imóvel encontrado.</td></tr>'
+        : data.slice(0, 100).map(item => `
+            <tr>
+              <td>${item.address || '-'}</td>
+              <td>${item.building || '-'}</td>
+              <td>${item.complement || '-'}</td>
+              <td class="inscription-cell">
+                <span>${item.inscription || '-'}</span>
+                <button class="copy-btn" onclick="copyToClipboard('${item.inscription || ''}')">Copiar</button>
+              </td>
+            </tr>`).join('') + (data.length > 100 ?
+              `<tr><td colspan="4" style="text-align:center">Mostrando 100 de ${data.length} imóveis. Refine sua busca.</td></tr>` : '');
     }
 
-    searchInput.addEventListener('input', filterData);
+    function generateBuildingList(data) {
+      const buildingCounts = {};
+      data.forEach(item => {
+        const name = item.building || '-';
+        if (!buildingCounts[name]) buildingCounts[name] = 0;
+        buildingCounts[name]++;
+      });
+
+      buildingList.innerHTML = Object.entries(buildingCounts)
+        .filter(([_, count]) => count > 5)
+        .sort((a, b) => a[0].localeCompare(b[0]))
+        .map(([building]) => `<li onclick="filterByBuilding('${building}')">${building}</li>`).join('');
+    }
+
+    function filterByBuilding(buildingName) {
+      currentData = allProperties.filter(item => item.building === buildingName);
+      displayData(currentData);
+    }
+
+    function clearBuildingFilter() {
+      currentData = [...allProperties];
+      displayData(currentData);
+    }
+
     searchButtons.forEach(button => {
       button.addEventListener('click', function () {
         searchButtons.forEach(btn => btn.classList.remove('active'));
@@ -340,79 +395,25 @@
       });
     });
 
-    function displayData(data) {
-      if (data.length === 0) {
-        tableBody.innerHTML = '<tr><td colspan="4" class="no-data">Nenhum imóvel encontrado.</td></tr>';
-        return;
-      }
-
-      const displayData = data.slice(0, 100);
-      tableBody.innerHTML = '';
-
-      displayData.forEach(item => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-          <td>${item.address || '-'}</td>
-          <td>${item.building || '-'}</td>
-          <td>${item.complement || '-'}</td>
-          <td class="inscription-cell">
-            <div class="copy-container">
-              <span class="inscription-text">${item.inscription || '-'}</span>
-              <button class="copy-btn" onclick="copyToClipboard('${item.inscription || ''}')">Copiar</button>
-            </div>
-          </td>
-        `;
-        tableBody.appendChild(row);
-      });
-
-      if (data.length > 100) {
-        const row = document.createElement('tr');
-        row.innerHTML = `<td colspan="4" style="text-align: center; background-color: #f8f9fa;">
-          Mostrando 100 de ${data.length} imóveis encontrados. Refine sua busca para ver mais.
-        </td>`;
-        tableBody.appendChild(row);
-      }
-    }
+    searchInput.addEventListener('input', filterData);
 
     function filterData() {
-      const searchTerm = searchInput.value.trim().toLowerCase();
-      if (!searchTerm) {
-        currentData = [...allProperties];
-        displayData(currentData);
-        return;
-      }
-
+      const term = searchInput.value.toLowerCase();
       currentData = allProperties.filter(item => {
-        const address = String(item.address || '').toLowerCase();
-        const building = String(item.building || '').toLowerCase();
-        const complement = String(item.complement || '').toLowerCase();
-        const inscription = String(item.inscription || '').toLowerCase();
-
-        switch (currentSearchType) {
-          case 'address': return address.includes(searchTerm);
-          case 'building': return building.includes(searchTerm);
-          case 'complement': return complement.includes(searchTerm);
-          case 'inscription': return inscription.includes(searchTerm);
-          case 'all':
-          default:
-            return (
-              address.includes(searchTerm) ||
-              building.includes(searchTerm) ||
-              complement.includes(searchTerm) ||
-              inscription.includes(searchTerm)
-            );
-        }
+        const address = (item.address || '').toLowerCase();
+        const building = (item.building || '').toLowerCase();
+        const complement = (item.complement || '').toLowerCase();
+        const inscription = (item.inscription || '').toLowerCase();
+        return currentSearchType === 'address' ? address.includes(term)
+             : currentSearchType === 'building' ? building.includes(term)
+             : currentSearchType === 'inscription' ? inscription.includes(term)
+             : address.includes(term) || building.includes(term) || complement.includes(term) || inscription.includes(term);
       });
-
       displayData(currentData);
     }
 
     function copyToClipboard(text) {
-      navigator.clipboard.writeText(text).then(() => {
-        alert('Inscrição copiada!');
-      }).catch(() => {
-        alert('Erro ao copiar.');
-      });
+      navigator.clipboard.writeText(text).then(() => alert('Inscrição copiada!'));
     }
   </script>
 </body>
