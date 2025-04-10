@@ -3,279 +3,417 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Consulta de Imóveis</title>
+  <title>Serenity Imobiliária - Catálogo de Imóveis</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fdfdfd;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    * {
       margin: 0;
-      padding: 2rem;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
 
-    .layout {
+    body {
+      min-height: 100vh;
+      background-color: #3a7a76;
+      padding: 2rem;
+      color: #333333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #d6c7b4;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
       display: flex;
-      gap: 2rem;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #dbae8e;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .logo-circle {
+      width: 40px;
+      height: 40px;
+      background-color: #dbae8e;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333333;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .header-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .logout-btn {
+      background-color: #3a7a76;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+    }
+
+    .logout-btn:hover {
+      background-color: #2e605d;
     }
 
     .search-section {
-      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2rem;
     }
 
-    h1 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      color: #3a7a76;
+    .search-input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid #dbae8e;
+      border-radius: 8px;
+      font-size: 1rem;
     }
 
-    .search-bar {
+    .search-buttons {
       display: flex;
       gap: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .search-bar input {
-      flex: 1;
-      padding: 0.5rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    .search-btns {
-      display: flex;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
+      flex-wrap: wrap;
     }
 
     .search-btn {
       background-color: #dbae8e;
-      color: white;
+      color: #333333;
       border: none;
-      padding: 0.4rem 0.8rem;
-      border-radius: 6px;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
       cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.3s;
     }
 
     .search-btn.active {
       background-color: #3a7a76;
+      color: white;
     }
 
-    table {
+    .search-btn:hover {
+      opacity: 0.9;
+    }
+
+    .data-table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 1rem;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
     }
 
-    th, td {
-      padding: 0.75rem;
-      border: 1px solid #ddd;
+    .data-table th, .data-table td {
+      padding: 0.8rem 1rem;
       text-align: left;
+      border-bottom: 1px solid #d6c7b4;
+      position: relative;
     }
 
-    th {
-      background-color: #f2f2f2;
+    .data-table th {
+      background-color: #3a7a76;
+      color: white;
     }
 
-    .sidebar {
-      width: 250px;
-      background-color: #f5f5f5;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      font-size: 0.95rem;
-      height: fit-content;
+    .data-table tr:hover {
+      background-color: rgba(219, 174, 142, 0.1);
     }
 
-    .sidebar h4 {
-      margin-bottom: 1rem;
-      font-size: 1.1rem;
-      color: #3a7a76;
+    .copy-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    .sidebar button {
+    .copy-btn {
+      display: none;
       background-color: #3a7a76;
       color: white;
       border: none;
-      padding: 0.4rem 1rem;
-      border-radius: 6px;
+      font-size: 0.8rem;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      margin-left: 8px;
       cursor: pointer;
-      margin-bottom: 1rem;
-      font-size: 0.9rem;
-      transition: 0.3s;
     }
 
-    .sidebar button:hover {
-      background-color: #2e605d;
+    td.inscription-cell:hover .copy-btn {
+      display: inline-block;
     }
 
-    .sidebar ul {
-      list-style: none;
-      padding-left: 0;
+    .no-data {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
     }
 
-    .sidebar li {
-      cursor: pointer;
-      padding: 0.5rem 0.75rem;
-      margin-bottom: 0.5rem;
-      border-radius: 6px;
-      transition: 0.3s ease;
+    .status-message {
+      margin-top: 1rem;
+      padding: 0.8rem;
+      border-radius: 4px;
     }
 
-    .sidebar li:hover {
-      background-color: #dbae8e;
-      color: #fff;
+    .status-message.success {
+      background-color: #d4edda;
+      color: #155724;
     }
 
-    .sidebar li.active {
-      background-color: #3a7a76;
-      color: white;
-      font-weight: bold;
+    .status-message.error {
+      background-color: #f8d7da;
+      color: #721c24;
     }
 
-    @media (max-width: 1024px) {
-      .layout {
+    .loading {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255,255,255,.3);
+      border-radius: 50%;
+      border-top-color: #3a7a76;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 768px) {
+      .header {
         flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
       }
 
-      .sidebar {
-        width: 100%;
+      .search-buttons {
+        flex-direction: column;
       }
     }
   </style>
 </head>
 <body>
-  <div class="layout">
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <div class="logo-circle">S</div>
+        <span>Serenity Imobiliária</span>
+      </div>
+      <div class="header-buttons">
+        <button class="logout-btn" onclick="location.href='captacao.html'">Captação</button>
+        <button class="logout-btn" onclick="logout()">Sair</button>
+      </div>
+    </div>
+
     <div class="search-section">
-      <h1>Consulta de Imóveis</h1>
-
-      <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Buscar..." />
+      <h3>Buscar Imóveis</h3>
+      <input type="text" class="search-input" id="searchInput" placeholder="Digite sua busca...">
+      <div class="search-buttons">
+        <button class="search-btn active" data-type="all">Todos</button>
+        <button class="search-btn" data-type="address">Busca por Endereço</button>
+        <button class="search-btn" data-type="building">Busca por Prédio</button>
+        <button class="search-btn" data-type="inscription">Busca por Inscrição</button>
       </div>
-
-      <div class="search-btns">
-        <button class="search-btn active" data-type="nome">Nome</button>
-        <button class="search-btn" data-type="inscricao">Inscrição</button>
-        <button class="search-btn" data-type="rua">Rua</button>
-        <button class="search-btn" data-type="codbairro">Bairro</button>
-        <button class="search-btn" data-type="quadra">Quadra</button>
-        <button class="search-btn" data-type="lote">Lote</button>
-        <button class="search-btn" data-type="bloco">Bloco</button>
-        <button class="search-btn" data-type="apto">Apto</button>
-        <button class="search-btn" data-type="building">Prédio</button>
+      <div class="status-message" id="statusMessage">
+        <span id="loadingIndicator" class="loading"></span>
+        <span id="statusText">Carregando catálogo de imóveis...</span>
       </div>
+    </div>
 
-      <table id="dataTable">
+    <div class="data-container">
+      <table class="data-table" id="dataTable">
         <thead>
           <tr>
-            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Prédio</th>
+            <th>Complemento</th>
             <th>Inscrição</th>
-            <th>Rua</th>
-            <th>Bairro</th>
-            <th>Quadra</th>
-            <th>Lote</th>
-            <th>Bloco</th>
-            <th>Apto</th>
           </tr>
         </thead>
-        <tbody id="dataTableBody">
-          <!-- Dados inseridos via JS -->
+        <tbody id="tableBody">
+          <tr>
+            <td colspan="4" class="no-data">Carregando imóveis...</td>
+          </tr>
         </tbody>
       </table>
     </div>
-
-    <div class="sidebar">
-      <h4>Prédios Completos</h4>
-      <button id="clearFilterBtn">Limpar Filtro</button>
-      <ul id="buildingList">
-        <li data-building="Fly Top Life">Fly Top Life</li>
-        <li data-building="Sun Flowers">Sun Flowers</li>
-        <li data-building="Palhano Residences">Palhano Residences</li>
-      </ul>
-    </div>
   </div>
 
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
   <script>
-    const data = [
-      { nome: "João", inscricao: "060400.001.0001", rua: "Av. Inglaterra", codbairro: "Aurora", quadra: "1", lote: "A", bloco: "1", apto: "101", building: "Fly Top Life" },
-      { nome: "Maria", inscricao: "060400.001.0002", rua: "Av. Inglaterra", codbairro: "Aurora", quadra: "1", lote: "A", bloco: "1", apto: "102", building: "Fly Top Life" },
-      { nome: "Pedro", inscricao: "060400.002.0001", rua: "Av. Inglaterra", codbairro: "Aurora", quadra: "2", lote: "B", bloco: "1", apto: "101", building: "Sun Flowers" },
-      { nome: "Ana", inscricao: "060400.003.0001", rua: "Av. Inglaterra", codbairro: "Aurora", quadra: "3", lote: "C", bloco: "1", apto: "101", building: "Palhano Residences" },
-      { nome: "Carlos", inscricao: "060400.003.0002", rua: "Av. Inglaterra", codbairro: "Aurora", quadra: "3", lote: "C", bloco: "1", apto: "102", building: "Palhano Residences" }
-    ];
+    const firebaseConfig = {
+      apiKey: "AIzaSyDGSLzvob9IS9LWUsR4i0FVuW7k5_wcjgA",
+      authDomain: "serenity-imobiliaria.firebaseapp.com",
+      projectId: "serenity-imobiliaria",
+      storageBucket: "serenity-imobiliaria.appspot.com",
+      messagingSenderId: "381579749133",
+      appId: "1:381579749133:web:ccbad8bc904b1d35853244",
+      measurementId: "G-K3NGJMBYKH"
+    };
+    firebase.initializeApp(firebaseConfig);
 
-    const tableBody = document.getElementById('dataTableBody');
+    firebase.auth().onAuthStateChanged(user => {
+      if (!user) window.location.href = "login.html";
+    });
+
+    function logout() {
+      firebase.auth().signOut().then(() => {
+        window.location.href = "login.html";
+      });
+    }
+  </script>
+
+  <!-- Script principal -->
+  <script>
+    let currentData = [];
+    let currentSearchType = 'all';
+    let allProperties = [];
+
     const searchInput = document.getElementById('searchInput');
     const searchButtons = document.querySelectorAll('.search-btn');
-    let currentSearchType = 'nome';
+    const tableBody = document.getElementById('tableBody');
+    const statusMessage = document.getElementById('statusMessage');
+    const statusText = document.getElementById('statusText');
+    const loadingIndicator = document.getElementById('loadingIndicator');
+    const JSON_URL = 'imoveis.json';
 
-    function renderTable(filteredData) {
-      tableBody.innerHTML = '';
-      filteredData.forEach(row => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td>${row.nome}</td>
-          <td>${row.inscricao}</td>
-          <td>${row.rua}</td>
-          <td>${row.codbairro}</td>
-          <td>${row.quadra}</td>
-          <td>${row.lote}</td>
-          <td>${row.bloco}</td>
-          <td>${row.apto}</td>
-        `;
-        tableBody.appendChild(tr);
+    document.addEventListener('DOMContentLoaded', function () {
+      loadPropertyData();
+    });
+
+    async function loadPropertyData() {
+      try {
+        const response = await fetch(JSON_URL);
+        if (!response.ok) throw new Error('Falha ao carregar dados');
+        allProperties = await response.json();
+        currentData = allProperties;
+        displayData(currentData);
+        updateStatus(`Catálogo carregado com ${currentData.length} imóveis`, 'success');
+      } catch (error) {
+        console.error('Erro ao carregar dados:', error);
+        updateStatus(`Erro: ${error.message}`, 'error');
+        tableBody.innerHTML = '<tr><td colspan="4" class="no-data">Erro ao carregar dados.</td></tr>';
+      } finally {
+        loadingIndicator.style.display = 'none';
+      }
+    }
+
+    function updateStatus(message, type) {
+      statusText.textContent = message;
+      statusMessage.className = 'status-message ' + type;
+    }
+
+    searchInput.addEventListener('input', filterData);
+    searchButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        searchButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        currentSearchType = this.dataset.type;
+        filterData();
       });
+    });
+
+    function displayData(data) {
+      if (data.length === 0) {
+        tableBody.innerHTML = '<tr><td colspan="4" class="no-data">Nenhum imóvel encontrado.</td></tr>';
+        return;
+      }
+
+      const displayData = data.slice(0, 100);
+      tableBody.innerHTML = '';
+
+      displayData.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${item.address || '-'}</td>
+          <td>${item.building || '-'}</td>
+          <td>${item.complement || '-'}</td>
+          <td class="inscription-cell">
+            <div class="copy-container">
+              <span class="inscription-text">${item.inscription || '-'}</span>
+              <button class="copy-btn" onclick="copyToClipboard('${item.inscription || ''}')">Copiar</button>
+            </div>
+          </td>
+        `;
+        tableBody.appendChild(row);
+      });
+
+      if (data.length > 100) {
+        const row = document.createElement('tr');
+        row.innerHTML = `<td colspan="4" style="text-align: center; background-color: #f8f9fa;">
+          Mostrando 100 de ${data.length} imóveis encontrados. Refine sua busca para ver mais.
+        </td>`;
+        tableBody.appendChild(row);
+      }
     }
 
     function filterData() {
-      const query = searchInput.value.toLowerCase();
-      const filtered = data.filter(item => {
-        const value = item[currentSearchType]?.toLowerCase();
-        return value?.includes(query);
+      const searchTerm = searchInput.value.trim().toLowerCase();
+      if (!searchTerm) {
+        currentData = [...allProperties];
+        displayData(currentData);
+        return;
+      }
+
+      currentData = allProperties.filter(item => {
+        const address = String(item.address || '').toLowerCase();
+        const building = String(item.building || '').toLowerCase();
+        const complement = String(item.complement || '').toLowerCase();
+        const inscription = String(item.inscription || '').toLowerCase();
+
+        switch (currentSearchType) {
+          case 'address': return address.includes(searchTerm);
+          case 'building': return building.includes(searchTerm);
+          case 'complement': return complement.includes(searchTerm);
+          case 'inscription': return inscription.includes(searchTerm);
+          case 'all':
+          default:
+            return (
+              address.includes(searchTerm) ||
+              building.includes(searchTerm) ||
+              complement.includes(searchTerm) ||
+              inscription.includes(searchTerm)
+            );
+        }
       });
-      renderTable(filtered);
+
+      displayData(currentData);
     }
 
-    searchButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        searchButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        currentSearchType = btn.dataset.type;
-        filterData();
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Inscrição copiada!');
+      }).catch(() => {
+        alert('Erro ao copiar.');
       });
-    });
-
-    searchInput.addEventListener('input', filterData);
-    renderTable(data);
-
-    // Sidebar filtering
-    const buildingListItems = document.querySelectorAll('#buildingList li');
-    const clearFilterBtn = document.getElementById('clearFilterBtn');
-
-    buildingListItems.forEach(item => {
-      item.addEventListener('click', () => {
-        buildingListItems.forEach(i => i.classList.remove('active'));
-        item.classList.add('active');
-        const buildingName = item.getAttribute('data-building').toLowerCase();
-        currentSearchType = 'building';
-        searchInput.value = buildingName;
-        filterData();
-        searchButtons.forEach(btn => {
-          btn.classList.remove('active');
-          if (btn.dataset.type === 'building') btn.classList.add('active');
-        });
-      });
-    });
-
-    clearFilterBtn.addEventListener('click', () => {
-      searchInput.value = '';
-      currentSearchType = 'nome';
-      renderTable(data);
-      buildingListItems.forEach(i => i.classList.remove('active'));
-      searchButtons.forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.dataset.type === 'nome') btn.classList.add('active');
-      });
-    });
+    }
   </script>
 </body>
 </html>
