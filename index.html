@@ -28,6 +28,54 @@
       border-radius: 10px;
       padding: 2rem;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      gap: 2rem;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #f3e9dc;
+      border-radius: 8px;
+      padding: 1rem;
+      height: fit-content;
+    }
+
+    .sidebar h4 {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: #3a7a76;
+    }
+
+    .building-list {
+      list-style: none;
+      padding: 0;
+      max-height: 500px;
+      overflow-y: auto;
+    }
+
+    .building-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    .building-list button {
+      background-color: #dbae8e;
+      border: none;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      font-size: 0.9rem;
+    }
+
+    .building-list button:hover {
+      background-color: #3a7a76;
+      color: white;
+    }
+
+    .main-content {
+      flex: 1;
     }
 
     .header {
@@ -80,59 +128,6 @@
       background-color: #2e605d;
     }
 
-    .main-content {
-      display: flex;
-      gap: 2rem;
-    }
-
-    .left-content {
-      flex: 1;
-    }
-
-    .sidebar {
-      width: 250px;
-      background-color: #f4efe8;
-      padding: 1rem;
-      border-radius: 8px;
-      height: fit-content;
-    }
-
-    .sidebar h4 {
-      margin-bottom: 1rem;
-      color: #3a7a76;
-    }
-
-    .building-list {
-      list-style: none;
-      padding: 0;
-    }
-
-    .building-list li {
-      padding: 0.4rem 0.6rem;
-      background-color: #dbae8e;
-      margin-bottom: 0.5rem;
-      border-radius: 6px;
-      color: #333;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .building-list li:hover {
-      background-color: #3a7a76;
-      color: white;
-    }
-
-    .clear-filter {
-      margin-top: 1rem;
-      background-color: #3a7a76;
-      color: white;
-      border: none;
-      padding: 0.4rem 0.8rem;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 0.85rem;
-    }
-
     .search-section {
       display: flex;
       flex-direction: column;
@@ -170,6 +165,10 @@
       color: white;
     }
 
+    .search-btn:hover {
+      opacity: 0.9;
+    }
+
     .data-table {
       width: 100%;
       border-collapse: collapse;
@@ -194,22 +193,6 @@
       background-color: rgba(219, 174, 142, 0.1);
     }
 
-    .copy-btn {
-      display: none;
-      background-color: #3a7a76;
-      color: white;
-      border: none;
-      font-size: 0.8rem;
-      padding: 0.2rem 0.4rem;
-      border-radius: 4px;
-      margin-left: 8px;
-      cursor: pointer;
-    }
-
-    td.inscription-cell:hover .copy-btn {
-      display: inline-block;
-    }
-
     .no-data {
       text-align: center;
       padding: 2rem;
@@ -231,60 +214,87 @@
       background-color: #f8d7da;
       color: #721c24;
     }
+
+    .loading {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255,255,255,.3);
+      border-radius: 50%;
+      border-top-color: #3a7a76;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .search-buttons {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <div class="logo">
-        <div class="logo-circle">S</div>
-        <span>Serenity Imobiliária</span>
-      </div>
-      <div class="header-buttons">
-        <button class="logout-btn" onclick="location.href='captacao.html'">Captação</button>
-        <button class="logout-btn" onclick="logout()">Sair</button>
-      </div>
+    <div class="sidebar">
+      <h4>Prédios Completos</h4>
+      <ul class="building-list" id="buildingList"></ul>
     </div>
-
     <div class="main-content">
-      <div class="left-content">
-        <div class="search-section">
-          <h3>Buscar Imóveis</h3>
-          <input type="text" class="search-input" id="searchInput" placeholder="Digite sua busca...">
-          <div class="search-buttons">
-            <button class="search-btn active" data-type="all">Todos</button>
-            <button class="search-btn" data-type="address">Busca por Endereço</button>
-            <button class="search-btn" data-type="building">Busca por Prédio</button>
-            <button class="search-btn" data-type="inscription">Busca por Inscrição</button>
-          </div>
-          <div class="status-message" id="statusMessage">
-            <span id="statusText">Carregando catálogo de imóveis...</span>
-          </div>
+      <div class="header">
+        <div class="logo">
+          <div class="logo-circle">S</div>
+          <span>Serenity Imobiliária</span>
         </div>
-
-        <div class="data-container">
-          <table class="data-table" id="dataTable">
-            <thead>
-              <tr>
-                <th>Endereço</th>
-                <th>Prédio</th>
-                <th>Complemento</th>
-                <th>Inscrição</th>
-              </tr>
-            </thead>
-            <tbody id="tableBody">
-              <tr>
-                <td colspan="4" class="no-data">Carregando imóveis...</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="header-buttons">
+          <button class="logout-btn" onclick="location.href='captacao.html'">Captação</button>
+          <button class="logout-btn" onclick="logout()">Sair</button>
         </div>
       </div>
 
-      <div class="sidebar">
-        <h4>Prédios Completos</h4>
-        <ul class="building-list" id="buildingList"></ul>
-        <button class="clear-filter" onclick="clearBuildingFilter()">Limpar Filtro</button>
+      <div class="search-section">
+        <h3>Buscar Imóveis</h3>
+        <input type="text" class="search-input" id="searchInput" placeholder="Digite sua busca...">
+        <div class="search-buttons">
+          <button class="search-btn active" data-type="all">Todos</button>
+          <button class="search-btn" data-type="address">Busca por Endereço</button>
+          <button class="search-btn" data-type="building">Busca por Prédio</button>
+          <button class="search-btn" data-type="inscription">Busca por Inscrição</button>
+        </div>
+        <div class="status-message" id="statusMessage">
+          <span id="loadingIndicator" class="loading"></span>
+          <span id="statusText">Carregando catálogo de imóveis...</span>
+        </div>
+      </div>
+
+      <div class="data-container">
+        <table class="data-table" id="dataTable">
+          <thead>
+            <tr>
+              <th>Endereço</th>
+              <th>Prédio</th>
+              <th>Complemento</th>
+              <th>Inscrição</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr>
+              <td colspan="4" class="no-data">Carregando imóveis...</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -315,19 +325,22 @@
     }
   </script>
 
+  <!-- Script principal -->
   <script>
-    let allProperties = [];
     let currentData = [];
     let currentSearchType = 'all';
-    const JSON_URL = 'imoveis.json';
+    let allProperties = [];
 
     const searchInput = document.getElementById('searchInput');
     const searchButtons = document.querySelectorAll('.search-btn');
     const tableBody = document.getElementById('tableBody');
+    const statusMessage = document.getElementById('statusMessage');
     const statusText = document.getElementById('statusText');
+    const loadingIndicator = document.getElementById('loadingIndicator');
     const buildingList = document.getElementById('buildingList');
+    const JSON_URL = 'imoveis.json';
 
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', function () {
       loadPropertyData();
     });
 
@@ -336,56 +349,25 @@
         const response = await fetch(JSON_URL);
         if (!response.ok) throw new Error('Falha ao carregar dados');
         allProperties = await response.json();
-        currentData = [...allProperties];
+        currentData = allProperties;
         displayData(currentData);
-        generateBuildingList(allProperties);
-        statusText.textContent = `Catálogo carregado com ${currentData.length} imóveis.`;
+        updateStatus(`Catálogo carregado com ${currentData.length} imóveis`, 'success');
+        populateBuildingList();
       } catch (error) {
         console.error('Erro ao carregar dados:', error);
+        updateStatus(`Erro: ${error.message}`, 'error');
         tableBody.innerHTML = '<tr><td colspan="4" class="no-data">Erro ao carregar dados.</td></tr>';
+      } finally {
+        loadingIndicator.style.display = 'none';
       }
     }
 
-    function displayData(data) {
-      tableBody.innerHTML = data.length === 0
-        ? '<tr><td colspan="4" class="no-data">Nenhum imóvel encontrado.</td></tr>'
-        : data.slice(0, 100).map(item => `
-            <tr>
-              <td>${item.address || '-'}</td>
-              <td>${item.building || '-'}</td>
-              <td>${item.complement || '-'}</td>
-              <td class="inscription-cell">
-                <span>${item.inscription || '-'}</span>
-                <button class="copy-btn" onclick="copyToClipboard('${item.inscription || ''}')">Copiar</button>
-              </td>
-            </tr>`).join('') + (data.length > 100 ?
-              `<tr><td colspan="4" style="text-align:center">Mostrando 100 de ${data.length} imóveis. Refine sua busca.</td></tr>` : '');
+    function updateStatus(message, type) {
+      statusText.textContent = message;
+      statusMessage.className = 'status-message ' + type;
     }
 
-    function generateBuildingList(data) {
-      const buildingCounts = {};
-      data.forEach(item => {
-        const name = item.building || '-';
-        if (!buildingCounts[name]) buildingCounts[name] = 0;
-        buildingCounts[name]++;
-      });
-
-      buildingList.innerHTML = Object.entries(buildingCounts)
-        .filter(([_, count]) => count > 5)
-        .sort((a, b) => a[0].localeCompare(b[0]))
-        .map(([building]) => `<li onclick="filterByBuilding('${building}')">${building}</li>`).join('');
-    }
-
-    function filterByBuilding(buildingName) {
-      currentData = allProperties.filter(item => item.building === buildingName);
-      displayData(currentData);
-    }
-
-    function clearBuildingFilter() {
-      currentData = [...allProperties];
-      displayData(currentData);
-    }
-
+    searchInput.addEventListener('input', filterData);
     searchButtons.forEach(button => {
       button.addEventListener('click', function () {
         searchButtons.forEach(btn => btn.classList.remove('active'));
@@ -395,25 +377,75 @@
       });
     });
 
-    searchInput.addEventListener('input', filterData);
+    function displayData(data) {
+      if (data.length === 0) {
+        tableBody.innerHTML = '<tr><td colspan="4" class="no-data">Nenhum imóvel encontrado.</td></tr>';
+        return;
+      }
+
+      tableBody.innerHTML = '';
+      data.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${item.address || '-'}</td>
+          <td>${item.building || '-'}</td>
+          <td>${item.complement || '-'}</td>
+          <td>${item.inscription || '-'}</td>
+        `;
+        tableBody.appendChild(row);
+      });
+    }
 
     function filterData() {
-      const term = searchInput.value.toLowerCase();
+      const searchTerm = searchInput.value.trim().toLowerCase();
+      if (!searchTerm) {
+        currentData = [...allProperties];
+        displayData(currentData);
+        return;
+      }
+
       currentData = allProperties.filter(item => {
-        const address = (item.address || '').toLowerCase();
-        const building = (item.building || '').toLowerCase();
-        const complement = (item.complement || '').toLowerCase();
-        const inscription = (item.inscription || '').toLowerCase();
-        return currentSearchType === 'address' ? address.includes(term)
-             : currentSearchType === 'building' ? building.includes(term)
-             : currentSearchType === 'inscription' ? inscription.includes(term)
-             : address.includes(term) || building.includes(term) || complement.includes(term) || inscription.includes(term);
+        const address = String(item.address || '').toLowerCase();
+        const building = String(item.building || '').toLowerCase();
+        const complement = String(item.complement || '').toLowerCase();
+        const inscription = String(item.inscription || '').toLowerCase();
+
+        switch (currentSearchType) {
+          case 'address': return address.includes(searchTerm);
+          case 'building': return building.includes(searchTerm);
+          case 'complement': return complement.includes(searchTerm);
+          case 'inscription': return inscription.includes(searchTerm);
+          case 'all':
+          default:
+            return (
+              address.includes(searchTerm) ||
+              building.includes(searchTerm) ||
+              complement.includes(searchTerm) ||
+              inscription.includes(searchTerm)
+            );
+        }
       });
+
       displayData(currentData);
     }
 
-    function copyToClipboard(text) {
-      navigator.clipboard.writeText(text).then(() => alert('Inscrição copiada!'));
+    function populateBuildingList() {
+      const uniqueBuildings = [...new Set(allProperties.map(p => p.building).filter(Boolean))].sort();
+      buildingList.innerHTML = '';
+
+      uniqueBuildings.forEach(building => {
+        const li = document.createElement('li');
+        const btn = document.createElement('button');
+        btn.textContent = building;
+        btn.onclick = () => {
+          searchInput.value = '';
+          currentData = allProperties.filter(p => p.building === building);
+          currentSearchType = 'building';
+          displayData(currentData);
+        };
+        li.appendChild(btn);
+        buildingList.appendChild(li);
+      });
     }
   </script>
 </body>
