@@ -253,6 +253,10 @@
           <button class="search-btn" data-type="building">Busca por Prédio</button>
           <button class="search-btn" data-type="inscription">Busca por Inscrição</button>
         </div>
+        <label style="margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+          <input type="checkbox" id="showAllToggle">
+          Mostrar todos os imóveis
+        </label>
         <div class="status-message" id="statusMessage">
           <span id="loadingIndicator" class="loading"></span>
           <span id="statusText">Carregando catálogo de imóveis...</span>
@@ -317,6 +321,7 @@
     const statusText = document.getElementById('statusText');
     const loadingIndicator = document.getElementById('loadingIndicator');
     const buildingList = document.getElementById('buildingList');
+    const showAllToggle = document.getElementById('showAllToggle');
     const JSON_URL = 'imoveis.json';
 
     let allProperties = [];
@@ -391,6 +396,10 @@
     }
 
     searchInput.addEventListener('input', filterData);
+    showAllToggle.addEventListener('change', () => {
+      displayData(currentData);
+    });
+
     searchButtons.forEach(button => {
       button.addEventListener('click', function () {
         searchButtons.forEach(btn => btn.classList.remove('active'));
@@ -408,7 +417,11 @@
 
       tableBody.innerHTML = '';
 
-      data.forEach(item => {
+      const searchTerm = searchInput.value.trim();
+      const shouldLimit = !showAllToggle.checked && !searchTerm;
+      const limitedData = shouldLimit ? data.slice(0, 100) : data;
+
+      limitedData.forEach(item => {
         const row = document.createElement('tr');
         row.innerHTML = `
           <td>${item.address || '-'}</td>
