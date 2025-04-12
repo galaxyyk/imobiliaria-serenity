@@ -328,44 +328,7 @@
     let currentData = [];
     let currentSearchType = 'all';
 
-    const validBuildings = [
-      "ARUAK",
-      "ACQUA ROYAL",
-      "AQUARELA PINHEIROS",
-      "AQUAPARQUE RESIDENCIAL E RESORT",
-      "AQUAJARDIM RESIDENCIAL & RESORT",
-      "BOULEVARD VILLAGE",
-      "COSMOPOLITAN RESIDENCE",
-      "DUE-TORRI",
-      "EVOLUTION HOME - ALTO DA PALHANO",
-      "EVOLUTION HOME AYRTON SENNA",
-      "FIT TERRA BONITA",
-      "FLY TOP LIFE",
-      "GARDEN ARAUCÁRIA",
-      "GARDEN BELVEDERE",
-      "GARDEN CATUAÍ",
-      "GARDEN ECOLOGIC",
-      "GARDEN PALHANO",
-      "JARDIM SUL",
-      "LÁ SICILIA",
-      "LIBERTY TOWER",
-      "PALHANO RESIDENCES",
-      "PARANAGUÁ SOHO",
-      "PATEO ALLEGRO",
-      "PRIME PIAUÍ",
-      "SOLAR ALTA VISTA",
-      "SOLAR MIRADOR",
-      "SPAZIO LA FONTAINE",
-      "SPAZIO LEOPOLDINA",
-      "SPAZIO LOUVRE",
-      "EDIFÍCIO SPLENDOR",
-      "SPOT CENTRO RESIDENCE",
-      "SUNFLOWERS",
-      "SUNSET FARIA LIMA",
-      "TERRA NOVA",
-      "ED. RESIDENCIAL LA SAVONA"
-      
-    ];
+    const validBuildings = [/* sua lista aqui */];
 
     document.addEventListener('DOMContentLoaded', () => {
       loadPropertyData();
@@ -411,9 +374,7 @@
     }
 
     searchInput.addEventListener('input', filterData);
-    showAllToggle.addEventListener('change', () => {
-      displayData(currentData);
-    });
+    showAllToggle.addEventListener('change', filterData);
 
     searchButtons.forEach(button => {
       button.addEventListener('click', function () {
@@ -431,12 +392,7 @@
       }
 
       tableBody.innerHTML = '';
-
-      const searchTerm = searchInput.value.trim();
-      const shouldLimit = !showAllToggle.checked && !searchTerm;
-      const limitedData = shouldLimit ? data.slice(0, 100) : data;
-
-      limitedData.forEach(item => {
+      data.forEach(item => {
         const row = document.createElement('tr');
         row.innerHTML = `
           <td>${item.address || '-'}</td>
@@ -450,35 +406,38 @@
 
     function filterData() {
       const searchTerm = searchInput.value.trim().toLowerCase();
+      let filtered;
+
       if (!searchTerm) {
-        currentData = [...allProperties];
-        displayData(currentData);
-        return;
+        filtered = [...allProperties];
+        if (!showAllToggle.checked) {
+          filtered = filtered.slice(0, 100);
+        }
+      } else {
+        filtered = allProperties.filter(item => {
+          const address = (item.address || '').toLowerCase();
+          const building = (item.building || '').toLowerCase();
+          const complement = (item.complement || '').toLowerCase();
+          const inscription = (item.inscription || '').toLowerCase();
+
+          switch (currentSearchType) {
+            case 'address': return address.includes(searchTerm);
+            case 'building': return building.includes(searchTerm);
+            case 'inscription': return inscription.includes(searchTerm);
+            case 'all':
+            default:
+              return (
+                address.includes(searchTerm) ||
+                building.includes(searchTerm) ||
+                complement.includes(searchTerm) ||
+                inscription.includes(searchTerm)
+              );
+          }
+        });
       }
 
-      currentData = allProperties.filter(item => {
-        const address = String(item.address || '').toLowerCase();
-        const building = String(item.building || '').toLowerCase();
-        const complement = String(item.complement || '').toLowerCase();
-        const inscription = String(item.inscription || '').toLowerCase();
-
-        switch (currentSearchType) {
-          case 'address': return address.includes(searchTerm);
-          case 'building': return building.includes(searchTerm);
-          case 'complement': return complement.includes(searchTerm);
-          case 'inscription': return inscription.includes(searchTerm);
-          case 'all':
-          default:
-            return (
-              address.includes(searchTerm) ||
-              building.includes(searchTerm) ||
-              complement.includes(searchTerm) ||
-              inscription.includes(searchTerm)
-            );
-        }
-      });
-
-      displayData(currentData);
+      currentData = filtered;
+      displayData(filtered);
     }
   </script>
 </body>
