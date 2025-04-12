@@ -374,7 +374,9 @@
     }
 
     searchInput.addEventListener('input', filterData);
-    showAllToggle.addEventListener('change', filterData);
+    showAllToggle.addEventListener('change', () => {
+      displayData(currentData);
+    });
 
     searchButtons.forEach(button => {
       button.addEventListener('click', function () {
@@ -392,7 +394,13 @@
       }
 
       tableBody.innerHTML = '';
-      data.forEach(item => {
+
+      const searchTerm = searchInput.value.trim();
+      const shouldLimit = !showAllToggle.checked && !searchTerm;
+      const limitedData = shouldLimit ? data.slice(0, 100) : data;
+
+      limitedData.forEach(item => {
+        if (!item) return;
         const row = document.createElement('tr');
         row.innerHTML = `
           <td>${item.address || '-'}</td>
@@ -406,38 +414,37 @@
 
     function filterData() {
       const searchTerm = searchInput.value.trim().toLowerCase();
-      let filtered;
-
       if (!searchTerm) {
-        filtered = [...allProperties];
-        if (!showAllToggle.checked) {
-          filtered = filtered.slice(0, 100);
-        }
-      } else {
-        filtered = allProperties.filter(item => {
-          const address = (item.address || '').toLowerCase();
-          const building = (item.building || '').toLowerCase();
-          const complement = (item.complement || '').toLowerCase();
-          const inscription = (item.inscription || '').toLowerCase();
-
-          switch (currentSearchType) {
-            case 'address': return address.includes(searchTerm);
-            case 'building': return building.includes(searchTerm);
-            case 'inscription': return inscription.includes(searchTerm);
-            case 'all':
-            default:
-              return (
-                address.includes(searchTerm) ||
-                building.includes(searchTerm) ||
-                complement.includes(searchTerm) ||
-                inscription.includes(searchTerm)
-              );
-          }
-        });
+        currentData = [...allProperties];
+        displayData(currentData);
+        return;
       }
 
-      currentData = filtered;
-      displayData(filtered);
+      currentData = allProperties.filter(item => {
+        if (!item || typeof item !== 'object') return false;
+
+        const address = (item.address ?? '').toLowerCase();
+        const building = (item.building ?? '').toLowerCase();
+        const complement = (item.complement ?? '').toLowerCase();
+        const inscription = (item.inscription ?? '').toLowerCase();
+
+        switch (currentSearchType) {
+          case 'address': return address.includes(searchTerm);
+          case 'building': return building.includes(searchTerm);
+          case 'complement': return complement.includes(searchTerm);
+          case 'inscription': return inscription.includes(searchTerm);
+          case 'all':
+          default:
+            return (
+              address.includes(searchTerm) ||
+              building.includes(searchTerm) ||
+              complement.includes(searchTerm) ||
+              inscription.includes(searchTerm)
+            );
+        }
+      });
+
+      displayData(currentData);
     }
   </script>
 </body>
