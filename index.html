@@ -409,42 +409,42 @@
     const showAllToggle = document.getElementById('showAllToggle');
 
     // === CONFIGURATION ===
+    // User confirmed 'imoveis.json'
     const JSON_URL = 'imoveis.json';
     const INITIAL_ROW_LIMIT = 100;
 
     // ================================================================
-    // === EDITAR AQUI: Coloque os nomes exatos dos prédios que você ===
-    // === quer que apareçam na lista "Prédios Completos".          ===
+    // === Lista de prédios definida pelo usuário                    ===
     // ================================================================
     const minhaListaDePredios = [
-       "ARUAK",
-       "ACQUA ROYAL",
-       "AQUARELA PINHEIROS",
-       "AQUAPARQUE RESIDENCIAL E RESORT",
-       "AQUAJARDIM RESIDENCIAL & RESORT",
-       "AQUAPARQUE RESIDENCIAL E RESORT",
-       "AQUAJARDIM RESIDENCIAL & RESORT",
-       "BOULEVARD VILLAGE",
-       "COSMOPOLITAN RESIDENCE",
-       "DUE-TORRI",
-       "EVOLUTION HOME - ALTO DA PALHANO",
-       "EVOLUTION HOME - ALTO DA PALHANO",
-       "EVOLUTION HOME AYRTON SENNA",
-       "FIT TERRA BONITA",
-       "FLY TOP LIFE",
-       "LIBERTY TOWER",
-       "PALHANO RESIDENCES",
-       "PARANAGUÁ SOHO",
-       "PATEO ALLEGRO"
-       "PATEO ALLEGRO",
-       "PRIME PIAUÍ",
-       "SOLAR ALTA VISTA",
-       "SOLAR MIRADOR",
-       "SPOT CENTRO RESIDENCE",
-       "SUNFLOWERS",
-       "SUNSET FARIA LIMA",
-       "TERRA NOVA",
-       "LA SAVONA"
+        "ARUAK",
+        "ACQUA ROYAL",
+        "AQUARELA PINHEIROS",
+        "AQUAPARQUE RESIDENCIAL E RESORT",
+        "AQUAJARDIM RESIDENCIAL & RESORT",
+        "AQUAPARQUE RESIDENCIAL E RESORT", // Duplicate OK
+        "AQUAJARDIM RESIDENCIAL & RESORT", // Duplicate OK
+        "BOULEVARD VILLAGE",
+        "COSMOPOLITAN RESIDENCE",
+        "DUE-TORRI",
+        "EVOLUTION HOME - ALTO DA PALHANO",
+        "EVOLUTION HOME - ALTO DA PALHANO", // Duplicate OK
+        "EVOLUTION HOME AYRTON SENNA",
+        "FIT TERRA BONITA",
+        "FLY TOP LIFE",
+        "LIBERTY TOWER",
+        "PALHANO RESIDENCES",
+        "PARANAGUÁ SOHO",
+        "PATEO ALLEGRO", // <-- VÍRGULA ADICIONADA AQUI!
+        "PATEO ALLEGRO", // Duplicate OK
+        "PRIME PIAUÍ",
+        "SOLAR ALTA VISTA",
+        "SOLAR MIRADOR",
+        "SPOT CENTRO RESIDENCE",
+        "SUNFLOWERS",
+        "SUNSET FARIA LIMA",
+        "TERRA NOVA",
+        "LA SAVONA"
     ];
     // ================================================================
 
@@ -475,7 +475,17 @@
              throw new Error(`Falha ao carregar dados (Status: ${response.status})`);
           }
         }
-        allProperties = await response.json();
+        // Check if response is JSON before parsing
+        const contentType = response.headers.get("content-type");
+        if (contentType && contentType.indexOf("application/json") !== -1) {
+            allProperties = await response.json();
+        } else {
+            // Handle cases where the server returns non-JSON (e.g., HTML error page)
+             const textResponse = await response.text();
+             console.error("Resposta do servidor não é JSON:", textResponse);
+             throw new Error(`Esperava JSON mas recebeu ${contentType || 'texto'}. Verifique o arquivo ${JSON_URL}.`);
+        }
+
 
         if (!Array.isArray(allProperties)) {
             throw new Error("O arquivo JSON não contém um array válido.");
@@ -490,7 +500,11 @@
         // Initial filter and display
         filterData();
 
-        updateStatus(`Catálogo carregado com ${allProperties.length} imóveis.`, 'success');
+        // Update status only if filtering didn't result in an immediate "no results" message
+        if (currentData.length > 0 || Object.keys(allProperties).length === 0) { // Check if initial filter yielded results or if file was empty
+             updateStatus(`Catálogo carregado com ${allProperties.length} imóveis.`, 'success');
+        }
+
 
       } catch (error) {
         console.error('Erro detalhado ao carregar dados:', error);
@@ -505,16 +519,17 @@
         // Get unique building names from the loaded JSON data
         const allBuildingNamesFromData = new Set(
              allProperties
-                .map(item => item && item.building ? item.building.trim() : null)
+                .map(item => item && item.building ? String(item.building).trim() : null) // Ensure building name is string
                 .filter(name => name) // Filter out null/empty names
         );
 
         // Convert the user's predefined list to lowercase for case-insensitive comparison
-        const userListLower = minhaListaDePredios.map(name => name.toLowerCase());
+        // Also ensure user list items are strings
+        const userListLower = minhaListaDePredios.map(name => String(name || '').toLowerCase());
 
         // Filter the names from the data: keep only those present in the user's list
         validBuildings = [...allBuildingNamesFromData] // Convert Set to Array
-            .filter(nameFromData => userListLower.includes(nameFromData.toLowerCase())) // Check against user's list (case-insensitive)
+            .filter(nameFromData => userListLower.includes(String(nameFromData || '').toLowerCase())) // Check against user's list (case-insensitive, ensure string)
             .sort((a, b) => a.localeCompare(b)); // Sort the final list
 
         console.log(`Found ${validBuildings.length} valid buildings based on predefined list.`);
@@ -524,7 +539,7 @@
     function renderBuildingList() {
       buildingList.innerHTML = '';
       if (validBuildings.length === 0) {
-          buildingList.innerHTML = `<p style="color: #666; font-size: 0.9rem;">Nenhum prédio da sua lista foi encontrado nos dados.</p>`;
+          buildingList.innerHTML = `<p style="color: #666; font-size: 0.9rem;">Nenhum prédio da sua lista foi encontrado nos dados carregados.</p>`;
           return;
       }
 
@@ -537,7 +552,11 @@
           currentSearchType = 'building';
           searchInput.value = building;
           searchButtons.forEach(btn => btn.classList.remove('active'));
-          document.querySelector(`.search-btn[data-type="building"]`).classList.add('active');
+          // Ensure the building button exists before adding class
+           const buildingButton = document.querySelector(`.search-btn[data-type="building"]`);
+           if (buildingButton) {
+               buildingButton.classList.add('active');
+           }
           filterData();
         });
         buildingList.appendChild(div);
@@ -566,7 +585,13 @@
 
     // --- Data Filtering --- (Remains the same)
     function filterData() {
-       if (!allProperties) return;
+       // Ensure allProperties is an array before filtering
+       if (!Array.isArray(allProperties)) {
+            console.warn("allProperties is not an array, skipping filter.");
+            // Optionally display an error or default state
+            displayData([]); // Show empty table
+            return;
+       }
       const searchTerm = searchInput.value.trim().toLowerCase();
       currentData = allProperties.filter(item => {
         if (!item || typeof item !== 'object') return false;
@@ -589,12 +614,17 @@
             );
         }
       });
-      displayData(currentData);
+      displayData(currentData); // Pass the filtered data
     }
 
-    // --- Data Display --- (Remains the same, except one small fix)
-    function displayData(data) {
+    // --- Data Display --- (Remains the same)
+    function displayData(data) { // Ensure data is received as argument
         if (!tableBody) return;
+        // Ensure data is an array before processing
+        if (!Array.isArray(data)) {
+             console.error("Invalid data passed to displayData:", data);
+             data = []; // Default to empty array to prevent errors
+        }
 
       const searchTerm = searchInput.value.trim();
       const shouldLimit = !showAllToggle.checked && !searchTerm;
@@ -604,15 +634,18 @@
 
       if (data.length === 0) {
         tableBody.innerHTML = `<tr><td colspan="4" class="no-data">Nenhum imóvel encontrado para a busca atual.</td></tr>`;
-        // Update status only if data loading didn't fail initially
-        if(allProperties.length > 0) updateStatus(`Nenhum imóvel encontrado (${data.length} resultados).`, 'success');
+        // Update status only if data loading didn't fail initially and the filter is actually applied
+        if(Array.isArray(allProperties) && allProperties.length > 0) {
+            updateStatus(`Nenhum imóvel encontrado (${data.length} resultados).`, 'success');
+        }
         return;
       }
 
-      if (dataToDisplay.length === 0 && data.length > 0) {
-         tableBody.innerHTML = `<tr><td colspan="4" class="no-data">Nenhum imóvel para exibir.</td></tr>`;
-         return;
-      }
+       // This check is redundant if the previous one handles data.length === 0
+      // if (dataToDisplay.length === 0 && data.length > 0) {
+      //    tableBody.innerHTML = `<tr><td colspan="4" class="no-data">Nenhum imóvel para exibir.</td></tr>`;
+      //    return;
+      // }
 
       dataToDisplay.forEach(item => {
         if (!item || typeof item !== 'object') return;
@@ -624,7 +657,6 @@
         const complementCell = document.createElement('td');
         complementCell.textContent = item.complement || '-';
         const inscriptionCell = document.createElement('td');
-        // Ensure display as string here too
         inscriptionCell.textContent = String(item.inscription || '-');
 
         row.appendChild(addressCell);
@@ -637,8 +669,10 @@
        if (shouldLimit && data.length > INITIAL_ROW_LIMIT) {
            updateStatus(`Exibindo ${dataToDisplay.length} de ${data.length} imóveis. Marque "Mostrar todos" ou refine a busca para ver mais.`, 'success');
        } else {
-            // Update status only if data loading didn't fail initially
-           if(allProperties.length > 0) updateStatus(`${data.length} imóveis encontrados.`, 'success');
+           // Update status only if data loading didn't fail initially
+           if(Array.isArray(allProperties) && allProperties.length > 0) {
+               updateStatus(`${data.length} imóveis encontrados.`, 'success');
+           }
        }
     }
 
