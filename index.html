@@ -37,10 +37,12 @@
 
     .main-content {
       flex: 1;
+      min-width: 0; /* Prevent flex item overflow */
     }
 
     .sidebar {
       width: 250px;
+      flex-shrink: 0; /* Prevent sidebar from shrinking */
     }
 
     .header {
@@ -134,25 +136,39 @@
       opacity: 0.9;
     }
 
+    .data-table-container { /* Added container for responsiveness */
+       width: 100%;
+       overflow-x: auto; /* Allow horizontal scrolling on small screens */
+    }
+
     .data-table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 1rem;
       background-color: white;
       border-radius: 8px;
-      overflow: hidden;
+      overflow: hidden; /* Needed with border-radius */
     }
 
     .data-table th, .data-table td {
       padding: 0.8rem 1rem;
       text-align: left;
       border-bottom: 1px solid #d6c7b4;
+      white-space: nowrap; /* Prevent text wrapping */
     }
 
     .data-table th {
       background-color: #3a7a76;
       color: white;
+      position: sticky; /* Keep header visible when scrolling vertically */
+      top: 0;          /* Required for sticky */
+      z-index: 1;      /* Ensure header stays above table content */
     }
+
+    .data-table tr:last-child td { /* Remove border from last row */
+        border-bottom: none;
+    }
+
 
     .data-table tr:hover {
       background-color: rgba(219, 174, 142, 0.1);
@@ -168,6 +184,9 @@
       margin-top: 1rem;
       padding: 0.8rem;
       border-radius: 4px;
+      display: flex; /* Align items */
+      align-items: center; /* Vertically center items */
+      gap: 0.5rem; /* Space between indicator and text */
     }
 
     .status-message.success {
@@ -180,13 +199,18 @@
       color: #721c24;
     }
 
-    .loading {
+    .status-message.loading { /* Add styling for loading state */
+        background-color: #e2e3e5;
+        color: #383d41;
+    }
+
+    .loading-indicator { /* Renamed from .loading to be more specific */
       display: inline-block;
-      width: 20px;
-      height: 20px;
-      border: 3px solid rgba(255,255,255,.3);
+      width: 16px; /* Slightly smaller */
+      height: 16px;
+      border: 3px solid rgba(0,0,0,.1); /* Lighter base */
       border-radius: 50%;
-      border-top-color: #3a7a76;
+      border-top-color: #3a7a76; /* Use theme color */
       animation: spin 1s ease-in-out infinite;
     }
 
@@ -203,6 +227,9 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+      max-height: calc(100vh - 200px); /* Example max height */
+      overflow-y: auto; /* Add scroll if list is long */
+      padding-right: 5px; /* Add some space for scrollbar */
     }
 
     .building-item {
@@ -213,25 +240,71 @@
       cursor: pointer;
       font-size: 0.9rem;
       transition: all 0.3s;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .building-item:hover {
       background-color: #2e605d;
     }
 
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-
-      .sidebar {
-        width: 100%;
-      }
+    /* Responsive adjustments */
+    @media (max-width: 992px) { /* Adjust breakpoint as needed */
+        .container {
+            flex-direction: column;
+        }
+        .sidebar {
+            width: 100%;
+            order: -1; /* Move sidebar above main content on smaller screens */
+            margin-bottom: 2rem;
+            max-height: 300px; /* Adjust height for horizontal layout */
+        }
+        .building-list{
+            max-height: 200px; /* Adjust scroll height */
+        }
     }
+
+     @media (max-width: 768px) {
+        body {
+            padding: 1rem; /* Reduce padding on smaller screens */
+        }
+        .container {
+            padding: 1rem;
+        }
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .search-buttons {
+            gap: 0.5rem; /* Reduce gap between buttons */
+        }
+        .search-btn {
+             padding: 0.5rem 0.8rem; /* Smaller buttons */
+             font-size: 0.8rem;
+        }
+        .logout-btn {
+            padding: 0.4rem 0.8rem;
+             font-size: 0.8rem;
+        }
+        .data-table th, .data-table td {
+            padding: 0.6rem 0.8rem; /* Reduce cell padding */
+        }
+     }
+
   </style>
 </head>
 <body>
   <div class="container">
+
+     <div class="sidebar">
+        <h4>Prédios Completos</h4>
+        <div class="building-list" id="buildingList">
+            <p style="color: #666; font-size: 0.9rem;">Carregando prédios...</p>
+        </div>
+     </div>
+
     <div class="main-content">
       <div class="header">
         <div class="logo">
@@ -253,18 +326,16 @@
           <button class="search-btn" data-type="building">Busca por Prédio</button>
           <button class="search-btn" data-type="inscription">Busca por Inscrição</button>
         </div>
-        <label style="margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+        <label style="margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
           <input type="checkbox" id="showAllToggle">
-          Mostrar todos os imóveis
+          Mostrar todos os imóveis (pode levar mais tempo)
         </label>
-        <div class="status-message" id="statusMessage">
-          <span id="loadingIndicator" class="loading"></span>
+        <div class="status-message loading" id="statusMessage"> <span id="loadingIndicator" class="loading-indicator"></span>
           <span id="statusText">Carregando catálogo de imóveis...</span>
         </div>
       </div>
 
-      <div class="data-container">
-        <table class="data-table" id="dataTable">
+      <div class="data-table-container"> <table class="data-table" id="dataTable">
           <thead>
             <tr>
               <th>Endereço</th>
@@ -282,16 +353,13 @@
       </div>
     </div>
 
-    <div class="sidebar">
-      <h4>Prédios Completos</h4>
-      <div class="building-list" id="buildingList"></div>
-    </div>
   </div>
 
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
   <script>
     const firebaseConfig = {
+      // IMPORTANT: Replace with your actual Firebase config
       apiKey: "AIzaSyDGSLzvob9IS9LWUsR4i0FVuW7k5_wcjgA",
       authDomain: "serenity-imobiliaria.firebaseapp.com",
       projectId: "serenity-imobiliaria",
@@ -302,18 +370,32 @@
     };
     firebase.initializeApp(firebaseConfig);
 
+    // Auth state listener
     firebase.auth().onAuthStateChanged(user => {
-      if (!user) window.location.href = "login.html";
+      // Redirect to login if not authenticated
+      if (!user) {
+        console.log("Usuário não autenticado, redirecionando para login.html");
+        // window.location.href = "login.html"; // Uncomment this line to enable redirection
+      } else {
+        console.log("Usuário autenticado:", user.email);
+      }
     });
 
+    // Logout function
     function logout() {
+       console.log("Tentando fazer logout...");
       firebase.auth().signOut().then(() => {
+        console.log("Logout bem-sucedido, redirecionando...");
         window.location.href = "login.html";
+      }).catch((error) => {
+         console.error("Erro no logout:", error);
+         alert("Erro ao tentar sair. Verifique o console para detalhes.");
       });
     }
   </script>
 
   <script>
+    // DOM Elements
     const searchInput = document.getElementById('searchInput');
     const searchButtons = document.querySelectorAll('.search-btn');
     const tableBody = document.getElementById('tableBody');
@@ -322,59 +404,119 @@
     const loadingIndicator = document.getElementById('loadingIndicator');
     const buildingList = document.getElementById('buildingList');
     const showAllToggle = document.getElementById('showAllToggle');
+
+    // === CONFIGURATION ===
+    // IMPORTANT: Make sure your JSON file is named 'imoveis.json'
+    // and is in the same directory as this HTML file.
     const JSON_URL = 'imoveis.json';
+    const INITIAL_ROW_LIMIT = 100; // How many rows to show initially
 
-    let allProperties = [];
-    let currentData = [];
-    let currentSearchType = 'all';
+    // Global state
+    let allProperties = []; // Holds all data from JSON
+    let currentData = [];   // Holds currently filtered/displayed data
+    let validBuildings = []; // Holds unique building names for the sidebar
+    let currentSearchType = 'all'; // Default search type
 
-    const validBuildings = []; // preencha se quiser filtrar prédios
-
+    // --- Initialization ---
     document.addEventListener('DOMContentLoaded', () => {
-      loadPropertyData();
-      currentSearchType = 'all';
+      // Set initial search type based on the active button
+      const activeButton = document.querySelector('.search-btn.active');
+      if (activeButton) {
+        currentSearchType = activeButton.dataset.type;
+      }
+      loadPropertyData(); // Load data when the page is ready
     });
 
+    // --- Data Loading ---
     async function loadPropertyData() {
+      updateStatus('Carregando catálogo de imóveis...', 'loading', true); // Show loading indicator
       try {
         const response = await fetch(JSON_URL);
-        if (!response.ok) throw new Error('Falha ao carregar dados');
+        if (!response.ok) {
+          // Provide more specific error messages
+          if (response.status === 404) {
+             throw new Error(`Arquivo não encontrado (${JSON_URL}). Verifique o nome e o local do arquivo.`);
+          } else {
+             throw new Error(`Falha ao carregar dados (Status: ${response.status})`);
+          }
+        }
         allProperties = await response.json();
-        currentData = allProperties;
-        displayData(currentData);
-        updateStatus(`Catálogo carregado com ${currentData.length} imóveis`, 'success');
+
+        // Basic data validation (check if it's an array)
+        if (!Array.isArray(allProperties)) {
+            throw new Error("O arquivo JSON não contém um array válido.");
+        }
+
+        console.log(`Loaded ${allProperties.length} properties initially.`);
+
+        // Populate the building list for the sidebar
+        populateValidBuildings();
         renderBuildingList();
+
+        // Initial filter and display
+        filterData(); // Apply initial filter (shows limited data)
+
+        updateStatus(`Catálogo carregado com ${allProperties.length} imóveis.`, 'success');
+
       } catch (error) {
-        console.error('Erro ao carregar dados:', error);
+        console.error('Erro detalhado ao carregar dados:', error);
         updateStatus(`Erro: ${error.message}`, 'error');
-        tableBody.innerHTML = '<tr><td colspan="4" class="no-data">Erro ao carregar dados.</td></tr>';
-      } finally {
-        loadingIndicator.style.display = 'none';
+        tableBody.innerHTML = `<tr><td colspan="4" class="no-data">Erro ao carregar dados. Verifique o console (F12) para mais detalhes.</td></tr>`;
+        buildingList.innerHTML = `<p style="color: #721c24; font-size: 0.9rem;">Erro ao carregar prédios.</p>`; // Update sidebar on error
       }
     }
 
+    // --- Sidebar Building List ---
+    function populateValidBuildings() {
+        // Use Set for efficient unique value extraction
+        const buildingNames = new Set(
+             allProperties
+                .map(item => item && item.building ? item.building.trim() : null) // Get building names, trim whitespace
+                .filter(name => name) // Filter out null/empty names
+        );
+        validBuildings = [...buildingNames].sort((a, b) => a.localeCompare(b)); // Convert Set to sorted array
+        console.log(`Found ${validBuildings.length} unique buildings.`);
+    }
+
     function renderBuildingList() {
-      const sortedBuildings = validBuildings.sort();
-      buildingList.innerHTML = '';
-      sortedBuildings.forEach(building => {
+      buildingList.innerHTML = ''; // Clear previous list
+      if (validBuildings.length === 0) {
+          buildingList.innerHTML = `<p style="color: #666; font-size: 0.9rem;">Nenhum prédio encontrado.</p>`;
+          return;
+      }
+
+      validBuildings.forEach(building => {
         const div = document.createElement('div');
         div.className = 'building-item';
         div.textContent = building;
+        div.title = building; // Show full name on hover if truncated
         div.addEventListener('click', () => {
+          // Set search type to 'building' and trigger filter
           currentSearchType = 'building';
-          searchInput.value = building;
-          filterData();
+          searchInput.value = building; // Populate search bar with building name
+          // Update active button visual state
+          searchButtons.forEach(btn => btn.classList.remove('active'));
+          document.querySelector(`.search-btn[data-type="building"]`).classList.add('active');
+          filterData(); // Apply the filter
         });
         buildingList.appendChild(div);
       });
     }
 
-    function updateStatus(message, type) {
+    // --- Status Updates ---
+    function updateStatus(message, type, isLoading = false) {
+       if (!statusMessage || !statusText || !loadingIndicator) return; // Guard against missing elements
+
       statusText.textContent = message;
+      // Reset classes and apply the correct type
       statusMessage.className = 'status-message ' + type;
+      // Show/hide loading indicator
+      loadingIndicator.style.display = isLoading ? 'inline-block' : 'none';
     }
 
+    // --- Event Listeners ---
     searchInput.addEventListener('input', () => {
+      // Optional: Add debounce here if needed for very large datasets
       filterData();
     });
 
@@ -391,60 +533,102 @@
       });
     });
 
-    function displayData(data) {
-      if (data.length === 0) {
-        tableBody.innerHTML = '<tr><td colspan="4" class="no-data">Nenhum imóvel encontrado.</td></tr>';
-        return;
-      }
-
-      tableBody.innerHTML = '';
-
-      const searchTerm = searchInput.value.trim();
-      const shouldLimit = !showAllToggle.checked && !searchTerm;
-      const limitedData = shouldLimit ? data.slice(0, 100) : data;
-
-      limitedData.forEach(item => {
-        if (!item) return;
-        const row = document.createElement('tr');
-        row.innerHTML = `
-          <td>${item.address || '-'}</td>
-          <td>${item.building || '-'}</td>
-          <td>${item.complement || '-'}</td>
-          <td>${item.inscription || '-'}</td>
-        `;
-        tableBody.appendChild(row);
-      });
-    }
-
+    // --- Data Filtering ---
     function filterData() {
+       if (!allProperties) return; // Don't filter if data hasn't loaded
+
       const searchTerm = searchInput.value.trim().toLowerCase();
 
+      // Filter the main properties array
       currentData = allProperties.filter(item => {
-        if (!item || typeof item !== 'object') return false;
+        // Ensure item is a valid object before accessing properties
+        if (!item || typeof item !== 'object') {
+            // console.warn("Skipping invalid item in JSON data:", item);
+            return false;
+        }
 
+        // Get values safely, converting to lowercase
         const address = (item.address || '').toLowerCase();
         const building = (item.building || '').toLowerCase();
-        const complement = (item.complement || '').toLowerCase();
+        const complement = (item.complement || '').toLowerCase(); // Included for 'all' search
         const inscription = (item.inscription || '').toLowerCase();
 
+        // Apply filter based on current search type
         switch (currentSearchType) {
           case 'address': return address.includes(searchTerm);
           case 'building': return building.includes(searchTerm);
-          case 'complement': return complement.includes(searchTerm);
           case 'inscription': return inscription.includes(searchTerm);
+          // Note: No dedicated 'complement' button, but it's included in 'all'
           case 'all':
           default:
             return (
               address.includes(searchTerm) ||
               building.includes(searchTerm) ||
-              complement.includes(searchTerm) ||
+              complement.includes(searchTerm) || // Complement is searched in 'all'
               inscription.includes(searchTerm)
             );
         }
       });
 
+      // Update the displayed table
       displayData(currentData);
     }
+
+    // --- Data Display ---
+    function displayData(data) {
+        if (!tableBody) return; // Guard
+
+      const searchTerm = searchInput.value.trim(); // Get current search term for limit logic
+      const shouldLimit = !showAllToggle.checked && !searchTerm; // Limit only if checkbox is off AND search is empty
+      const dataToDisplay = shouldLimit ? data.slice(0, INITIAL_ROW_LIMIT) : data;
+
+      // Clear previous table content
+      tableBody.innerHTML = '';
+
+      if (data.length === 0) {
+        tableBody.innerHTML = `<tr><td colspan="4" class="no-data">Nenhum imóvel encontrado para a busca atual.</td></tr>`;
+        updateStatus(`Nenhum imóvel encontrado (${data.length} resultados).`, 'success'); // Update status for no results
+        return;
+      }
+
+      if (dataToDisplay.length === 0 && data.length > 0) {
+         // This case shouldn't typically happen with current logic, but good to handle
+         tableBody.innerHTML = `<tr><td colspan="4" class="no-data">Nenhum imóvel para exibir (verifique limite inicial).</td></tr>`;
+         return;
+      }
+
+      // Populate table rows
+      dataToDisplay.forEach(item => {
+         // Double-check item validity
+        if (!item || typeof item !== 'object') return;
+
+        const row = document.createElement('tr');
+        // Use textContent for security (prevents HTML injection if data contains markup)
+        const addressCell = document.createElement('td');
+        addressCell.textContent = item.address || '-';
+        const buildingCell = document.createElement('td');
+        buildingCell.textContent = item.building || '-';
+        const complementCell = document.createElement('td');
+        complementCell.textContent = item.complement || '-';
+        const inscriptionCell = document.createElement('td');
+        inscriptionCell.textContent = item.inscription || '-';
+
+        row.appendChild(addressCell);
+        row.appendChild(buildingCell);
+        row.appendChild(complementCell);
+        row.appendChild(inscriptionCell);
+
+        tableBody.appendChild(row);
+      });
+
+       // Update status message based on displayed results
+       if (shouldLimit && data.length > INITIAL_ROW_LIMIT) {
+           updateStatus(`Exibindo ${dataToDisplay.length} de ${data.length} imóveis. Marque "Mostrar todos" ou refine a busca para ver mais.`, 'success');
+       } else {
+           updateStatus(`${data.length} imóveis encontrados.`, 'success');
+       }
+    }
+
   </script>
 </body>
 </html>
