@@ -406,9 +406,9 @@
     const showAllToggle = document.getElementById('showAllToggle');
 
     // === CONFIGURATION ===
-    // IMPORTANT: Make sure your JSON file is named 'imoveis.json'
+    // IMPORTANT: Make sure your JSON file is named 'imoveis (3).json'
     // and is in the same directory as this HTML file.
-    const JSON_URL = 'imoveis.json';
+    const JSON_URL = 'imoveis (3).json';
     const INITIAL_ROW_LIMIT = 100; // How many rows to show initially
 
     // Global state
@@ -551,7 +551,8 @@
         const address = (item.address || '').toLowerCase();
         const building = (item.building || '').toLowerCase();
         const complement = (item.complement || '').toLowerCase(); // Included for 'all' search
-        const inscription = (item.inscription || '').toLowerCase();
+        // *** THIS IS THE CORRECTED LINE: ***
+        const inscription = String(item.inscription || '').toLowerCase(); // Force conversion to string
 
         // Apply filter based on current search type
         switch (currentSearchType) {
@@ -611,7 +612,8 @@
         const complementCell = document.createElement('td');
         complementCell.textContent = item.complement || '-';
         const inscriptionCell = document.createElement('td');
-        inscriptionCell.textContent = item.inscription || '-';
+        // Also ensure inscription is displayed as a string
+        inscriptionCell.textContent = String(item.inscription || '-');
 
         row.appendChild(addressCell);
         row.appendChild(buildingCell);
