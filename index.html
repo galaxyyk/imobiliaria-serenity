@@ -1,4 +1,4 @@
-v<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -126,9 +126,8 @@ v<!DOCTYPE html>
     }
 
     .search-btn.active {
-      background-color: #3a7a76 !important;
-      color: white !important;
-      font-weight: bold;
+      background-color: #3a7a76;
+      color: white;
     }
 
     .search-btn:hover {
@@ -252,7 +251,6 @@ v<!DOCTYPE html>
           <button class="search-btn active" data-type="all">Todos</button>
           <button class="search-btn" data-type="address">Busca por Endereço</button>
           <button class="search-btn" data-type="building">Busca por Prédio</button>
-          <button class="search-btn" data-type="complement">Busca por Complemento</button>
           <button class="search-btn" data-type="inscription">Busca por Inscrição</button>
         </div>
         <label style="margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem;">
@@ -330,10 +328,11 @@ v<!DOCTYPE html>
     let currentData = [];
     let currentSearchType = 'all';
 
-    const validBuildings = []; // Preencha com seus nomes de prédios se necessário
+    const validBuildings = []; // preencha se quiser filtrar prédios
 
     document.addEventListener('DOMContentLoaded', () => {
       loadPropertyData();
+      currentSearchType = 'all';
     });
 
     async function loadPropertyData() {
@@ -375,9 +374,12 @@ v<!DOCTYPE html>
       statusMessage.className = 'status-message ' + type;
     }
 
-    searchInput.addEventListener('input', filterData);
+    searchInput.addEventListener('input', () => {
+      filterData();
+    });
+
     showAllToggle.addEventListener('change', () => {
-      displayData(currentData);
+      filterData();
     });
 
     searchButtons.forEach(button => {
@@ -416,12 +418,6 @@ v<!DOCTYPE html>
 
     function filterData() {
       const searchTerm = searchInput.value.trim().toLowerCase();
-
-      if (!searchTerm) {
-        currentData = [...allProperties];
-        displayData(currentData);
-        return;
-      }
 
       currentData = allProperties.filter(item => {
         if (!item || typeof item !== 'object') return false;
