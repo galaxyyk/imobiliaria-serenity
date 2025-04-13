@@ -43,7 +43,6 @@
     .sidebar {
       width: 250px;
       flex-shrink: 0; /* Prevent sidebar from shrinking */
-      /* Order is now determined by HTML source order */
     }
 
     .header {
@@ -137,9 +136,9 @@
       opacity: 0.9;
     }
 
-    .data-table-container { /* Added container for responsiveness */
+    .data-table-container {
        width: 100%;
-       overflow-x: auto; /* Allow horizontal scrolling on small screens */
+       overflow-x: auto;
     }
 
     .data-table {
@@ -148,28 +147,27 @@
       margin-top: 1rem;
       background-color: white;
       border-radius: 8px;
-      overflow: hidden; /* Needed with border-radius */
+      overflow: hidden;
     }
 
     .data-table th, .data-table td {
       padding: 0.8rem 1rem;
       text-align: left;
       border-bottom: 1px solid #d6c7b4;
-      white-space: nowrap; /* Prevent text wrapping */
+      white-space: nowrap;
     }
 
     .data-table th {
       background-color: #3a7a76;
       color: white;
-      position: sticky; /* Keep header visible when scrolling vertically */
-      top: 0;          /* Required for sticky */
-      z-index: 1;      /* Ensure header stays above table content */
+      position: sticky;
+      top: 0;
+      z-index: 1;
     }
 
-    .data-table tr:last-child td { /* Remove border from last row */
+    .data-table tr:last-child td {
         border-bottom: none;
     }
-
 
     .data-table tr:hover {
       background-color: rgba(219, 174, 142, 0.1);
@@ -185,9 +183,9 @@
       margin-top: 1rem;
       padding: 0.8rem;
       border-radius: 4px;
-      display: flex; /* Align items */
-      align-items: center; /* Vertically center items */
-      gap: 0.5rem; /* Space between indicator and text */
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     .status-message.success {
@@ -200,18 +198,18 @@
       color: #721c24;
     }
 
-    .status-message.loading { /* Add styling for loading state */
+    .status-message.loading {
         background-color: #e2e3e5;
         color: #383d41;
     }
 
-    .loading-indicator { /* Renamed from .loading to be more specific */
+    .loading-indicator {
       display: inline-block;
-      width: 16px; /* Slightly smaller */
+      width: 16px;
       height: 16px;
-      border: 3px solid rgba(0,0,0,.1); /* Lighter base */
+      border: 3px solid rgba(0,0,0,.1);
       border-radius: 50%;
-      border-top-color: #3a7a76; /* Use theme color */
+      border-top-color: #3a7a76;
       animation: spin 1s ease-in-out infinite;
     }
 
@@ -228,20 +226,24 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-      max-height: calc(100vh - 200px); /* Example max height */
-      overflow-y: auto; /* Add scroll if list is long */
-      padding-right: 5px; /* Add some space for scrollbar */
+      max-height: calc(100vh - 200px);
+      overflow-y: auto;
+      padding-right: 5px;
     }
 
     /* === AJUSTE AQUI === */
     .building-item {
+      display: flex; /* Habilita Flexbox para o item */
+      align-items: center; /* Centraliza o conteúdo (texto) verticalmente */
+      /* justify-content: center; */ /* Descomente se quiser centralizar horizontalmente também */
       background-color: #3a7a76;
       color: white;
-      /* Padding aumentado (vertical e horizontal) */
-      padding: 0.7rem 1rem;
+      /* Padding aumentado mais um pouco */
+      padding: 0.9rem 1.2rem;
+      min-height: 45px; /* Garante uma altura mínima */
       border-radius: 6px;
       cursor: pointer;
-      font-size: 0.9rem; /* Tamanho da fonte mantido por enquanto */
+      font-size: 0.9rem;
       transition: all 0.3s;
       white-space: nowrap;
       overflow: hidden;
@@ -254,24 +256,23 @@
     }
 
     /* Responsive adjustments */
-    @media (max-width: 992px) { /* Adjust breakpoint as needed */
+    @media (max-width: 992px) {
         .container {
-            flex-direction: column; /* Stack items vertically */
+            flex-direction: column;
         }
         .sidebar {
             width: 100%;
-            /* order: -1; --- REMOVED --- Now follows HTML source order (appears below main content) */
-            margin-bottom: 2rem; /* Keep margin */
-            max-height: 300px; /* Adjust height for horizontal layout */
+            margin-bottom: 2rem;
+            max-height: 300px;
         }
         .building-list{
-            max-height: 200px; /* Adjust scroll height */
+            max-height: 200px;
         }
     }
 
      @media (max-width: 768px) {
         body {
-            padding: 1rem; /* Reduce padding on smaller screens */
+            padding: 1rem;
         }
         .container {
             padding: 1rem;
@@ -282,10 +283,10 @@
             gap: 1rem;
         }
         .search-buttons {
-            gap: 0.5rem; /* Reduce gap between buttons */
+            gap: 0.5rem;
         }
         .search-btn {
-             padding: 0.5rem 0.8rem; /* Smaller buttons */
+             padding: 0.5rem 0.8rem;
              font-size: 0.8rem;
         }
         .logout-btn {
@@ -293,10 +294,9 @@
              font-size: 0.8rem;
         }
         .data-table th, .data-table td {
-            padding: 0.6rem 0.8rem; /* Reduce cell padding */
+            padding: 0.6rem 0.8rem;
         }
      }
-
   </style>
 </head>
 <body>
@@ -352,10 +352,10 @@
       </div>
     </div>
 
-    <div class="sidebar">
+     <div class="sidebar">
         <h4>Prédios Completos</h4>
         <div class="building-list" id="buildingList">
-            <p style="color: #666; font-size: 0.9rem;">Carregando prédios...</p>
+             <p style="color: #666; font-size: 0.9rem;">Carregando prédios...</p>
         </div>
      </div>
 
@@ -376,18 +376,15 @@
     };
     firebase.initializeApp(firebaseConfig);
 
-    // Auth state listener
     firebase.auth().onAuthStateChanged(user => {
-      // Redirect to login if not authenticated
       if (!user) {
         console.log("Usuário não autenticado, redirecionando para login.html");
-        // window.location.href = "login.html"; // Uncomment this line to enable redirection
+        // window.location.href = "login.html";
       } else {
         console.log("Usuário autenticado:", user.email);
       }
     });
 
-    // Logout function
     function logout() {
        console.log("Tentando fazer logout...");
       firebase.auth().signOut().then(() => {
@@ -419,41 +416,21 @@
     // === Lista de prédios definida pelo usuário                    ===
     // ================================================================
     const minhaListaDePredios = [
-        "ARUAK",
-        "ACQUA ROYAL",
-        "AQUARELA PINHEIROS",
-        "AQUAPARQUE RESIDENCIAL E RESORT",
-        "AQUAJARDIM RESIDENCIAL & RESORT",
-        "AQUAPARQUE RESIDENCIAL E RESORT",
-        "AQUAJARDIM RESIDENCIAL & RESORT",
-        "BOULEVARD VILLAGE",
-        "COSMOPOLITAN RESIDENCE",
-        "DUE-TORRI",
-        "EVOLUTION HOME - ALTO DA PALHANO",
-        "EVOLUTION HOME - ALTO DA PALHANO",
-        "EVOLUTION HOME AYRTON SENNA",
-        "FIT TERRA BONITA",
-        "FLY TOP LIFE",
-        "LIBERTY TOWER",
-        "PALHANO RESIDENCES",
-        "PARANAGUÁ SOHO",
-        "PATEO ALLEGRO",
-        "PATEO ALLEGRO",
-        "PRIME PIAUÍ",
-        "SOLAR ALTA VISTA",
-        "SOLAR MIRADOR",
-        "SPOT CENTRO RESIDENCE",
-        "SUNFLOWERS",
-        "SUNSET FARIA LIMA",
-        "TERRA NOVA",
-        "LA SAVONA"
+        "ARUAK", "ACQUA ROYAL", "AQUARELA PINHEIROS", "AQUAPARQUE RESIDENCIAL E RESORT",
+        "AQUAJARDIM RESIDENCIAL & RESORT", "AQUAPARQUE RESIDENCIAL E RESORT",
+        "AQUAJARDIM RESIDENCIAL & RESORT", "BOULEVARD VILLAGE", "COSMOPOLITAN RESIDENCE",
+        "DUE-TORRI", "EVOLUTION HOME - ALTO DA PALHANO", "EVOLUTION HOME - ALTO DA PALHANO",
+        "EVOLUTION HOME AYRTON SENNA", "FIT TERRA BONITA", "FLY TOP LIFE", "LIBERTY TOWER",
+        "PALHANO RESIDENCES", "PARANAGUÁ SOHO", "PATEO ALLEGRO", "PATEO ALLEGRO",
+        "PRIME PIAUÍ", "SOLAR ALTA VISTA", "SOLAR MIRADOR", "SPOT CENTRO RESIDENCE",
+        "SUNFLOWERS", "SUNSET FARIA LIMA", "TERRA NOVA", "LA SAVONA"
     ];
     // ================================================================
 
     // Global state
     let allProperties = [];
     let currentData = [];
-    let validBuildings = []; // This will hold the *filtered* list for the sidebar
+    let validBuildings = [];
     let currentSearchType = 'all';
 
     // --- Initialization ---
@@ -471,11 +448,8 @@
       try {
         const response = await fetch(JSON_URL);
         if (!response.ok) {
-          if (response.status === 404) {
-             throw new Error(`Arquivo não encontrado (${JSON_URL}). Verifique o nome e o local.`);
-          } else {
-             throw new Error(`Falha ao carregar dados (Status: ${response.status})`);
-          }
+          if (response.status === 404) { throw new Error(`Arquivo não encontrado (${JSON_URL}). Verifique o nome e o local.`); }
+          else { throw new Error(`Falha ao carregar dados (Status: ${response.status})`); }
         }
         const contentType = response.headers.get("content-type");
         if (contentType && contentType.indexOf("application/json") !== -1) {
@@ -485,10 +459,7 @@
              console.error("Resposta do servidor não é JSON:", textResponse);
              throw new Error(`Esperava JSON mas recebeu ${contentType || 'texto'}. Verifique o arquivo ${JSON_URL}.`);
         }
-
-        if (!Array.isArray(allProperties)) {
-            throw new Error("O arquivo JSON não contém um array válido.");
-        }
+        if (!Array.isArray(allProperties)) { throw new Error("O arquivo JSON não contém um array válido."); }
         console.log(`Loaded ${allProperties.length} properties.`);
 
         populateValidBuildings();
@@ -537,9 +508,7 @@
           searchInput.value = building;
           searchButtons.forEach(btn => btn.classList.remove('active'));
            const buildingButton = document.querySelector(`.search-btn[data-type="building"]`);
-           if (buildingButton) {
-               buildingButton.classList.add('active');
-           }
+           if (buildingButton) { buildingButton.classList.add('active'); }
           filterData();
         });
         buildingList.appendChild(div);
@@ -570,8 +539,7 @@
     function filterData() {
        if (!Array.isArray(allProperties)) {
             console.warn("allProperties is not an array, skipping filter.");
-            displayData([]);
-            return;
+            displayData([]); return;
        }
       const searchTerm = searchInput.value.trim().toLowerCase();
       currentData = allProperties.filter(item => {
@@ -585,14 +553,9 @@
           case 'address': return address.includes(searchTerm);
           case 'building': return building.includes(searchTerm);
           case 'inscription': return inscription.includes(searchTerm);
-          case 'all':
-          default:
-            return (
-              address.includes(searchTerm) ||
-              building.includes(searchTerm) ||
-              complement.includes(searchTerm) ||
-              inscription.includes(searchTerm)
-            );
+          case 'all': default:
+            return (address.includes(searchTerm) || building.includes(searchTerm) ||
+                    complement.includes(searchTerm) || inscription.includes(searchTerm));
         }
       });
       displayData(currentData);
@@ -601,10 +564,7 @@
     // --- Data Display ---
     function displayData(data) {
         if (!tableBody) return;
-        if (!Array.isArray(data)) {
-             console.error("Invalid data passed to displayData:", data);
-             data = [];
-        }
+        if (!Array.isArray(data)) { console.error("Invalid data passed to displayData:", data); data = []; }
 
       const searchTerm = searchInput.value.trim();
       const shouldLimit = !showAllToggle.checked && !searchTerm;
@@ -614,40 +574,29 @@
 
       if (data.length === 0) {
         tableBody.innerHTML = `<tr><td colspan="4" class="no-data">Nenhum imóvel encontrado para a busca atual.</td></tr>`;
-        if(Array.isArray(allProperties) && allProperties.length > 0) {
-            updateStatus(`Nenhum imóvel encontrado (${data.length} resultados).`, 'success');
-        }
+        if(Array.isArray(allProperties) && allProperties.length > 0) { updateStatus(`Nenhum imóvel encontrado (${data.length} resultados).`, 'success'); }
         return;
       }
 
       dataToDisplay.forEach(item => {
         if (!item || typeof item !== 'object') return;
         const row = document.createElement('tr');
-        const addressCell = document.createElement('td');
-        addressCell.textContent = item.address || '-';
-        const buildingCell = document.createElement('td');
-        buildingCell.textContent = item.building || '-';
-        const complementCell = document.createElement('td');
-        complementCell.textContent = item.complement || '-';
-        const inscriptionCell = document.createElement('td');
-        inscriptionCell.textContent = String(item.inscription || '-');
+        const addressCell = document.createElement('td'); addressCell.textContent = item.address || '-';
+        const buildingCell = document.createElement('td'); buildingCell.textContent = item.building || '-';
+        const complementCell = document.createElement('td'); complementCell.textContent = item.complement || '-';
+        const inscriptionCell = document.createElement('td'); inscriptionCell.textContent = String(item.inscription || '-');
 
-        row.appendChild(addressCell);
-        row.appendChild(buildingCell);
-        row.appendChild(complementCell);
-        row.appendChild(inscriptionCell);
+        row.appendChild(addressCell); row.appendChild(buildingCell);
+        row.appendChild(complementCell); row.appendChild(inscriptionCell);
         tableBody.appendChild(row);
       });
 
        if (shouldLimit && data.length > INITIAL_ROW_LIMIT) {
            updateStatus(`Exibindo ${dataToDisplay.length} de ${data.length} imóveis. Marque "Mostrar todos" ou refine a busca para ver mais.`, 'success');
        } else {
-           if(Array.isArray(allProperties) && allProperties.length > 0) {
-               updateStatus(`${data.length} imóveis encontrados.`, 'success');
-           }
+           if(Array.isArray(allProperties) && allProperties.length > 0) { updateStatus(`${data.length} imóveis encontrados.`, 'success'); }
        }
     }
-
   </script>
 </body>
 </html>
