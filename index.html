@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+v<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -126,8 +126,9 @@
     }
 
     .search-btn.active {
-      background-color: #3a7a76;
-      color: white;
+      background-color: #3a7a76 !important;
+      color: white !important;
+      font-weight: bold;
     }
 
     .search-btn:hover {
@@ -251,6 +252,7 @@
           <button class="search-btn active" data-type="all">Todos</button>
           <button class="search-btn" data-type="address">Busca por Endereço</button>
           <button class="search-btn" data-type="building">Busca por Prédio</button>
+          <button class="search-btn" data-type="complement">Busca por Complemento</button>
           <button class="search-btn" data-type="inscription">Busca por Inscrição</button>
         </div>
         <label style="margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem;">
@@ -328,7 +330,7 @@
     let currentData = [];
     let currentSearchType = 'all';
 
-    const validBuildings = [/* sua lista aqui */];
+    const validBuildings = []; // Preencha com seus nomes de prédios se necessário
 
     document.addEventListener('DOMContentLoaded', () => {
       loadPropertyData();
@@ -414,6 +416,7 @@
 
     function filterData() {
       const searchTerm = searchInput.value.trim().toLowerCase();
+
       if (!searchTerm) {
         currentData = [...allProperties];
         displayData(currentData);
@@ -423,10 +426,10 @@
       currentData = allProperties.filter(item => {
         if (!item || typeof item !== 'object') return false;
 
-        const address = (item.address ?? '').toLowerCase();
-        const building = (item.building ?? '').toLowerCase();
-        const complement = (item.complement ?? '').toLowerCase();
-        const inscription = (item.inscription ?? '').toLowerCase();
+        const address = (item.address || '').toLowerCase();
+        const building = (item.building || '').toLowerCase();
+        const complement = (item.complement || '').toLowerCase();
+        const inscription = (item.inscription || '').toLowerCase();
 
         switch (currentSearchType) {
           case 'address': return address.includes(searchTerm);
