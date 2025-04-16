@@ -31,18 +31,18 @@
       padding: 2rem;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       display: flex;
-      flex-direction: row; /* Main axis is horizontal */
+      flex-direction: row;
       gap: 2rem;
     }
 
     .main-content {
-      flex: 1; /* Takes up remaining space */
-      min-width: 0; /* Prevent flex item overflow */
+      flex: 1;
+      min-width: 0;
     }
 
     .sidebar {
       width: 250px;
-      flex-shrink: 0; /* Prevent sidebar from shrinking */
+      flex-shrink: 0;
     }
 
     .header {
@@ -231,16 +231,13 @@
       padding-right: 5px;
     }
 
-    /* === AJUSTE AQUI === */
     .building-item {
-      display: flex; /* Habilita Flexbox para o item */
-      align-items: center; /* Centraliza o conteúdo (texto) verticalmente */
-      /* justify-content: center; */ /* Descomente se quiser centralizar horizontalmente também */
+      display: flex;
+      align-items: center;
       background-color: #3a7a76;
       color: white;
-      /* Padding aumentado mais um pouco */
       padding: 0.9rem 1.2rem;
-      min-height: 45px; /* Garante uma altura mínima */
+      min-height: 45px;
       border-radius: 6px;
       cursor: pointer;
       font-size: 0.9rem;
@@ -249,13 +246,11 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    /* =================== */
 
     .building-item:hover {
       background-color: #2e605d;
     }
 
-    /* Responsive adjustments */
     @media (max-width: 992px) {
         .container {
             flex-direction: column;
@@ -322,7 +317,7 @@
           <button class="search-btn active" data-type="all">Todos</button>
           <button class="search-btn" data-type="address">Busca por Endereço</button>
           <button class="search-btn" data-type="building">Busca por Prédio</button>
-          <button class="search-btn" data-type="apartment">Busca por Apartamento</button>
+          <button class="search-btn" data-type="complement">Busca por Complemento</button>
         </div>
         <label style="margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
           <input type="checkbox" id="showAllToggle">
@@ -341,7 +336,7 @@
               <th>Endereço</th>
               <th>Prédio</th>
               <th>Complemento</th>
-              <th>Apartamento</th>
+              <th>Inscrição</th>
             </tr>
           </thead>
           <tbody id="tableBody">
@@ -366,7 +361,6 @@
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
   <script>
     const firebaseConfig = {
-      // IMPORTANT: Replace with your actual Firebase config
       apiKey: "AIzaSyDGSLzvob9IS9LWUsR4i0FVuW7k5_wcjgA",
       authDomain: "serenity-imobiliaria.firebaseapp.com",
       projectId: "serenity-imobiliaria",
@@ -414,68 +408,65 @@
     const JSON_URL = 'imoveis.json';
     const INITIAL_ROW_LIMIT = 100;
 
-    // ================================================================
-    // === Lista de prédios definida pelo usuário                    ===
-    // ================================================================
-const minhaListaDePredios = [
-    "ACQUA ROYAL",
-    "ALAMEDA ECO RESORT",
-    "AQUARELA PINHEIROS",
-    "AQUAJARDIM RESIDENCIAL & RESORT",
-    "AQUAPARQUE RESIDENCIAL E RESORT",
-    "BERACÁ HOME",
-    "BOULEVARD VILLAGE",
-    "BRISAS DO LAGO",
-    "CENTRAL PARK",
-    "COSMOPOLITAN RESIDENCE",
-    "ED PALHANO RESIDENCES",
-    "ED. RESIDENCIAL LA SAVONA",
-    "ED SUNFLOWERS RESIDENCE",
-    "EDIFÍCIO ARUAK",
-    "EDIFÍCIO DUE-TORRI",
-    "EDIFÍCIO GARDEN PALHANO",
-    "EDIFÍCIO SPLENDOR",
-    "EDIFICIO EVOLUTION HOME - ALTO DA PALHANO",
-    "EDIFICIO TERRA NOVA",
-    "EVOLUTION HOME AYRTON SENNA",
-    "FIT TERRA BONITA",
-    "FLORAIS ECO RESORT",
-    "FLY TOP LIFE",
-    "GARDEN ARAUCÁRIA",
-    "GARDEN BELVEDERE",
-    "GARDEN CATUAÍ",
-    "GARDEN ECOLOGIC",
-    "HAMPTONS RESIDENCE",
-    "IDEAL ALAMEDA DAS PALMEIRAS",
-    "JARDIM SUL",
-    "JARDINS ECO RESORT",
-    "LAGO DI LUGANO",
-    "LAGO MAGGIORE",
-    "LAGOA SANTA",
-    "LIBERTY TOWER",
-    "LIV CATUAÍ",
-    "PARANAGUÁ SOHO",
-    "PATEO ALLEGRO",
-    "PRIME PIAUÍ",
-    "RESIDENCIAL SPEZIA",
-    "RITZ RESIDENCE",
-    "ROSA DOS VENTOS",
-    "SAN PABLO III-A",
-    "SMART CITY MAYRINK GÓES",
-    "SOLAR ALTA VISTA",
-    "SOLAR MIRADOR",
-    "SPAZIO LA FONTAINE",
-    "SPAZIO LE PARC",
-    "SPAZIO LEOPOLDINA",
-    "SPAZIO LOUVRE",
-    "SPOT CENTRO RESIDENCE",
-    "STUDIO BETA",
-    "SUNSET FARIA LIMA",
-    "TORRE MADRI",
-    "TORRES DO HORIZONTE",
-    "VERNAZZA RESIDENZIALE"
-];
-    // ================================================================
+    // Lista de prédios
+    const minhaListaDePredios = [
+      "ACQUA ROYAL",
+      "ALAMEDA ECO RESORT",
+      "AQUARELA PINHEIROS",
+      "AQUAJARDIM RESIDENCIAL & RESORT",
+      "AQUAPARQUE RESIDENCIAL E RESORT",
+      "BERACÁ HOME",
+      "BOULEVARD VILLAGE",
+      "BRISAS DO LAGO",
+      "CENTRAL PARK",
+      "COSMOPOLITAN RESIDENCE",
+      "ED PALHANO RESIDENCES",
+      "ED. RESIDENCIAL LA SAVONA",
+      "ED SUNFLOWERS RESIDENCE",
+      "EDIFÍCIO ARUAK",
+      "EDIFÍCIO DUE-TORRI",
+      "EDIFÍCIO GARDEN PALHANO",
+      "EDIFÍCIO SPLENDOR",
+      "EDIFICIO EVOLUTION HOME - ALTO DA PALHANO",
+      "EDIFICIO TERRA NOVA",
+      "EVOLUTION HOME AYRTON SENNA",
+      "FIT TERRA BONITA",
+      "FLORAIS ECO RESORT",
+      "FLY TOP LIFE",
+      "GARDEN ARAUCÁRIA",
+      "GARDEN BELVEDERE",
+      "GARDEN CATUAÍ",
+      "GARDEN ECOLOGIC",
+      "HAMPTONS RESIDENCE",
+      "IDEAL ALAMEDA DAS PALMEIRAS",
+      "JARDIM SUL",
+      "JARDINS ECO RESORT",
+      "LAGO DI LUGANO",
+      "LAGO MAGGIORE",
+      "LAGOA SANTA",
+      "LIBERTY TOWER",
+      "LIV CATUAÍ",
+      "PARANAGUÁ SOHO",
+      "PATEO ALLEGRO",
+      "PRIME PIAUÍ",
+      "RESIDENCIAL SPEZIA",
+      "RITZ RESIDENCE",
+      "ROSA DOS VENTOS",
+      "SAN PABLO III-A",
+      "SMART CITY MAYRINK GÓES",
+      "SOLAR ALTA VISTA",
+      "SOLAR MIRADOR",
+      "SPAZIO LA FONTAINE",
+      "SPAZIO LE PARC",
+      "SPAZIO LEOPOLDINA",
+      "SPAZIO LOUVRE",
+      "SPOT CENTRO RESIDENCE",
+      "STUDIO BETA",
+      "SUNSET FARIA LIMA",
+      "TORRE MADRI",
+      "TORRES DO HORIZONTE",
+      "VERNAZZA RESIDENZIALE"
+    ];
 
     // Global state
     let allProperties = [];
@@ -541,7 +532,6 @@ const minhaListaDePredios = [
             .sort((a, b) => a.localeCompare(b));
         console.log(`Found ${validBuildings.length} valid buildings based on predefined list.`);
         
-        // Atualiza o título com a contagem de prédios
         buildingListTitle.textContent = `Prédios Completos (${validBuildings.length})`;
     }
 
@@ -600,15 +590,15 @@ const minhaListaDePredios = [
         const address = (item.address || '').toLowerCase();
         const building = (item.building || '').toLowerCase();
         const complement = (item.complement || '').toLowerCase();
-        const apartment = String(item.apartment || item.inscription || '').toLowerCase();
+        const inscription = String(item.inscription || '').toLowerCase();
 
         switch (currentSearchType) {
           case 'address': return address.includes(searchTerm);
           case 'building': return building.includes(searchTerm);
-          case 'apartment': return apartment.includes(searchTerm);
+          case 'complement': return complement.includes(searchTerm);
           case 'all': default:
             return (address.includes(searchTerm) || building.includes(searchTerm) ||
-                    complement.includes(searchTerm) || apartment.includes(searchTerm));
+                    complement.includes(searchTerm) || inscription.includes(searchTerm));
         }
       });
       displayData(currentData);
@@ -637,10 +627,10 @@ const minhaListaDePredios = [
         const addressCell = document.createElement('td'); addressCell.textContent = item.address || '-';
         const buildingCell = document.createElement('td'); buildingCell.textContent = item.building || '-';
         const complementCell = document.createElement('td'); complementCell.textContent = item.complement || '-';
-        const apartmentCell = document.createElement('td'); apartmentCell.textContent = String(item.apartment || item.inscription || '-');
+        const inscriptionCell = document.createElement('td'); inscriptionCell.textContent = String(item.inscription || '-');
 
         row.appendChild(addressCell); row.appendChild(buildingCell);
-        row.appendChild(complementCell); row.appendChild(apartmentCell);
+        row.appendChild(complementCell); row.appendChild(inscriptionCell);
         tableBody.appendChild(row);
       });
 
