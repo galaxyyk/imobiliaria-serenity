@@ -2,46 +2,45 @@ name: Atualizar Imóveis
 
 on:
   repository_dispatch:
-    types: [update_imovel]  # Deve bater com o event_type do seu frontend
+    types: [update_imovel]  # Deve bater com o event_type do admin.html
 
 jobs:
   update_json:
     runs-on: ubuntu-latest
     
     steps:
-      # 1. Baixa o código do repositório
+      # 1. Baixa o repositório
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Importante para o git push funcionar
+          fetch-depth: 0  # Necessário para o git push
 
-      # 2. Configura o Git
-      - name: Configurar Git
+      # 2. Configuração inicial
+      - name: Configurar ambiente
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
-      # 3. Processa o novo imóvel
-      - name: Atualizar arquivo JSON
+      # 3. Processa o imóvel (agora na raiz)
+      - name: Atualizar imoveis.json
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Token com permissões
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Token com permissão 'repo'
         run: |
           # Cria arquivo temporário com os dados recebidos
           echo '${{ toJSON(github.event.client_payload.imovel) }}' > novo-imovel.json
 
-          # Verifica se o arquivo principal existe
-          if [ -f "site/imoveis.json" ]; then
-            echo "Arquivo existente encontrado, adicionando novo imóvel..."
-            jq '. += [input]' site/imoveis.json novo-imovel.json > temp.json
+          # Se imoveis.json já existir na raiz, atualiza
+          if [ -f "imoveis.json" ]; then
+            echo "Atualizando arquivo existente..."
+            jq '. += [input]' imoveis.json novo-imovel.json > temp.json
           else
-            echo "Arquivo não existe, criando novo..."
-            mkdir -p site
+            echo "Criando novo arquivo..."
             jq -n '[input]' novo-imovel.json > temp.json
           fi
 
-          # Substitui o arquivo antigo
-          mv temp.json site/imoveis.json
+          # Substitui o arquivo
+          mv temp.json imoveis.json
 
-          # Faz commit das mudanças
-          git add site/imoveis.json
+          # Commit e push
+          git add imoveis.json
           git commit -m "Adiciona imóvel via painel admin [skip ci]"
-          git push origin HEAD:${{ github.ref }}
+          git push
