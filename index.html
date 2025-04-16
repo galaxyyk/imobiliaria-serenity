@@ -321,7 +321,7 @@
           <button class="search-btn active" data-type="all">Todos</button>
           <button class="search-btn" data-type="address">Busca por Endereço</button>
           <button class="search-btn" data-type="building">Busca por Prédio</button>
-          <button class="search-btn" data-type="inscription">Busca por Inscrição</button>
+          <button class="search-btn" data-type="apartment">Busca por Apartamento</button>
         </div>
         <label style="margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
           <input type="checkbox" id="showAllToggle">
@@ -340,7 +340,7 @@
               <th>Endereço</th>
               <th>Prédio</th>
               <th>Complemento</th>
-              <th>Inscrição</th>
+              <th>Apartamento</th>
             </tr>
           </thead>
           <tbody id="tableBody">
@@ -599,15 +599,15 @@ const minhaListaDePredios = [
         const address = (item.address || '').toLowerCase();
         const building = (item.building || '').toLowerCase();
         const complement = (item.complement || '').toLowerCase();
-        const inscription = String(item.inscription || '').toLowerCase();
+        const apartment = String(item.apartment || item.inscription || '').toLowerCase();
 
         switch (currentSearchType) {
           case 'address': return address.includes(searchTerm);
           case 'building': return building.includes(searchTerm);
-          case 'inscription': return inscription.includes(searchTerm);
+          case 'apartment': return apartment.includes(searchTerm);
           case 'all': default:
             return (address.includes(searchTerm) || building.includes(searchTerm) ||
-                    complement.includes(searchTerm) || inscription.includes(searchTerm));
+                    complement.includes(searchTerm) || apartment.includes(searchTerm));
         }
       });
       displayData(currentData);
@@ -636,10 +636,10 @@ const minhaListaDePredios = [
         const addressCell = document.createElement('td'); addressCell.textContent = item.address || '-';
         const buildingCell = document.createElement('td'); buildingCell.textContent = item.building || '-';
         const complementCell = document.createElement('td'); complementCell.textContent = item.complement || '-';
-        const inscriptionCell = document.createElement('td'); inscriptionCell.textContent = String(item.inscription || '-');
+        const apartmentCell = document.createElement('td'); apartmentCell.textContent = String(item.apartment || item.inscription || '-');
 
         row.appendChild(addressCell); row.appendChild(buildingCell);
-        row.appendChild(complementCell); row.appendChild(inscriptionCell);
+        row.appendChild(complementCell); row.appendChild(apartmentCell);
         tableBody.appendChild(row);
       });
 
