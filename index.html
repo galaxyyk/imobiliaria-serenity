@@ -526,20 +526,31 @@
     }
 
     // --- Sidebar Building List ---
-    function populateValidBuildings() {
-        const allBuildingNamesFromData = new Set(
-             allProperties
-                .map(item => item && item.building ? String(item.building).trim() : null)
-                .filter(name => name)
-        );
+// Substitua a função populateValidBuildings() no index.html por esta:
+async function populateValidBuildings() {
+    try {
+        const snapshot = await firebase.firestore().collection('completeBuildings').get();
+        validBuildings = snapshot.docs.map(doc => doc.id).sort((a, b) => a.localeCompare(b));
+        console.log(`Loaded ${validBuildings.length} complete buildings from Firestore.`);
+        
+        buildingListTitle.textContent = `Prédios Completos (${validBuildings.length})`;
+    } catch (error) {
+        console.error('Error loading complete buildings:', error);
+        // Fallback para a lista local se houver erro
         const userListLower = minhaListaDePredios.map(name => String(name || '').toLowerCase());
+        const allBuildingNamesFromData = new Set(
+            allProperties
+               .map(item => item && item.building ? String(item.building).trim() : null)
+               .filter(name => name)
+        );
         validBuildings = [...allBuildingNamesFromData]
             .filter(nameFromData => userListLower.includes(String(nameFromData || '').toLowerCase()))
             .sort((a, b) => a.localeCompare(b));
-        console.log(`Found ${validBuildings.length} valid buildings based on predefined list.`);
+        console.log(`Using fallback with ${validBuildings.length} valid buildings.`);
         
         buildingListTitle.textContent = `Prédios Completos (${validBuildings.length})`;
     }
+}
 
     function renderBuildingList() {
       buildingList.innerHTML = '';
