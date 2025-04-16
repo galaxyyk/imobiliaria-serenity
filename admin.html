@@ -9,7 +9,7 @@
       font-family: Arial, sans-serif;
       padding: 2rem;
       background-color: #f5f5f5;
-      max-width: 800px;
+      max-width: 1200px;
       margin: 0 auto;
     }
 
@@ -27,7 +27,7 @@
       margin-bottom: 2rem;
     }
 
-    input, textarea {
+    input, textarea, select {
       padding: 0.5rem;
       font-size: 1rem;
       width: 100%;
@@ -65,16 +65,31 @@
       background-color: #a82323;
     }
 
-    #propertyList {
+    .success-btn {
+      background-color: #388e3c;
+    }
+
+    .success-btn:hover {
+      background-color: #2e7d32;
+    }
+
+    #propertyList, #buildingList, #allBuildingsList {
       margin-top: 1rem;
     }
 
-    .property-item {
+    .property-item, .building-item {
       background: #f9f9f9;
       padding: 1rem;
       border-radius: 4px;
       margin-bottom: 1rem;
       border-left: 4px solid #3a7a76;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .building-item.complete {
+      border-left-color: #388e3c;
     }
     
     .loading {
@@ -92,6 +107,40 @@
     @keyframes spin {
       to { transform: rotate(360deg); }
     }
+    
+    .columns {
+      display: flex;
+      gap: 2rem;
+    }
+    
+    .column {
+      flex: 1;
+    }
+    
+    .search-box {
+      margin-bottom: 1rem;
+    }
+    
+    .status-message {
+      padding: 0.8rem;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+    
+    .status-message.success {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    
+    .status-message.error {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+    
+    .status-message.loading {
+      background-color: #e2e3e5;
+      color: #383d41;
+    }
   </style>
 </head>
 <body>
@@ -105,9 +154,39 @@
     <ul id="emailList"></ul>
   </div>
 
+  <!-- Seção 2: Gerenciar Prédios Completos -->
+  <div class="section">
+    <h1>Gerenciar Prédios Completos</h1>
+    
+    <div class="status-message" id="statusMessage"></div>
+    
+    <div class="columns">
+      <div class="column">
+        <h2>Todos os Prédios no Sistema</h2>
+        <div class="search-box">
+          <input type="text" id="allBuildingsSearch" placeholder="Buscar prédios...">
+        </div>
+        <div id="allBuildingsList">
+          <p>Carregando prédios...</p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <h2>Prédios Completos</h2>
+        <div class="search-box">
+          <input type="text" id="completeBuildingsSearch" placeholder="Buscar prédios completos...">
+        </div>
+        <div id="buildingList">
+          <p>Carregando prédios completos...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
 
   <script>
     // Configuração do Firebase
@@ -122,13 +201,34 @@
     };
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
-    const allowedEmailsRef = db.collection('allowedEmails');
+    const auth = firebase.auth();
+    
+    // Verificar autenticação
+    auth.onAuthStateChanged(user => {
+      if (!user) {
+        window.location.href = "login.html";
+      }
+    });
 
-    // ===== PARTE 1: Gerenciamento de E-mails =====
+    // Referências do Firestore
+    const allowedEmailsRef = db.collection('allowedEmails');
+    const completeBuildingsRef = db.collection('completeBuildings');
+    
+    // Elementos DOM
     const emailListEl = document.getElementById('emailList');
     const emailInput = document.getElementById('emailInput');
     const addEmailForm = document.getElementById('addEmailForm');
+    const statusMessage = document.getElementById('statusMessage');
+    const allBuildingsList = document.getElementById('allBuildingsList');
+    const buildingList = document.getElementById('buildingList');
+    const allBuildingsSearch = document.getElementById('allBuildingsSearch');
+    const completeBuildingsSearch = document.getElementById('completeBuildingsSearch');
+    
+    // Estado da aplicação
+    let allBuildings = [];
+    let completeBuildings = [];
 
+    // ===== PARTE 1: Gerenciamento de E-mails =====
     async function renderEmails() {
       emailListEl.innerHTML = '';
       const snapshot = await allowedEmailsRef.get();
@@ -165,7 +265,152 @@
       }
     });
 
+    // ===== PARTE 2: Gerenciamento de Prédios Completos =====
+    async function loadAllBuildings() {
+      try {
+        updateStatus('Carregando lista de prédios...', 'loading');
+        
+        // Simulando a carga de prédios do seu JSON (na prática, você pode carregar do Firestore ou de um endpoint)
+        // Aqui estou simulando com um array vazio - você precisará adaptar para carregar seus prédios reais
+        const response = await fetch('imoveis.json');
+        if (!response.ok) throw new Error('Falha ao carregar imóveis');
+        const properties = await response.json();
+        
+        // Extrair todos os prédios únicos
+        const buildingsSet = new Set();
+        properties.forEach(property => {
+          if (property.building) {
+            buildingsSet.add(property.building.trim());
+          }
+        });
+        
+        allBuildings = Array.from(buildingsSet).sort((a, b) => a.localeCompare(b));
+        
+        // Carregar prédios completos do Firestore
+        const snapshot = await completeBuildingsRef.get();
+        completeBuildings = snapshot.docs.map(doc => doc.id);
+        
+        renderAllBuildings();
+        renderCompleteBuildings();
+        updateStatus('Prédios carregados com sucesso', 'success');
+      } catch (error) {
+        console.error('Erro ao carregar prédios:', error);
+        updateStatus(`Erro: ${error.message}`, 'error');
+      }
+    }
+    
+    function updateStatus(message, type) {
+      statusMessage.textContent = message;
+      statusMessage.className = 'status-message ' + type;
+    }
+    
+    function renderAllBuildings(searchTerm = '') {
+      const filteredBuildings = allBuildings.filter(building => 
+        building.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      
+      if (filteredBuildings.length === 0) {
+        allBuildingsList.innerHTML = '<p>Nenhum prédio encontrado</p>';
+        return;
+      }
+      
+      allBuildingsList.innerHTML = '';
+      filteredBuildings.forEach(building => {
+        const isComplete = completeBuildings.includes(building);
+        const item = document.createElement('div');
+        item.className = 'building-item' + (isComplete ? ' complete' : '');
+        item.innerHTML = `
+          <span>${building}</span>
+          ${isComplete ? 
+            '<span>Já adicionado</span>' : 
+            '<button class="success-btn add-building-btn" data-building="${escapeHtml(building)}">Adicionar</button>'
+          }
+        `;
+        allBuildingsList.appendChild(item);
+      });
+      
+      // Adicionar event listeners aos botões
+      document.querySelectorAll('.add-building-btn').forEach(button => {
+        button.addEventListener('click', async () => {
+          const building = button.dataset.building;
+          try {
+            await completeBuildingsRef.doc(building).set({
+              name: building,
+              addedAt: new Date()
+            });
+            completeBuildings.push(building);
+            renderAllBuildings(allBuildingsSearch.value);
+            renderCompleteBuildings(completeBuildingsSearch.value);
+            updateStatus(`Prédio "${building}" adicionado aos completos`, 'success');
+          } catch (error) {
+            console.error('Erro ao adicionar prédio:', error);
+            updateStatus(`Erro ao adicionar prédio: ${error.message}`, 'error');
+          }
+        });
+      });
+    }
+    
+    function renderCompleteBuildings(searchTerm = '') {
+      const filteredBuildings = completeBuildings.filter(building => 
+        building.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      
+      if (filteredBuildings.length === 0) {
+        buildingList.innerHTML = '<p>Nenhum prédio completo encontrado</p>';
+        return;
+      }
+      
+      buildingList.innerHTML = '';
+      filteredBuildings.forEach(building => {
+        const item = document.createElement('div');
+        item.className = 'building-item complete';
+        item.innerHTML = `
+          <span>${building}</span>
+          <button class="remove-btn remove-building-btn" data-building="${escapeHtml(building)}">Remover</button>
+        `;
+        buildingList.appendChild(item);
+      });
+      
+      // Adicionar event listeners aos botões
+      document.querySelectorAll('.remove-building-btn').forEach(button => {
+        button.addEventListener('click', async () => {
+          const building = button.dataset.building;
+          try {
+            await completeBuildingsRef.doc(building).delete();
+            completeBuildings = completeBuildings.filter(b => b !== building);
+            renderAllBuildings(allBuildingsSearch.value);
+            renderCompleteBuildings(completeBuildingsSearch.value);
+            updateStatus(`Prédio "${building}" removido dos completos`, 'success');
+          } catch (error) {
+            console.error('Erro ao remover prédio:', error);
+            updateStatus(`Erro ao remover prédio: ${error.message}`, 'error');
+          }
+        });
+      });
+    }
+    
+    // Função auxiliar para escapar HTML
+    function escapeHtml(unsafe) {
+      return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+    
+    // Event listeners para busca
+    allBuildingsSearch.addEventListener('input', () => {
+      renderAllBuildings(allBuildingsSearch.value);
+    });
+    
+    completeBuildingsSearch.addEventListener('input', () => {
+      renderCompleteBuildings(completeBuildingsSearch.value);
+    });
+    
+    // Inicialização
     renderEmails();
+    loadAllBuildings();
   </script>
 </body>
 </html>
