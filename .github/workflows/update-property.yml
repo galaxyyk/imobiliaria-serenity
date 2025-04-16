@@ -1,0 +1,22 @@
+name: Update Property JSON
+on:
+  repository_dispatch:
+    types: [update_property]
+jobs:
+  update_json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Atualizar imóvel
+        run: |
+          # Lê o JSON atual e adiciona o novo imóvel
+          echo '${{ github.event.client_payload.property }}' > new_property.json
+          jq '. += [input]' site/imoveis.json new_property.json > temp.json
+          mv temp.json site/imoveis.json
+          
+          # Commit
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add site/imoveis.json
+          git commit -m "Adiciona imóvel via admin"
+          git push
