@@ -113,6 +113,69 @@
       background-color: white;
     }
 
+    /* Estilos específicos para o bloco personalizado da Certidão Narrativa */
+    .custom-narrativa {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .custom-controls {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .input-group label {
+      font-weight: 500;
+      color: #3a7a76;
+    }
+
+    .input-group input {
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .custom-button {
+      background-color: #3a7a76;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .custom-button:hover {
+      background-color: #2f625f;
+    }
+
+    .captcha-container {
+      position: relative;
+      overflow: hidden;
+      height: 120px; /* Ajuste conforme necessário para mostrar apenas o captcha */
+      border-radius: 10px;
+    }
+
+    .captcha-container iframe {
+      position: relative;
+      top: -200px; /* Ajuste este valor para posicionar o captcha corretamente */
+      height: 800px; /* Mantém o iframe grande o suficiente para funcionar */
+    }
+
     @media (max-width: 900px) {
       .iframe-grid {
         grid-template-columns: 1fr;
@@ -139,15 +202,27 @@
       <h1>Consultas Públicas - Certidões</h1>
     </div>
 
-    <!-- Primeira linha de iframes -->
+    <!-- Primeira linha de iframes - Versão modificada da Certidão Narrativa -->
     <div class="iframe-grid">
       <div class="iframe-block">
         <h3>Certidão Narrativa</h3>
-        <iframe 
-          src="https://www2.londrina.pr.gov.br/sistemas/iptu/narrativa/" 
-          title="Certidão Narrativa">
-          Seu navegador não suporta iframes.
-        </iframe>
+        <div class="custom-narrativa">
+          <div class="custom-controls">
+            <div class="input-group">
+              <label for="inscricao">Número de Inscrição</label>
+              <input type="text" id="inscricao" placeholder="Digite a inscrição">
+            </div>
+            <button id="gerarCertidao" class="custom-button">Gerar Certidão</button>
+          </div>
+          <div class="captcha-container">
+            <iframe 
+              id="narrativaIframe"
+              src="https://www2.londrina.pr.gov.br/sistemas/iptu/narrativa/" 
+              title="Certidão Narrativa">
+              Seu navegador não suporta iframes.
+            </iframe>
+          </div>
+        </div>
       </div>
 
       <div class="iframe-block">
@@ -181,5 +256,55 @@
       </div>
     </div>
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const inscricaoInput = document.getElementById('inscricao');
+      const gerarButton = document.getElementById('gerarCertidao');
+      const iframe = document.getElementById('narrativaIframe');
+      
+      // Quando o iframe carregar, vamos configurar os listeners
+      iframe.addEventListener('load', function() {
+        // Como não podemos acessar o DOM do iframe diretamente por CORS,
+        // usamos esta solução alternativa:
+        
+        // 1. Quando o usuário digitar no campo local, enviamos para o iframe
+        inscricaoInput.addEventListener('input', function() {
+          // Envia mensagem para o iframe (funciona apenas se o iframe estiver preparado para receber)
+          try {
+            iframe.contentWindow.postMessage({
+              type: 'setInscricao',
+              value: inscricaoInput.value
+            }, 'https://www2.londrina.pr.gov.br');
+          } catch (e) {
+            console.log('Não foi possível enviar dados para o iframe devido a políticas de segurança.');
+          }
+        });
+        
+        // 2. Quando clicar no botão local, clicamos no botão do iframe
+        gerarButton.addEventListener('click', function() {
+          try {
+            iframe.contentWindow.postMessage({
+              type: 'clickGenerate'
+            }, 'https://www2.londrina.pr.gov.br');
+          } catch (e) {
+            console.log('Não foi possível enviar comando para o iframe devido a políticas de segurança.');
+          }
+        });
+      });
+      
+      // Observação: Para que isso funcione completamente, o site do iframe precisaria
+      // ter um listener para message preparado para receber esses comandos.
+      // Como não temos controle sobre o site externo, esta é uma solução parcial.
+      
+      // Solução alternativa caso o postMessage não funcione:
+      // Você pode instruir os usuários a:
+      // 1. Digitar a inscrição no seu campo
+      // 2. Clicar no campo dentro do iframe (que está visível apenas o captcha)
+      // 3. Colar manualmente (Ctrl+V) a inscrição
+      // 4. Resolver o captcha
+      // 5. Clicar no seu botão "Gerar Certidão" que vai clicar no botão do iframe
+    });
+  </script>
 </body>
 </html>
