@@ -2,30 +2,32 @@ name: Atualizar Imóvel
 
 on:
   repository_dispatch:
-    types: [update_imovel]  # 👈 Escuta o evento do frontend
+    types: [update_imovel]  # 👈 Deve bater com o event_type do frontend
 
 jobs:
   update-json:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Atualizar imoveis.json
+      
+      - name: Atualizar JSON
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Token seguro!
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          # 1. Lê os dados do evento (enviados pelo frontend)
-          IMOVEL_JSON='${{ toJSON(github.event.client_payload.imovel) }}'
-
-          # 2. Atualiza o arquivo local
+          # 1. Cria arquivo com o novo imóvel
+          echo '${{ toJSON(github.event.client_payload.imovel) }}' > novo-imovel.json
+          
+          # 2. Atualiza o arquivo principal (cria se não existir)
           if [ -f "site/imoveis.json" ]; then
-            echo "$IMOVEL_JSON" > novo-imovel.json
             jq '. += [input]' site/imoveis.json novo-imovel.json > temp.json
             mv temp.json site/imoveis.json
           else
-            echo "[$IMOVEL_JSON]" > site/imoveis.json
+            mkdir -p site
+            echo '[]' > site/imoveis.json
+            jq '. += [input]' site/imoveis.json novo-imovel.json > temp.json
+            mv temp.json site/imoveis.json
           fi
-
+          
           # 3. Commit e push
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
