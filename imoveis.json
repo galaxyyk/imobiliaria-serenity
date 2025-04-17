@@ -81270,36 +81270,6 @@
   "inscription": "06020037206390020"
  },
  {
-  "address": "RUA TAKABUMI MURATA, 303",
-  "building": "CARMEL",
-  "complement": "APTO 1006 -GAR 184 -TORRE SUL (02)",
-  "inscription": "06020053103830206"
- },
- {
-  "address": "RUA TAKABUMI MURATA, 303",
-  "building": "CARMEL",
-  "complement": "APTO 207 -GAR 35 -TORRE NORTE (01)",
-  "inscription": "06020053103830023"
- },
- {
-  "address": "RUA SANTA TEREZINHA, 1300",
-  "building": "CARPE DIEM DOWNTOWN",
-  "complement": "ΑΡΤΟ 1308-GAR 168 T. HARMONIA",
-  "inscription": "04040071309490104"
- },
- {
-  "address": "RUA SANTA TEREZINHA, 1300",
-  "building": "CARPE DIEM DOWNTOWN",
-  "complement": "ΑΡΤΟ 1308-GAR 130 T. FELICIDADE",
-  "inscription": "04040071309490224"
- },
- {
-  "address": "RUA SANTA TEREZINHA, 1300",
-  "building": "CARPE DIEM DOWNTOWN",
-  "complement": "ΑΡΤΟ 102-GAR 236 T. FELICIDADE",
-  "inscription": "04040071309490122"
- },
- {
   "address": "RUA CARACAS, 500",
   "building": "CASA BATLLO",
   "complement": "LOTE 6-T-1 \/ APTO T1 802 TORRE 1",
@@ -102332,5 +102302,6311 @@
     "building": "ARIA RESIDENCE",
     "complement": "TORRE 2 APTO 602",
     "inscription": "06020048507300151"
+  },
+   {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 603",
+    "inscription": "06020048507300152"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 604",
+    "inscription": "06020048507300153"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 701",
+    "inscription": "06020048507300154"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 702",
+    "inscription": "06020048507300155"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 703",
+    "inscription": "06020048507300156"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 704",
+    "inscription": "06020048507300157"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 801",
+    "inscription": "06020048507300158"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 802",
+    "inscription": "06020048507300159"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 803",
+    "inscription": "06020048507300160"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 804",
+    "inscription": "06020048507300161"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 901",
+    "inscription": "06020048507300162"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 902",
+    "inscription": "06020048507300163"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 903",
+    "inscription": "06020048507300164"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 904",
+    "inscription": "06020048507300165"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1001",
+    "inscription": "06020048507300166"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1002",
+    "inscription": "06020048507300167"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1003",
+    "inscription": "06020048507300168"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1004",
+    "inscription": "06020048507300169"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1101",
+    "inscription": "06020048507300170"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1102",
+    "inscription": "06020048507300171"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1103",
+    "inscription": "06020048507300172"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1104",
+    "inscription": "06020048507300173"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1201",
+    "inscription": "06020048507300174"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1202",
+    "inscription": "06020048507300175"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1203",
+    "inscription": "06020048507300176"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1204",
+    "inscription": "06020048507300177"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1301",
+    "inscription": "06020048507300178"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1302",
+    "inscription": "06020048507300179"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1303",
+    "inscription": "06020048507300180"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1304",
+    "inscription": "06020048507300181"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1401",
+    "inscription": "06020048507300182"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1402",
+    "inscription": "06020048507300183"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1403",
+    "inscription": "06020048507300184"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1404",
+    "inscription": "06020048507300185"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1501",
+    "inscription": "06020048507300186"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1502",
+    "inscription": "06020048507300187"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1503",
+    "inscription": "06020048507300188"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1504",
+    "inscription": "06020048507300189"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1601",
+    "inscription": "06020048507300190"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1602",
+    "inscription": "06020048507300191"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1603",
+    "inscription": "06020048507300192"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1604",
+    "inscription": "06020048507300193"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1701",
+    "inscription": "06020048507300194"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1702",
+    "inscription": "06020048507300195"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1703",
+    "inscription": "06020048507300196"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1704",
+    "inscription": "06020048507300197"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1801",
+    "inscription": "06020048507300198"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1802",
+    "inscription": "06020048507300199"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1803",
+    "inscription": "06020048507300200"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1804",
+    "inscription": "06020048507300201"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1901",
+    "inscription": "06020048507300202"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1902",
+    "inscription": "06020048507300203"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1903",
+    "inscription": "06020048507300204"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 1904",
+    "inscription": "06020048507300205"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2001",
+    "inscription": "06020048507300206"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2002",
+    "inscription": "06020048507300207"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2003",
+    "inscription": "06020048507300208"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2004",
+    "inscription": "06020048507300209"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2101",
+    "inscription": "06020048507300210"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2102",
+    "inscription": "06020048507300211"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2103",
+    "inscription": "06020048507300212"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2104",
+    "inscription": "06020048507300213"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2201",
+    "inscription": "06020048507300214"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2202",
+    "inscription": "06020048507300215"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2203",
+    "inscription": "06020048507300216"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2204",
+    "inscription": "06020048507300217"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2301",
+    "inscription": "06020048507300218"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2302",
+    "inscription": "06020048507300219"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2303",
+    "inscription": "06020048507300220"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2304",
+    "inscription": "06020048507300221"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2401",
+    "inscription": "06020048507300222"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2402",
+    "inscription": "06020048507300223"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2403",
+    "inscription": "06020048507300224"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2404",
+    "inscription": "06020048507300225"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2501",
+    "inscription": "06020048507300226"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2502",
+    "inscription": "06020048507300227"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2503",
+    "inscription": "06020048507300228"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2504",
+    "inscription": "06020048507300229"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2601",
+    "inscription": "06020048507300230"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2602",
+    "inscription": "06020048507300231"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2603",
+    "inscription": "06020048507300232"
+  },
+  {
+    "address": "RUA ANTONIO PISICCHIO, 50",
+    "building": "ARIA RESIDENCE",
+    "complement": "TORRE 2 APTO 2604",
+    "inscription": "06020048507300233"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 601 TORRE 1",
+    "inscription": "02030039402670047"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 602 TORRE 1",
+    "inscription": "02030039402670048"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 603 TORRE 1",
+    "inscription": "02030039402670049"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 604 TORRE 1",
+    "inscription": "02030039402670050"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 605 TORRE 1",
+    "inscription": "02030039402670051"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 606 TORRE 1",
+    "inscription": "02030039402670052"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 607 TORRE 1",
+    "inscription": "02030039402670053"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 608 TORRE 1",
+    "inscription": "02030039402670054"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 701 TORRE 1",
+    "inscription": "02030039402670055"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 702 TORRE 1",
+    "inscription": "02030039402670056"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 703 TORRE 1",
+    "inscription": "02030039402670057"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 704 TORRE 1",
+    "inscription": "02030039402670058"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 705 TORRE 1",
+    "inscription": "02030039402670059"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 706 TORRE 1",
+    "inscription": "02030039402670060"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 707 TORRE 1",
+    "inscription": "02030039402670061"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 708 TORRE 1",
+    "inscription": "02030039402670062"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 801 TORRE 1",
+    "inscription": "02030039402670063"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 802 TORRE 1",
+    "inscription": "02030039402670064"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 803 TORRE 1",
+    "inscription": "02030039402670065"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 804 TORRE 1",
+    "inscription": "02030039402670066"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 805 TORRE 1",
+    "inscription": "02030039402670067"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 806 TORRE 1",
+    "inscription": "02030039402670068"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 807 TORRE 1",
+    "inscription": "02030039402670069"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 808 TORRE 1",
+    "inscription": "02030039402670070"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 901 TORRE 1",
+    "inscription": "02030039402670071"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 902 TORRE 1",
+    "inscription": "02030039402670072"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 903 TORRE 1",
+    "inscription": "02030039402670073"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 904 TORRE 1",
+    "inscription": "02030039402670074"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 905 TORRE 1",
+    "inscription": "02030039402670075"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 906 TORRE 1",
+    "inscription": "02030039402670076"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 907 TORRE 1",
+    "inscription": "02030039402670077"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 908 TORRE 1",
+    "inscription": "02030039402670078"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 101 TORRE 2",
+    "inscription": "02030039402670079"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 102 TORRE 2",
+    "inscription": "02030039402670080"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 103 TORRE 2",
+    "inscription": "02030039402670081"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 104 TORRE 2",
+    "inscription": "02030039402670082"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 105 TORRE 2",
+    "inscription": "02030039402670083"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 106 TORRE 2",
+    "inscription": "02030039402670084"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 107 TORRE 2",
+    "inscription": "02030039402670085"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 108 TORRE 2",
+    "inscription": "02030039402670086"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 201 TORRE 2",
+    "inscription": "02030039402670087"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 202 TORRE 2",
+    "inscription": "02030039402670088"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 203 TORRE 2",
+    "inscription": "02030039402670089"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 204 TORRE 2",
+    "inscription": "02030039402670090"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 205 TORRE 2",
+    "inscription": "02030039402670091"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 206 TORRE 2",
+    "inscription": "02030039402670092"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 207 TORRE 2",
+    "inscription": "02030039402670093"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 208 TORRE 2",
+    "inscription": "02030039402670094"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 301 TORRE 2",
+    "inscription": "02030039402670095"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 302 TORRE 2",
+    "inscription": "02030039402670096"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 303 TORRE 2",
+    "inscription": "02030039402670097"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 304 TORRE 2",
+    "inscription": "02030039402670098"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 305 TORRE 2",
+    "inscription": "02030039402670099"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 306 TORRE 2",
+    "inscription": "02030039402670100"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 307 TORRE 2",
+    "inscription": "02030039402670101"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 308 TORRE 2",
+    "inscription": "02030039402670102"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 401 TORRE 2",
+    "inscription": "02030039402670103"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 402 TORRE 2",
+    "inscription": "02030039402670104"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 403 TORRE 2",
+    "inscription": "02030039402670105"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 404 TORRE 2",
+    "inscription": "02030039402670106"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 405 TORRE 2",
+    "inscription": "02030039402670107"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 406 TORRE 2",
+    "inscription": "02030039402670108"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 407 TORRE 2",
+    "inscription": "02030039402670109"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 408 TORRE 2",
+    "inscription": "02030039402670110"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 501 TORRE 2",
+    "inscription": "02030039402670111"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 502 TORRE 2",
+    "inscription": "02030039402670112"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 503 TORRE 2",
+    "inscription": "02030039402670113"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 504 TORRE 2",
+    "inscription": "02030039402670114"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 505 TORRE 2",
+    "inscription": "02030039402670115"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 506 TORRE 2",
+    "inscription": "02030039402670116"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 507 TORRE 2",
+    "inscription": "02030039402670117"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 508 TORRE 2",
+    "inscription": "02030039402670118"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 601 TORRE 2",
+    "inscription": "02030039402670119"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 602 TORRE 2",
+    "inscription": "02030039402670120"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 603 TORRE 2",
+    "inscription": "02030039402670121"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 604 TORRE 2",
+    "inscription": "02030039402670122"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 605 TORRE 2",
+    "inscription": "02030039402670123"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 606 TORRE 2",
+    "inscription": "02030039402670124"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 607 TORRE 2",
+    "inscription": "02030039402670125"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 608 TORRE 2",
+    "inscription": "02030039402670126"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 701 TORRE 2",
+    "inscription": "02030039402670127"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 702 TORRE 2",
+    "inscription": "02030039402670128"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 703 TORRE 2",
+    "inscription": "02030039402670129"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 704 TORRE 2",
+    "inscription": "02030039402670130"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 705 TORRE 2",
+    "inscription": "02030039402670131"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 706 TORRE 2",
+    "inscription": "02030039402670132"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 707 TORRE 2",
+    "inscription": "02030039402670133"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 708 TORRE 2",
+    "inscription": "02030039402670134"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 801 TORRE 2",
+    "inscription": "02030039402670135"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 802 TORRE 2",
+    "inscription": "02030039402670136"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 803 TORRE 2",
+    "inscription": "02030039402670137"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 804 TORRE 2",
+    "inscription": "02030039402670138"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 805 TORRE 2",
+    "inscription": "02030039402670139"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 806 TORRE 2",
+    "inscription": "02030039402670140"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 807 TORRE 2",
+    "inscription": "02030039402670141"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 808 TORRE 2",
+    "inscription": "02030039402670142"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 901 TORRE 2",
+    "inscription": "02030039402670143"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 902 TORRE 2",
+    "inscription": "02030039402670144"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 903 TORRE 2",
+    "inscription": "02030039402670145"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 904 TORRE 2",
+    "inscription": "02030039402670146"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 905 TORRE 2",
+    "inscription": "02030039402670147"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 906 TORRE 2",
+    "inscription": "02030039402670148"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 907 TORRE 2",
+    "inscription": "02030039402670149"
+  },
+  {
+    "address": "Rua Venezuela, 557",
+    "building": "Aquabrasil Residencial e Resort",
+    "complement": "Apto 908 TORRE 2",
+    "inscription": "02030039402670150"
+  },
+    {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 101",
+    "inscription": "06020046306180001"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 102",
+    "inscription": "06020046306180002"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 103",
+    "inscription": "06020046306180003"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 104",
+    "inscription": "06020046306180004"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 105",
+    "inscription": "06020046306180005"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 106",
+    "inscription": "06020046306180006"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 201",
+    "inscription": "06020046306180007"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 202",
+    "inscription": "06020046306180008"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 203",
+    "inscription": "06020046306180009"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 204",
+    "inscription": "06020046306180010"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 205",
+    "inscription": "06020046306180011"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 206",
+    "inscription": "06020046306180012"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 301",
+    "inscription": "06020046306180013"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 302",
+    "inscription": "06020046306180014"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 303",
+    "inscription": "06020046306180015"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 304",
+    "inscription": "06020046306180016"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 305",
+    "inscription": "06020046306180017"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 306",
+    "inscription": "06020046306180018"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 401",
+    "inscription": "06020046306180019"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 402",
+    "inscription": "06020046306180020"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 403",
+    "inscription": "06020046306180021"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 404",
+    "inscription": "06020046306180022"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 405",
+    "inscription": "06020046306180023"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 406",
+    "inscription": "06020046306180024"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 501",
+    "inscription": "06020046306180025"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 502",
+    "inscription": "06020046306180026"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 503",
+    "inscription": "06020046306180027"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 504",
+    "inscription": "06020046306180028"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 505",
+    "inscription": "06020046306180029"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 506",
+    "inscription": "06020046306180030"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 601",
+    "inscription": "06020046306180031"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 602",
+    "inscription": "06020046306180032"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 603",
+    "inscription": "06020046306180033"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 604",
+    "inscription": "06020046306180034"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 605",
+    "inscription": "06020046306180035"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 606",
+    "inscription": "06020046306180036"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 701",
+    "inscription": "06020046306180037"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 702",
+    "inscription": "06020046306180038"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 703",
+    "inscription": "06020046306180039"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 704",
+    "inscription": "06020046306180040"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 705",
+    "inscription": "06020046306180041"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 706",
+    "inscription": "06020046306180042"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 801",
+    "inscription": "06020046306180043"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 802",
+    "inscription": "06020046306180044"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 803",
+    "inscription": "06020046306180045"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 804",
+    "inscription": "06020046306180046"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 805",
+    "inscription": "06020046306180047"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 806",
+    "inscription": "06020046306180048"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 901",
+    "inscription": "06020046306180049"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 902",
+    "inscription": "06020046306180050"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 903",
+    "inscription": "06020046306180051"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 904",
+    "inscription": "06020046306180052"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 905",
+    "inscription": "06020046306180053"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 906",
+    "inscription": "06020046306180054"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1001",
+    "inscription": "06020046306180055"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1002",
+    "inscription": "06020046306180056"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1003",
+    "inscription": "06020046306180057"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1004",
+    "inscription": "06020046306180058"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1005",
+    "inscription": "06020046306180059"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1006",
+    "inscription": "06020046306180060"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1101",
+    "inscription": "06020046306180061"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1102",
+    "inscription": "06020046306180062"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1103",
+    "inscription": "06020046306180063"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1104",
+    "inscription": "06020046306180064"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1105",
+    "inscription": "06020046306180065"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1106",
+    "inscription": "06020046306180066"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1201",
+    "inscription": "06020046306180067"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1202",
+    "inscription": "06020046306180068"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1203",
+    "inscription": "06020046306180069"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1204",
+    "inscription": "06020046306180070"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1205",
+    "inscription": "06020046306180071"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1206",
+    "inscription": "06020046306180072"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1301",
+    "inscription": "06020046306180073"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1302",
+    "inscription": "06020046306180074"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1303",
+    "inscription": "06020046306180075"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1304",
+    "inscription": "06020046306180076"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1305",
+    "inscription": "06020046306180077"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1306",
+    "inscription": "06020046306180078"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1401",
+    "inscription": "06020046306180079"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1402",
+    "inscription": "06020046306180080"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1403",
+    "inscription": "06020046306180081"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1404",
+    "inscription": "06020046306180082"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1405",
+    "inscription": "06020046306180083"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1406",
+    "inscription": "06020046306180084"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1501",
+    "inscription": "06020046306180085"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1502",
+    "inscription": "06020046306180086"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1503",
+    "inscription": "06020046306180087"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1504",
+    "inscription": "06020046306180088"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1505",
+    "inscription": "06020046306180089"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1506",
+    "inscription": "06020046306180090"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1601",
+    "inscription": "06020046306180091"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1602",
+    "inscription": "06020046306180092"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1603",
+    "inscription": "06020046306180093"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1604",
+    "inscription": "06020046306180094"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1605",
+    "inscription": "06020046306180095"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1606",
+    "inscription": "06020046306180096"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1701",
+    "inscription": "06020046306180097"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1702",
+    "inscription": "06020046306180098"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1703",
+    "inscription": "06020046306180099"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1704",
+    "inscription": "06020046306180100"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1705",
+    "inscription": "06020046306180101"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1706",
+    "inscription": "06020046306180102"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1801",
+    "inscription": "06020046306180103"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1802",
+    "inscription": "06020046306180104"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1803",
+    "inscription": "06020046306180105"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1804",
+    "inscription": "06020046306180106"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1805",
+    "inscription": "06020046306180107"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1806",
+    "inscription": "06020046306180108"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1901",
+    "inscription": "06020046306180109"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1902",
+    "inscription": "06020046306180110"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1903",
+    "inscription": "06020046306180111"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1904",
+    "inscription": "06020046306180112"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1905",
+    "inscription": "06020046306180113"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 1906",
+    "inscription": "06020046306180114"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 2001",
+    "inscription": "06020046306180115"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 2002",
+    "inscription": "06020046306180116"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 2003",
+    "inscription": "06020046306180117"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 2004",
+    "inscription": "06020046306180118"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 2005",
+    "inscription": "06020046306180119"
+  },
+  {
+    "address": "RUA ULRICO ZUINGLIO, 600",
+    "building": "ED. ARCH PALHANO",
+    "complement": "APTO 2006",
+    "inscription": "06020046306180120"
+  },
+    {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 101 TORRE NORTE",
+    "inscription": "06020053103830009"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 102 TORRE NORTE",
+    "inscription": "06020053103830010"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 103 TORRE NORTE",
+    "inscription": "06020053103830011"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 104 TORRE NORTE",
+    "inscription": "06020053103830012"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 105 TORRE NORTE",
+    "inscription": "06020053103830013"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 106 TORRE NORTE",
+    "inscription": "06020053103830014"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 107 TORRE NORTE",
+    "inscription": "06020053103830015"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 108 TORRE NORTE",
+    "inscription": "06020053103830016"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 201 TORRE NORTE",
+    "inscription": "06020053103830017"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 202 TORRE NORTE",
+    "inscription": "06020053103830018"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 203 TORRE NORTE",
+    "inscription": "06020053103830019"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 204 TORRE NORTE",
+    "inscription": "06020053103830020"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 205 TORRE NORTE",
+    "inscription": "06020053103830021"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 206 TORRE NORTE",
+    "inscription": "06020053103830022"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 207 TORRE NORTE",
+    "inscription": "06020053103830023"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 208 TORRE NORTE",
+    "inscription": "06020053103830024"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 301 TORRE NORTE",
+    "inscription": "06020053103830025"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 302 TORRE NORTE",
+    "inscription": "06020053103830026"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 303 TORRE NORTE",
+    "inscription": "06020053103830027"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 304 TORRE NORTE",
+    "inscription": "06020053103830028"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 305 TORRE NORTE",
+    "inscription": "06020053103830029"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 306 TORRE NORTE",
+    "inscription": "06020053103830030"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 307 TORRE NORTE",
+    "inscription": "06020053103830031"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 308 TORRE NORTE",
+    "inscription": "06020053103830032"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 401 TORRE NORTE",
+    "inscription": "06020053103830033"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 402 TORRE NORTE",
+    "inscription": "06020053103830034"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 403 TORRE NORTE",
+    "inscription": "06020053103830035"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 404 TORRE NORTE",
+    "inscription": "06020053103830036"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 405 TORRE NORTE",
+    "inscription": "06020053103830037"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 406 TORRE NORTE",
+    "inscription": "06020053103830038"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 407 TORRE NORTE",
+    "inscription": "06020053103830039"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 408 TORRE NORTE",
+    "inscription": "06020053103830040"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 501 TORRE NORTE",
+    "inscription": "06020053103830041"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 502 TORRE NORTE",
+    "inscription": "06020053103830042"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 503 TORRE NORTE",
+    "inscription": "06020053103830043"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 504 TORRE NORTE",
+    "inscription": "06020053103830044"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 505 TORRE NORTE",
+    "inscription": "06020053103830045"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 506 TORRE NORTE",
+    "inscription": "06020053103830046"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 507 TORRE NORTE",
+    "inscription": "06020053103830047"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 508 TORRE NORTE",
+    "inscription": "06020053103830048"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 601 TORRE NORTE",
+    "inscription": "06020053103830049"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 602 TORRE NORTE",
+    "inscription": "06020053103830050"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 603 TORRE NORTE",
+    "inscription": "06020053103830051"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 604 TORRE NORTE",
+    "inscription": "06020053103830052"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 605 TORRE NORTE",
+    "inscription": "06020053103830053"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 606 TORRE NORTE",
+    "inscription": "06020053103830054"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 607 TORRE NORTE",
+    "inscription": "06020053103830055"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 608 TORRE NORTE",
+    "inscription": "06020053103830056"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 701 TORRE NORTE",
+    "inscription": "06020053103830057"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 702 TORRE NORTE",
+    "inscription": "06020053103830058"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 703 TORRE NORTE",
+    "inscription": "06020053103830059"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 704 TORRE NORTE",
+    "inscription": "06020053103830060"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 705 TORRE NORTE",
+    "inscription": "06020053103830061"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 706 TORRE NORTE",
+    "inscription": "06020053103830062"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 707 TORRE NORTE",
+    "inscription": "06020053103830063"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 708 TORRE NORTE",
+    "inscription": "06020053103830064"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 801 TORRE NORTE",
+    "inscription": "06020053103830065"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 802 TORRE NORTE",
+    "inscription": "06020053103830066"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 803 TORRE NORTE",
+    "inscription": "06020053103830067"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 804 TORRE NORTE",
+    "inscription": "06020053103830068"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 805 TORRE NORTE",
+    "inscription": "06020053103830069"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 806 TORRE NORTE",
+    "inscription": "06020053103830070"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 807 TORRE NORTE",
+    "inscription": "06020053103830071"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 808 TORRE NORTE",
+    "inscription": "06020053103830072"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 901 TORRE NORTE",
+    "inscription": "06020053103830073"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 902 TORRE NORTE",
+    "inscription": "06020053103830074"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 903 TORRE NORTE",
+    "inscription": "06020053103830075"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 904 TORRE NORTE",
+    "inscription": "06020053103830076"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 905 TORRE NORTE",
+    "inscription": "06020053103830077"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 906 TORRE NORTE",
+    "inscription": "06020053103830078"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 907 TORRE NORTE",
+    "inscription": "06020053103830079"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 908 TORRE NORTE",
+    "inscription": "06020053103830080"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1001 TORRE NORTE",
+    "inscription": "06020053103830081"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1002 TORRE NORTE",
+    "inscription": "06020053103830082"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1003 TORRE NORTE",
+    "inscription": "06020053103830083"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1004 TORRE NORTE",
+    "inscription": "06020053103830084"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1005 TORRE NORTE",
+    "inscription": "06020053103830085"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1006 TORRE NORTE",
+    "inscription": "06020053103830086"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1007 TORRE NORTE",
+    "inscription": "06020053103830087"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1008 TORRE NORTE",
+    "inscription": "06020053103830088"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1101 TORRE NORTE",
+    "inscription": "06020053103830089"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1102 TORRE NORTE",
+    "inscription": "06020053103830090"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1103 TORRE NORTE",
+    "inscription": "06020053103830091"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1104 TORRE NORTE",
+    "inscription": "06020053103830092"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1105 TORRE NORTE",
+    "inscription": "06020053103830093"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1106 TORRE NORTE",
+    "inscription": "06020053103830094"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1107 TORRE NORTE",
+    "inscription": "06020053103830095"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1108 TORRE NORTE",
+    "inscription": "06020053103830096"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1201 TORRE NORTE",
+    "inscription": "06020053103830097"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1202 TORRE NORTE",
+    "inscription": "06020053103830098"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1203 TORRE NORTE",
+    "inscription": "06020053103830099"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1204 TORRE NORTE",
+    "inscription": "06020053103830100"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1205 TORRE NORTE",
+    "inscription": "06020053103830101"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1206 TORRE NORTE",
+    "inscription": "06020053103830102"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1207 TORRE NORTE",
+    "inscription": "06020053103830103"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1208 TORRE NORTE",
+    "inscription": "06020053103830104"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1301 TORRE NORTE",
+    "inscription": "06020053103830105"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1302 TORRE NORTE",
+    "inscription": "06020053103830106"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1303 TORRE NORTE",
+    "inscription": "06020053103830107"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1304 TORRE NORTE",
+    "inscription": "06020053103830108"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1305 TORRE NORTE",
+    "inscription": "06020053103830109"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1306 TORRE NORTE",
+    "inscription": "06020053103830110"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1307 TORRE NORTE",
+    "inscription": "06020053103830111"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1308 TORRE NORTE",
+    "inscription": "06020053103830112"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1401 TORRE NORTE",
+    "inscription": "06020053103830113"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1402 TORRE NORTE",
+    "inscription": "06020053103830114"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1403 TORRE NORTE",
+    "inscription": "06020053103830115"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1404 TORRE NORTE",
+    "inscription": "06020053103830116"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1405 TORRE NORTE",
+    "inscription": "06020053103830117"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1406 TORRE NORTE",
+    "inscription": "06020053103830118"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1407 TORRE NORTE",
+    "inscription": "06020053103830119"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1408 TORRE NORTE",
+    "inscription": "06020053103830120"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1501 TORRE NORTE",
+    "inscription": "06020053103830121"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1502 TORRE NORTE",
+    "inscription": "06020053103830122"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1503 TORRE NORTE",
+    "inscription": "06020053103830123"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1504 TORRE NORTE",
+    "inscription": "06020053103830124"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1505 TORRE NORTE",
+    "inscription": "06020053103830125"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1506 TORRE NORTE",
+    "inscription": "06020053103830126"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1507 TORRE NORTE",
+    "inscription": "06020053103830127"
+  },
+  {
+    "address": "RUA TAKABUMI MURATA, 303",
+    "building": "CARMEL",
+    "complement": "APTO 1508 TORRE NORTE",
+    "inscription": "06020053103830128"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 101",
+    "inscription": "04040071309490001"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 102",
+    "inscription": "04040071309490002"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 103",
+    "inscription": "04040071309490003"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 104",
+    "inscription": "04040071309490004"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 105",
+    "inscription": "04040071309490005"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 106",
+    "inscription": "04040071309490006"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 107",
+    "inscription": "04040071309490007"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 108",
+    "inscription": "04040071309490008"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 201",
+    "inscription": "04040071309490009"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 202",
+    "inscription": "04040071309490010"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 203",
+    "inscription": "04040071309490011"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 204",
+    "inscription": "04040071309490012"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 205",
+    "inscription": "04040071309490013"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 206",
+    "inscription": "04040071309490014"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 207",
+    "inscription": "04040071309490015"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 208",
+    "inscription": "04040071309490016"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 301",
+    "inscription": "04040071309490017"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 302",
+    "inscription": "04040071309490018"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 303",
+    "inscription": "04040071309490019"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 304",
+    "inscription": "04040071309490020"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 305",
+    "inscription": "04040071309490021"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 306",
+    "inscription": "04040071309490022"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 307",
+    "inscription": "04040071309490023"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 308",
+    "inscription": "04040071309490024"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 401",
+    "inscription": "04040071309490025"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 402",
+    "inscription": "04040071309490026"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 403",
+    "inscription": "04040071309490027"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 404",
+    "inscription": "04040071309490028"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 405",
+    "inscription": "04040071309490029"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 406",
+    "inscription": "04040071309490030"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 407",
+    "inscription": "04040071309490031"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 408",
+    "inscription": "04040071309490032"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 501",
+    "inscription": "04040071309490033"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 502",
+    "inscription": "04040071309490034"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 503",
+    "inscription": "04040071309490035"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 504",
+    "inscription": "04040071309490036"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 505",
+    "inscription": "04040071309490037"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 506",
+    "inscription": "04040071309490038"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 507",
+    "inscription": "04040071309490039"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 508",
+    "inscription": "04040071309490040"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 601",
+    "inscription": "04040071309490041"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 602",
+    "inscription": "04040071309490042"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 603",
+    "inscription": "04040071309490043"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 604",
+    "inscription": "04040071309490044"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 605",
+    "inscription": "04040071309490045"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 606",
+    "inscription": "04040071309490046"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 607",
+    "inscription": "04040071309490047"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 608",
+    "inscription": "04040071309490048"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 701",
+    "inscription": "04040071309490049"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 702",
+    "inscription": "04040071309490050"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 703",
+    "inscription": "04040071309490051"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 704",
+    "inscription": "04040071309490052"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 705",
+    "inscription": "04040071309490053"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 706",
+    "inscription": "04040071309490054"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 707",
+    "inscription": "04040071309490055"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 708",
+    "inscription": "04040071309490056"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 801",
+    "inscription": "04040071309490057"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 802",
+    "inscription": "04040071309490058"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 803",
+    "inscription": "04040071309490059"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 804",
+    "inscription": "04040071309490060"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 805",
+    "inscription": "04040071309490061"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 806",
+    "inscription": "04040071309490062"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 807",
+    "inscription": "04040071309490063"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 808",
+    "inscription": "04040071309490064"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 901",
+    "inscription": "04040071309490065"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 902",
+    "inscription": "04040071309490066"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 903",
+    "inscription": "04040071309490067"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 904",
+    "inscription": "04040071309490068"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 905",
+    "inscription": "04040071309490069"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 906",
+    "inscription": "04040071309490070"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 907",
+    "inscription": "04040071309490071"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 908",
+    "inscription": "04040071309490072"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1001",
+    "inscription": "04040071309490073"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1002",
+    "inscription": "04040071309490074"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1003",
+    "inscription": "04040071309490075"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1004",
+    "inscription": "04040071309490076"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1005",
+    "inscription": "04040071309490077"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1006",
+    "inscription": "04040071309490078"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1007",
+    "inscription": "04040071309490079"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1008",
+    "inscription": "04040071309490080"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1101",
+    "inscription": "04040071309490081"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1102",
+    "inscription": "04040071309490082"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1103",
+    "inscription": "04040071309490083"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1104",
+    "inscription": "04040071309490084"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1105",
+    "inscription": "04040071309490085"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1106",
+    "inscription": "04040071309490086"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1107",
+    "inscription": "04040071309490087"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1108",
+    "inscription": "04040071309490088"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1201",
+    "inscription": "04040071309490089"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1202",
+    "inscription": "04040071309490090"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1203",
+    "inscription": "04040071309490091"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1204",
+    "inscription": "04040071309490092"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1205",
+    "inscription": "04040071309490093"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1206",
+    "inscription": "04040071309490094"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1207",
+    "inscription": "04040071309490095"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1208",
+    "inscription": "04040071309490096"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1301",
+    "inscription": "04040071309490097"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1302",
+    "inscription": "04040071309490098"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1303",
+    "inscription": "04040071309490099"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1304",
+    "inscription": "04040071309490100"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1305",
+    "inscription": "04040071309490101"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1306",
+    "inscription": "04040071309490102"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1307",
+    "inscription": "04040071309490103"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1308",
+    "inscription": "04040071309490104"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1401",
+    "inscription": "04040071309490105"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1402",
+    "inscription": "04040071309490106"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1403",
+    "inscription": "04040071309490107"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1404",
+    "inscription": "04040071309490108"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1405",
+    "inscription": "04040071309490109"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1406",
+    "inscription": "04040071309490110"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1407",
+    "inscription": "04040071309490111"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1408",
+    "inscription": "04040071309490112"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1501",
+    "inscription": "04040071309490113"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1502",
+    "inscription": "04040071309490114"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1503",
+    "inscription": "04040071309490115"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1504",
+    "inscription": "04040071309490116"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1505",
+    "inscription": "04040071309490117"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1506",
+    "inscription": "04040071309490118"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1507",
+    "inscription": "04040071309490119"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE HARMONIA APTO 1508",
+    "inscription": "04040071309490120"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 101",
+    "inscription": "04040071309490121"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 102",
+    "inscription": "04040071309490122"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 103",
+    "inscription": "04040071309490123"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 104",
+    "inscription": "04040071309490124"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 105",
+    "inscription": "04040071309490125"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 106",
+    "inscription": "04040071309490126"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 107",
+    "inscription": "04040071309490127"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 108",
+    "inscription": "04040071309490128"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 201",
+    "inscription": "04040071309490129"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 202",
+    "inscription": "04040071309490130"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 203",
+    "inscription": "04040071309490131"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 204",
+    "inscription": "04040071309490132"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 205",
+    "inscription": "04040071309490133"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 206",
+    "inscription": "04040071309490134"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 207",
+    "inscription": "04040071309490135"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 208",
+    "inscription": "04040071309490136"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 301",
+    "inscription": "04040071309490137"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 302",
+    "inscription": "04040071309490138"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 303",
+    "inscription": "04040071309490139"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 304",
+    "inscription": "04040071309490140"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 305",
+    "inscription": "04040071309490141"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 306",
+    "inscription": "04040071309490142"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 307",
+    "inscription": "04040071309490143"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 308",
+    "inscription": "04040071309490144"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 401",
+    "inscription": "04040071309490145"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 402",
+    "inscription": "04040071309490146"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 403",
+    "inscription": "04040071309490147"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 404",
+    "inscription": "04040071309490148"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 405",
+    "inscription": "04040071309490149"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 406",
+    "inscription": "04040071309490150"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 407",
+    "inscription": "04040071309490151"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 408",
+    "inscription": "04040071309490152"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 501",
+    "inscription": "04040071309490153"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 502",
+    "inscription": "04040071309490154"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 503",
+    "inscription": "04040071309490155"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 504",
+    "inscription": "04040071309490156"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 505",
+    "inscription": "04040071309490157"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 506",
+    "inscription": "04040071309490158"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 507",
+    "inscription": "04040071309490159"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 508",
+    "inscription": "04040071309490160"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 601",
+    "inscription": "04040071309490161"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 602",
+    "inscription": "04040071309490162"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 603",
+    "inscription": "04040071309490163"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 604",
+    "inscription": "04040071309490164"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 605",
+    "inscription": "04040071309490165"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 606",
+    "inscription": "04040071309490166"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 607",
+    "inscription": "04040071309490167"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 608",
+    "inscription": "04040071309490168"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 701",
+    "inscription": "04040071309490169"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 702",
+    "inscription": "04040071309490170"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 703",
+    "inscription": "04040071309490171"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 704",
+    "inscription": "04040071309490172"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 705",
+    "inscription": "04040071309490173"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 706",
+    "inscription": "04040071309490174"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 707",
+    "inscription": "04040071309490175"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 708",
+    "inscription": "04040071309490176"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 801",
+    "inscription": "04040071309490177"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 802",
+    "inscription": "04040071309490178"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 803",
+    "inscription": "04040071309490179"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 804",
+    "inscription": "04040071309490180"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 805",
+    "inscription": "04040071309490181"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 806",
+    "inscription": "04040071309490182"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 807",
+    "inscription": "04040071309490183"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 808",
+    "inscription": "04040071309490184"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 901",
+    "inscription": "04040071309490185"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 902",
+    "inscription": "04040071309490186"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 903",
+    "inscription": "04040071309490187"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 904",
+    "inscription": "04040071309490188"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 905",
+    "inscription": "04040071309490189"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 906",
+    "inscription": "04040071309490190"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 907",
+    "inscription": "04040071309490191"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 908",
+    "inscription": "04040071309490192"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1001",
+    "inscription": "04040071309490193"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1002",
+    "inscription": "04040071309490194"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1003",
+    "inscription": "04040071309490195"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1004",
+    "inscription": "04040071309490196"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1005",
+    "inscription": "04040071309490197"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1006",
+    "inscription": "04040071309490198"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1007",
+    "inscription": "04040071309490199"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1008",
+    "inscription": "04040071309490200"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1101",
+    "inscription": "04040071309490201"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1102",
+    "inscription": "04040071309490202"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1103",
+    "inscription": "04040071309490203"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1104",
+    "inscription": "04040071309490204"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1105",
+    "inscription": "04040071309490205"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1106",
+    "inscription": "04040071309490206"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1107",
+    "inscription": "04040071309490207"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1108",
+    "inscription": "04040071309490208"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1201",
+    "inscription": "04040071309490209"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1202",
+    "inscription": "04040071309490210"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1203",
+    "inscription": "04040071309490211"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1204",
+    "inscription": "04040071309490212"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1205",
+    "inscription": "04040071309490213"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1206",
+    "inscription": "04040071309490214"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1207",
+    "inscription": "04040071309490215"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1208",
+    "inscription": "04040071309490216"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1301",
+    "inscription": "04040071309490217"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1302",
+    "inscription": "04040071309490218"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1303",
+    "inscription": "04040071309490219"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1304",
+    "inscription": "04040071309490220"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1305",
+    "inscription": "04040071309490221"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1306",
+    "inscription": "04040071309490222"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1307",
+    "inscription": "04040071309490223"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1308",
+    "inscription": "04040071309490224"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1401",
+    "inscription": "04040071309490225"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1402",
+    "inscription": "04040071309490226"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1403",
+    "inscription": "04040071309490227"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1404",
+    "inscription": "04040071309490228"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1405",
+    "inscription": "04040071309490229"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1406",
+    "inscription": "04040071309490230"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1407",
+    "inscription": "04040071309490231"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1408",
+    "inscription": "04040071309490232"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1501",
+    "inscription": "04040071309490233"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1502",
+    "inscription": "04040071309490234"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1503",
+    "inscription": "04040071309490235"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1504",
+    "inscription": "04040071309490236"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1505",
+    "inscription": "04040071309490237"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1506",
+    "inscription": "04040071309490238"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1507",
+    "inscription": "04040071309490239"
+  },
+  {
+    "address": "RUA SANTA TEREZINHA, 1300",
+    "building": "CARPEDIEM",
+    "complement": "TORRE FELICIDADE APTO 1508",
+    "inscription": "04040071309490240"
+  },
+    {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 101 BLOCO A",
+    "inscription": "06020037206390001"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 102 BLOCO A",
+    "inscription": "06020037206390002"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 103 BLOCO A",
+    "inscription": "06020037206390003"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 104 BLOCO A",
+    "inscription": "06020037206390004"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 201 BLOCO A",
+    "inscription": "06020037206390005"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 202 BLOCO A",
+    "inscription": "06020037206390006"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 203 BLOCO A",
+    "inscription": "06020037206390007"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 204 BLOCO A",
+    "inscription": "06020037206390008"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 301 BLOCO A",
+    "inscription": "06020037206390009"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 302 BLOCO A",
+    "inscription": "06020037206390010"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 303 BLOCO A",
+    "inscription": "06020037206390011"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 304 BLOCO A",
+    "inscription": "06020037206390012"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 401 BLOCO A",
+    "inscription": "06020037206390013"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 402 BLOCO A",
+    "inscription": "06020037206390014"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 403 BLOCO A",
+    "inscription": "06020037206390015"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 404 BLOCO A",
+    "inscription": "06020037206390016"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 501 BLOCO A",
+    "inscription": "06020037206390017"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 502 BLOCO A",
+    "inscription": "06020037206390018"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 503 BLOCO A",
+    "inscription": "06020037206390019"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 504 BLOCO A",
+    "inscription": "06020037206390020"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 601 BLOCO A",
+    "inscription": "06020037206390021"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 602 BLOCO A",
+    "inscription": "06020037206390022"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 603 BLOCO A",
+    "inscription": "06020037206390023"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 604 BLOCO A",
+    "inscription": "06020037206390024"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 701 BLOCO A",
+    "inscription": "06020037206390025"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 702 BLOCO A",
+    "inscription": "06020037206390026"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 703 BLOCO A",
+    "inscription": "06020037206390027"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 704 BLOCO A",
+    "inscription": "06020037206390028"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 801 BLOCO A",
+    "inscription": "06020037206390029"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 802 BLOCO A",
+    "inscription": "06020037206390030"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 803 BLOCO A",
+    "inscription": "06020037206390031"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 804 BLOCO A",
+    "inscription": "06020037206390032"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 901 BLOCO A",
+    "inscription": "06020037206390033"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 902 BLOCO A",
+    "inscription": "06020037206390034"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 903 BLOCO A",
+    "inscription": "06020037206390035"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 904 BLOCO A",
+    "inscription": "06020037206390036"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 1001 BLOCO A",
+    "inscription": "06020037206390037"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 1002 BLOCO A",
+    "inscription": "06020037206390038"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 1003 BLOCO A",
+    "inscription": "06020037206390039"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 1004 BLOCO A",
+    "inscription": "06020037206390040"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 101 BLOCO B",
+    "inscription": "06020037206390041"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 102 BLOCO B",
+    "inscription": "06020037206390042"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 103 BLOCO B",
+    "inscription": "06020037206390043"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 104 BLOCO B",
+    "inscription": "06020037206390044"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 201 BLOCO B",
+    "inscription": "06020037206390045"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 202 BLOCO B",
+    "inscription": "06020037206390046"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 203 BLOCO B",
+    "inscription": "06020037206390047"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 204 BLOCO B",
+    "inscription": "06020037206390048"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 301 BLOCO B",
+    "inscription": "06020037206390049"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 302 BLOCO B",
+    "inscription": "06020037206390050"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 303 BLOCO B",
+    "inscription": "06020037206390051"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 304 BLOCO B",
+    "inscription": "06020037206390052"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 401 BLOCO B",
+    "inscription": "06020037206390053"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 402 BLOCO B",
+    "inscription": "06020037206390054"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 403 BLOCO B",
+    "inscription": "06020037206390055"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 404 BLOCO B",
+    "inscription": "06020037206390056"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 501 BLOCO B",
+    "inscription": "06020037206390057"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 502 BLOCO B",
+    "inscription": "06020037206390058"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 503 BLOCO B",
+    "inscription": "06020037206390059"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 504 BLOCO B",
+    "inscription": "06020037206390060"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 601 BLOCO B",
+    "inscription": "06020037206390061"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 602 BLOCO B",
+    "inscription": "06020037206390062"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 603 BLOCO B",
+    "inscription": "06020037206390063"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 604 BLOCO B",
+    "inscription": "06020037206390064"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 701 BLOCO B",
+    "inscription": "06020037206390065"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 702 BLOCO B",
+    "inscription": "06020037206390066"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 703 BLOCO B",
+    "inscription": "06020037206390067"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 704 BLOCO B",
+    "inscription": "06020037206390068"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 801 BLOCO B",
+    "inscription": "06020037206390069"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 802 BLOCO B",
+    "inscription": "06020037206390070"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 803 BLOCO B",
+    "inscription": "06020037206390071"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 804 BLOCO B",
+    "inscription": "06020037206390072"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 901 BLOCO B",
+    "inscription": "06020037206390073"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 902 BLOCO B",
+    "inscription": "06020037206390074"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 903 BLOCO B",
+    "inscription": "06020037206390075"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 904 BLOCO B",
+    "inscription": "06020037206390076"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 1001 BLOCO B",
+    "inscription": "06020037206390077"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 1002 BLOCO B",
+    "inscription": "06020037206390078"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 1003 BLOCO B",
+    "inscription": "06020037206390079"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 1004 BLOCO B",
+    "inscription": "06020037206390080"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 101 BLOCO B",
+    "inscription": "06020037206390041"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 102 BLOCO B",
+    "inscription": "06020037206390042"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 103 BLOCO B",
+    "inscription": "06020037206390043"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 104 BLOCO B",
+    "inscription": "06020037206390044"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 201 BLOCO B",
+    "inscription": "06020037206390045"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 202 BLOCO B",
+    "inscription": "06020037206390046"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 203 BLOCO B",
+    "inscription": "06020037206390047"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 204 BLOCO B",
+    "inscription": "06020037206390048"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 301 BLOCO B",
+    "inscription": "06020037206390049"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 302 BLOCO B",
+    "inscription": "06020037206390050"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 303 BLOCO B",
+    "inscription": "06020037206390051"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 304 BLOCO B",
+    "inscription": "06020037206390052"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 401 BLOCO B",
+    "inscription": "06020037206390053"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 402 BLOCO B",
+    "inscription": "06020037206390054"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 403 BLOCO B",
+    "inscription": "06020037206390055"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 404 BLOCO B",
+    "inscription": "06020037206390056"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 501 BLOCO B",
+    "inscription": "06020037206390057"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 502 BLOCO B",
+    "inscription": "06020037206390058"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 503 BLOCO B",
+    "inscription": "06020037206390059"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 504 BLOCO B",
+    "inscription": "06020037206390060"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 601 BLOCO B",
+    "inscription": "06020037206390061"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 602 BLOCO B",
+    "inscription": "06020037206390062"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 603 BLOCO B",
+    "inscription": "06020037206390063"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 604 BLOCO B",
+    "inscription": "06020037206390064"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 701 BLOCO B",
+    "inscription": "06020037206390065"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 702 BLOCO B",
+    "inscription": "06020037206390066"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 703 BLOCO B",
+    "inscription": "06020037206390067"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 704 BLOCO B",
+    "inscription": "06020037206390068"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 801 BLOCO B",
+    "inscription": "06020037206390069"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 802 BLOCO B",
+    "inscription": "06020037206390070"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 803 BLOCO B",
+    "inscription": "06020037206390071"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 804 BLOCO B",
+    "inscription": "06020037206390072"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 901 BLOCO B",
+    "inscription": "06020037206390073"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 902 BLOCO B",
+    "inscription": "06020037206390074"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 903 BLOCO B",
+    "inscription": "06020037206390075"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 904 BLOCO B",
+    "inscription": "06020037206390076"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 1001 BLOCO B",
+    "inscription": "06020037206390077"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 1002 BLOCO B",
+    "inscription": "06020037206390078"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 1003 BLOCO B",
+    "inscription": "06020037206390079"
+  },
+  {
+    "address": "RUA ERNANI LACERDA DE ATHAYDE, 188",
+    "building": "COSTA ESMERALDA",
+    "complement": "APTO 1004 BLOCO B",
+    "inscription": "06020037206390080"
+  },
+    {
+    "address": "RUA MATO GROSSO, 913",
+    "building": "EDIFÍCIO ASTEKA",
+    "complement": "APTO 101",
+    "inscription": "01030029604040001"
+  },
+  {
+    "address": "RUA MATO GROSSO, 913",
+    "building": "EDIFÍCIO ASTEKA",
+    "complement": "APTO 201",
+    "inscription": "01030029604040002"
+  },
+  {
+    "address": "RUA MATO GROSSO, 913",
+    "building": "EDIFÍCIO ASTEKA",
+    "complement": "APTO 301",
+    "inscription": "01030029604040003"
+  },
+  {
+    "address": "RUA MATO GROSSO, 913",
+    "building": "EDIFÍCIO ASTEKA",
+    "complement": "APTO 401",
+    "inscription": "01030029604040004"
+  },
+  {
+    "address": "RUA MATO GROSSO, 913",
+    "building": "EDIFÍCIO ASTEKA",
+    "complement": "APTO 501",
+    "inscription": "01030029604040005"
+  },
+  {
+    "address": "RUA MATO GROSSO, 913",
+    "building": "EDIFÍCIO ASTEKA",
+    "complement": "APTO 601",
+    "inscription": "01030029604040006"
+  },
+  {
+    "address": "RUA MATO GROSSO, 913",
+    "building": "EDIFÍCIO ASTEKA",
+    "complement": "APTO 701",
+    "inscription": "01030029604040007"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 101",
+    "inscription": "06020043307400001"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 102",
+    "inscription": "06020043307400002"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 201",
+    "inscription": "06020043307400003"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 202",
+    "inscription": "06020043307400004"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 301",
+    "inscription": "06020043307400005"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 302",
+    "inscription": "06020043307400006"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 401",
+    "inscription": "06020043307400007"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 402",
+    "inscription": "06020043307400008"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 501",
+    "inscription": "06020043307400009"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 502",
+    "inscription": "06020043307400010"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 601",
+    "inscription": "06020043307400011"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 602",
+    "inscription": "06020043307400012"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 701",
+    "inscription": "06020043307400013"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 702",
+    "inscription": "06020043307400014"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 801",
+    "inscription": "06020043307400015"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 802",
+    "inscription": "06020043307400016"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 901",
+    "inscription": "06020043307400017"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 902",
+    "inscription": "06020043307400018"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1001",
+    "inscription": "06020043307400019"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1002",
+    "inscription": "06020043307400020"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1101",
+    "inscription": "06020043307400021"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1102",
+    "inscription": "06020043307400022"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1201",
+    "inscription": "06020043307400023"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1202",
+    "inscription": "06020043307400024"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1301",
+    "inscription": "06020043307400025"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1302",
+    "inscription": "06020043307400026"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1401",
+    "inscription": "06020043307400027"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1402",
+    "inscription": "06020043307400028"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1501",
+    "inscription": "06020043307400029"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1502",
+    "inscription": "06020043307400030"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1601",
+    "inscription": "06020043307400031"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1602",
+    "inscription": "06020043307400032"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1701",
+    "inscription": "06020043307400033"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1702",
+    "inscription": "06020043307400034"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1801",
+    "inscription": "06020043307400035"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1802",
+    "inscription": "06020043307400036"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1901",
+    "inscription": "06020043307400037"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 1902",
+    "inscription": "06020043307400038"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 2001",
+    "inscription": "06020043307400039"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 2002",
+    "inscription": "06020043307400040"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 2101",
+    "inscription": "06020043307400041"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 2102",
+    "inscription": "06020043307400042"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 2201",
+    "inscription": "06020043307400043"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 2202",
+    "inscription": "06020043307400044"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 2301",
+    "inscription": "06020043307400045"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 2302",
+    "inscription": "06020043307400046"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 2401",
+    "inscription": "06020043307400047"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 2402",
+    "inscription": "06020043307400048"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 1 APTO 2501",
+    "inscription": "06020043307400049"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 101",
+    "inscription": "06020043307400050"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 102",
+    "inscription": "06020043307400051"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 201",
+    "inscription": "06020043307400052"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 202",
+    "inscription": "06020043307400053"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 301",
+    "inscription": "06020043307400054"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 302",
+    "inscription": "06020043307400055"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 401",
+    "inscription": "06020043307400056"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 402",
+    "inscription": "06020043307400057"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 501",
+    "inscription": "06020043307400058"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 502",
+    "inscription": "06020043307400059"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 601",
+    "inscription": "06020043307400060"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 602",
+    "inscription": "06020043307400061"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 701",
+    "inscription": "06020043307400062"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 702",
+    "inscription": "06020043307400063"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 801",
+    "inscription": "06020043307400064"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 802",
+    "inscription": "06020043307400065"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 901",
+    "inscription": "06020043307400066"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 902",
+    "inscription": "06020043307400067"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1001",
+    "inscription": "06020043307400068"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1002",
+    "inscription": "06020043307400069"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1101",
+    "inscription": "06020043307400070"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1102",
+    "inscription": "06020043307400071"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1201",
+    "inscription": "06020043307400072"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1202",
+    "inscription": "06020043307400073"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1301",
+    "inscription": "06020043307400074"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1302",
+    "inscription": "06020043307400075"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1401",
+    "inscription": "06020043307400076"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1402",
+    "inscription": "06020043307400077"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1501",
+    "inscription": "06020043307400078"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1502",
+    "inscription": "06020043307400079"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1601",
+    "inscription": "06020043307400080"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1602",
+    "inscription": "06020043307400081"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1701",
+    "inscription": "06020043307400082"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1702",
+    "inscription": "06020043307400083"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1801",
+    "inscription": "06020043307400084"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1802",
+    "inscription": "06020043307400085"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1901",
+    "inscription": "06020043307400086"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 1902",
+    "inscription": "06020043307400087"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 2001",
+    "inscription": "06020043307400088"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 2002",
+    "inscription": "06020043307400089"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 2101",
+    "inscription": "06020043307400090"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 2102",
+    "inscription": "06020043307400091"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 2201",
+    "inscription": "06020043307400092"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 2202",
+    "inscription": "06020043307400093"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 2301",
+    "inscription": "06020043307400094"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 2302",
+    "inscription": "06020043307400095"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 2401",
+    "inscription": "06020043307400096"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 2402",
+    "inscription": "06020043307400097"
+  },
+  {
+    "address": "RUA CARACAS, 500",
+    "building": "CASA BATLLÓ",
+    "complement": "TORRE 2 APTO 2501",
+    "inscription": "06020043307400098"
+  },
+    {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 101 BLOCO A",
+    "inscription": "03040089112360001"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 102 BLOCO A",
+    "inscription": "03040089112360002"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 103 BLOCO A",
+    "inscription": "03040089112360003"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 104 BLOCO A",
+    "inscription": "03040089112360004"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 201 BLOCO A",
+    "inscription": "03040089112360005"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 202 BLOCO A",
+    "inscription": "03040089112360006"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 203 BLOCO A",
+    "inscription": "03040089112360007"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 204 BLOCO A",
+    "inscription": "03040089112360008"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 301 BLOCO A",
+    "inscription": "03040089112360009"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 302 BLOCO A",
+    "inscription": "03040089112360010"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 303 BLOCO A",
+    "inscription": "03040089112360011"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 304 BLOCO A",
+    "inscription": "03040089112360012"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 401 BLOCO A",
+    "inscription": "03040089112360013"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 402 BLOCO A",
+    "inscription": "03040089112360014"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 403 BLOCO A",
+    "inscription": "03040089112360015"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 404 BLOCO A",
+    "inscription": "03040089112360016"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 101 BLOCO B",
+    "inscription": "03040089112360017"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 102 BLOCO B",
+    "inscription": "03040089112360018"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 103 BLOCO B",
+    "inscription": "03040089112360019"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 104 BLOCO B",
+    "inscription": "03040089112360020"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 201 BLOCO B",
+    "inscription": "03040089112360021"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 202 BLOCO B",
+    "inscription": "03040089112360022"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 203 BLOCO B",
+    "inscription": "03040089112360023"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 204 BLOCO B",
+    "inscription": "03040089112360024"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 301 BLOCO B",
+    "inscription": "03040089112360025"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 302 BLOCO B",
+    "inscription": "03040089112360026"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 303 BLOCO B",
+    "inscription": "03040089112360027"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 304 BLOCO B",
+    "inscription": "03040089112360028"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 401 BLOCO B",
+    "inscription": "03040089112360029"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 402 BLOCO B",
+    "inscription": "03040089112360030"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 403 BLOCO B",
+    "inscription": "03040089112360031"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "CONJ. RESID. PARQUE JAMAICA",
+    "complement": "APTO 404 BLOCO B",
+    "inscription": "03040089112360032"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 101 BLOCO C",
+    "inscription": "03040089112360017"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 102 BLOCO C",
+    "inscription": "03040089112360018"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 103 BLOCO C",
+    "inscription": "03040089112360019"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 104 BLOCO C",
+    "inscription": "03040089112360020"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 201 BLOCO C",
+    "inscription": "03040089112360021"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 202 BLOCO C",
+    "inscription": "03040089112360022"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 203 BLOCO C",
+    "inscription": "03040089112360023"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 204 BLOCO C",
+    "inscription": "03040089112360024"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 301 BLOCO C",
+    "inscription": "03040089112360025"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 302 BLOCO C",
+    "inscription": "03040089112360026"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 303 BLOCO C",
+    "inscription": "03040089112360027"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 304 BLOCO C",
+    "inscription": "03040089112360028"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 401 BLOCO C",
+    "inscription": "03040089112360029"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 402 BLOCO C",
+    "inscription": "03040089112360030"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 403 BLOCO C",
+    "inscription": "03040089112360031"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 404 BLOCO C",
+    "inscription": "03040089112360032"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 101 BLOCO D",
+    "inscription": "03040089112360033"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 102 BLOCO D",
+    "inscription": "03040089112360034"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 103 BLOCO D",
+    "inscription": "03040089112360035"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 104 BLOCO D",
+    "inscription": "03040089112360036"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 201 BLOCO D",
+    "inscription": "03040089112360037"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 202 BLOCO D",
+    "inscription": "03040089112360038"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 203 BLOCO D",
+    "inscription": "03040089112360039"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 204 BLOCO D",
+    "inscription": "03040089112360040"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 301 BLOCO D",
+    "inscription": "03040089112360041"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 302 BLOCO D",
+    "inscription": "03040089112360042"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 303 BLOCO D",
+    "inscription": "03040089112360043"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 304 BLOCO D",
+    "inscription": "03040089112360044"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 401 BLOCO D",
+    "inscription": "03040089112360045"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 402 BLOCO D",
+    "inscription": "03040089112360046"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 403 BLOCO D",
+    "inscription": "03040089112360047"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 404 BLOCO D",
+    "inscription": "03040089112360048"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 101 BLOCO E",
+    "inscription": "03040089112360049"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 102 BLOCO E",
+    "inscription": "03040089112360050"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 103 BLOCO E",
+    "inscription": "03040089112360051"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 104 BLOCO E",
+    "inscription": "03040089112360052"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 201 BLOCO E",
+    "inscription": "03040089112360053"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 202 BLOCO E",
+    "inscription": "03040089112360054"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 203 BLOCO E",
+    "inscription": "03040089112360055"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 204 BLOCO E",
+    "inscription": "03040089112360056"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 301 BLOCO E",
+    "inscription": "03040089112360057"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 302 BLOCO E",
+    "inscription": "03040089112360058"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 303 BLOCO E",
+    "inscription": "03040089112360059"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 304 BLOCO E",
+    "inscription": "03040089112360060"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 401 BLOCO E",
+    "inscription": "03040089112360061"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 402 BLOCO E",
+    "inscription": "03040089112360062"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 403 BLOCO E",
+    "inscription": "03040089112360063"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 404 BLOCO E",
+    "inscription": "03040089112360064"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 101 BLOCO F",
+    "inscription": "03040089112360065"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 102 BLOCO F",
+    "inscription": "03040089112360066"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 103 BLOCO F",
+    "inscription": "03040089112360067"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 104 BLOCO F",
+    "inscription": "03040089112360068"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 201 BLOCO F",
+    "inscription": "03040089112360069"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 202 BLOCO F",
+    "inscription": "03040089112360070"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 203 BLOCO F",
+    "inscription": "03040089112360071"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 204 BLOCO F",
+    "inscription": "03040089112360072"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 301 BLOCO F",
+    "inscription": "03040089112360073"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 302 BLOCO F",
+    "inscription": "03040089112360074"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 303 BLOCO F",
+    "inscription": "03040089112360075"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 304 BLOCO F",
+    "inscription": "03040089112360076"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 401 BLOCO F",
+    "inscription": "03040089112360077"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 402 BLOCO F",
+    "inscription": "03040089112360078"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 403 BLOCO F",
+    "inscription": "03040089112360079"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 404 BLOCO F",
+    "inscription": "03040089112360080"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 101 BLOCO C",
+    "inscription": "03040089112360033"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 102 BLOCO C",
+    "inscription": "03040089112360034"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 103 BLOCO C",
+    "inscription": "03040089112360035"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 104 BLOCO C",
+    "inscription": "03040089112360036"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 201 BLOCO C",
+    "inscription": "03040089112360037"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 202 BLOCO C",
+    "inscription": "03040089112360038"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 203 BLOCO C",
+    "inscription": "03040089112360039"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 204 BLOCO C",
+    "inscription": "03040089112360040"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 301 BLOCO C",
+    "inscription": "03040089112360041"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 302 BLOCO C",
+    "inscription": "03040089112360042"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 303 BLOCO C",
+    "inscription": "03040089112360043"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 304 BLOCO C",
+    "inscription": "03040089112360044"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 401 BLOCO C",
+    "inscription": "03040089112360045"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 402 BLOCO C",
+    "inscription": "03040089112360046"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 403 BLOCO C",
+    "inscription": "03040089112360047"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 404 BLOCO C",
+    "inscription": "03040089112360048"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 101 BLOCO D",
+    "inscription": "03040089112360049"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 102 BLOCO D",
+    "inscription": "03040089112360050"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 103 BLOCO D",
+    "inscription": "03040089112360051"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 104 BLOCO D",
+    "inscription": "03040089112360052"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 201 BLOCO D",
+    "inscription": "03040089112360053"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 202 BLOCO D",
+    "inscription": "03040089112360054"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 203 BLOCO D",
+    "inscription": "03040089112360055"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 204 BLOCO D",
+    "inscription": "03040089112360056"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 301 BLOCO D",
+    "inscription": "03040089112360057"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 302 BLOCO D",
+    "inscription": "03040089112360058"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 303 BLOCO D",
+    "inscription": "03040089112360059"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 304 BLOCO D",
+    "inscription": "03040089112360060"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 401 BLOCO D",
+    "inscription": "03040089112360061"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 402 BLOCO D",
+    "inscription": "03040089112360062"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 403 BLOCO D",
+    "inscription": "03040089112360063"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 404 BLOCO D",
+    "inscription": "03040089112360064"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 101 BLOCO E",
+    "inscription": "03040089112360065"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 102 BLOCO E",
+    "inscription": "03040089112360066"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 103 BLOCO E",
+    "inscription": "03040089112360067"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 104 BLOCO E",
+    "inscription": "03040089112360068"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 201 BLOCO E",
+    "inscription": "03040089112360069"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 202 BLOCO E",
+    "inscription": "03040089112360070"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 203 BLOCO E",
+    "inscription": "03040089112360071"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 204 BLOCO E",
+    "inscription": "03040089112360072"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 301 BLOCO E",
+    "inscription": "03040089112360073"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 302 BLOCO E",
+    "inscription": "03040089112360074"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 303 BLOCO E",
+    "inscription": "03040089112360075"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 304 BLOCO E",
+    "inscription": "03040089112360076"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 401 BLOCO E",
+    "inscription": "03040089112360077"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 402 BLOCO E",
+    "inscription": "03040089112360078"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 403 BLOCO E",
+    "inscription": "03040089112360079"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 404 BLOCO E",
+    "inscription": "03040089112360080"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 101 BLOCO F",
+    "inscription": "03040089112360081"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 102 BLOCO F",
+    "inscription": "03040089112360082"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 103 BLOCO F",
+    "inscription": "03040089112360083"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 104 BLOCO F",
+    "inscription": "03040089112360084"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 201 BLOCO F",
+    "inscription": "03040089112360085"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 202 BLOCO F",
+    "inscription": "03040089112360086"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 203 BLOCO F",
+    "inscription": "03040089112360087"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 204 BLOCO F",
+    "inscription": "03040089112360088"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 301 BLOCO F",
+    "inscription": "03040089112360089"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 302 BLOCO F",
+    "inscription": "03040089112360090"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 303 BLOCO F",
+    "inscription": "03040089112360091"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 304 BLOCO F",
+    "inscription": "03040089112360092"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 401 BLOCO F",
+    "inscription": "03040089112360077"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 402 BLOCO F",
+    "inscription": "03040089112360078"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 403 BLOCO F",
+    "inscription": "03040089112360079"
+  },
+  {
+    "address": "AV. ARTHUR THOMAS, 1475",
+    "building": "PARQUE JAMAICA",
+    "complement": "APTO 404 BLOCO F",
+    "inscription": "03040089112360080"
   }
 ]
